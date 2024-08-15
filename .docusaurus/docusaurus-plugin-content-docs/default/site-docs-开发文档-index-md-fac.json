@@ -11,10 +11,10 @@
   "editUrl": "https://atomgit.com/zouxiangneihe/website/tree/master/docs/开发文档/index.md",
   "tags": [],
   "version": "current",
-  "sidebarPosition": 4,
+  "sidebarPosition": 60,
   "frontMatter": {
     "title": "编码规范",
-    "sidebar_position": 4
+    "sidebar_position": 60
   },
   "sidebar": "tutorialSidebar",
   "previous": {

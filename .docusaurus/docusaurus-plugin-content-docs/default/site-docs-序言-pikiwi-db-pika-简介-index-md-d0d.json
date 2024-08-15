@@ -1,0 +1,28 @@
+{
+  "id": "序言/PikiwiDB(Pika)简介/index",
+  "title": "PikiwiDB(Pika) 简介",
+  "description": "PikiwiDB(Pika)-Logo-Logo.png)",
+  "source": "@site/docs/序言/PikiwiDB(Pika)简介/index.md",
+  "sourceDirName": "序言/PikiwiDB(Pika)简介",
+  "slug": "/序言/PikiwiDB(Pika)简介/",
+  "permalink": "/docs/序言/PikiwiDB(Pika)简介/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://atomgit.com/zouxiangneihe/website/tree/master/docs/序言/PikiwiDB(Pika)简介/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 0,
+  "frontMatter": {
+    "title": "PikiwiDB(Pika) 简介",
+    "sidebar_position": 0
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "序言",
+    "permalink": "/docs/序言/"
+  },
+  "next": {
+    "title": "支持的 Redis 接口与兼容情况",
+    "permalink": "/docs/序言/支持的 Redis 接口与兼容情况/"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "permalink": "/blog/Pika-3.5.0",
+  "source": "@site/blog/2024-05-16-PikiwiDB(Pika)-4.0.0.md",
+  "title": "What's new in Pika v3.5.0",
+  "description": "尊敬的社区成员及技术爱好者们：",
+  "date": "2024-05-16T00:00:00.000Z",
+  "tags": [],
+  "readingTime": 17.09,
+  "hasTruncateMarker": false,
+  "authors": [
+    {
+      "name": "360 车金鸽",
+      "title": "Pika 开源社区"
+    }
+  ],
+  "frontMatter": {
+    "title": "What's new in Pika v3.5.0",
+    "slug": "Pika-3.5.0",
+    "authors": [
+      {
+        "name": "360 车金鸽",
+        "title": "Pika 开源社区"
+      }
+    ],
+    "hide_table_of_contents": false
+  },
+  "unlisted": false,
+  "prevItem": {
+    "title": "What's new in Pika v3.5.4",
+    "permalink": "/blog/Pika-3.5.4"
+  },
+  "nextItem": {
+    "title": "What's new in Pika v3.5.3 ",
+    "permalink": "/blog/Pika-3.5.3"
+  }
+}

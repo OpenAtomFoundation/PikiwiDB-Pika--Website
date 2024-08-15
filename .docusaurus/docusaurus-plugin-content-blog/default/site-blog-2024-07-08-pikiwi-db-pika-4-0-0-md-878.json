@@ -1,0 +1,32 @@
+{
+  "permalink": "/blog/PikiwiDB(Pika)-4.0.0",
+  "source": "@site/blog/2024-07-08-PikiwiDB(Pika)-4.0.0.md",
+  "title": "What's new in PikiwiDB(Pika) v4.0.0",
+  "description": "尊敬的社区成员及技术爱好者们：",
+  "date": "2024-07-08T00:00:00.000Z",
+  "tags": [],
+  "readingTime": 17.085,
+  "hasTruncateMarker": false,
+  "authors": [
+    {
+      "name": "360 车金鸽",
+      "title": "Pika 开源社区"
+    }
+  ],
+  "frontMatter": {
+    "title": "What's new in PikiwiDB(Pika) v4.0.0",
+    "slug": "PikiwiDB(Pika)-4.0.0",
+    "authors": [
+      {
+        "name": "360 车金鸽",
+        "title": "Pika 开源社区"
+      }
+    ],
+    "hide_table_of_contents": false
+  },
+  "unlisted": false,
+  "nextItem": {
+    "title": "What's new in Pika v3.5.4",
+    "permalink": "/blog/Pika-3.5.4"
+  }
+}

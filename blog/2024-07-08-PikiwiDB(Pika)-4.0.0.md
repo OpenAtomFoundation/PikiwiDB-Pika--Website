@@ -1,6 +1,11 @@
 ---
-title: "Pika 4.0.0 版本"
-sidebar_position: 4
+title: What's new in PikiwiDB(Pika) v4.0.0 
+slug: PikiwiDB(Pika)-4.0.0
+
+authors:
+  - name: 360 车金鸽
+    title: Pika 开源社区
+hide_table_of_contents: false
 ---
 
 尊敬的社区成员及技术爱好者们：
@@ -16,7 +21,7 @@ Floyd 如同其前代 Blackwidow，基于 RocksDB，不仅支持基础的 String
 
 + 禁止重复 key
 
-![alt text](image.png)
+![2024-05-16-PikiwiDB(Pika)-4.0.0-key](2024-07-08-PikiwiDB(Pika)-4.0.0-key.png)
 基于 RocksDB 的 Column-Family 虚拟隔离机制，Floyd 把所有类型的 key 和 string 一起存储在 Column-Family 0。在此存储基础之上，可明确禁止不同类型的 key 重复，这一设计旨在杜绝潜在的数据冗余与不一致性，与 Redis 服务特性保持一致，进一步提升了系统的整体效率与数据质量。
 
 + Floyd 详细说明
@@ -258,3 +263,5 @@ https://github.com/OpenAtomFoundation/pika/pull/2711
     wangshao1
 
 PikiwiDB (Pika) 开源社区热烈欢迎您的参与和支持。如果您有任何问题、意见或建议，请扫码添加 PikiwiDB 小助手【微信号: PikiwiDB】为好友，它会拉您加入官方微信群。
+
+![2024-07-08-PikiwiDB(Pika)-4.0.0-connect](2024-07-08-PikiwiDB(Pika)-4.0.0-connect.png)

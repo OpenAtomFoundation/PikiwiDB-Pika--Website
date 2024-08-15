@@ -10,20 +10,20 @@ import rehypeKatex from 'rehype-katex';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Pika',
-  tagline: '低成本数据持久化数据库',
+  title: 'PikiwiDB(Pika)',
+  tagline: '为海量数据存储设计的高可用键值数据库',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://pikiwidb.com/',
+  url: 'https://www.pikiwidb.com/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'Pika 开源社区', // Usually your GitHub org/user name.
-  projectName: 'Pika', // Usually your repo name.
+  organizationName: 'PikiwiDB(Pika) 开源社区', // Usually your GitHub org/user name.
+  projectName: 'PikiwiDB(Pika)', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -72,9 +72,11 @@ const config = {
         title: '',
         logo: {
           alt: 'Logo',
-          src: 'img/pika-logo.png',
+          src: 'img/PikiwiDB-Logo.png',
         },
         items: [
+          {to: 'docs/序言', label: '文档', position: 'left'},
+          {to: 'blog', label: '博客', position: 'left'}
         ],
       },
       footer: {
@@ -84,13 +86,13 @@ const config = {
             title: '微信公众号',
             items: [
               {
-                label: 'Pika 公众号',
+                label: 'PikiwiDB(Pika) 公众号',
                 href: 'https://mp.weixin.qq.com/s/CvIdQs3g31DC8JztyymuqQ',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Pika 开源数据库社区`,
+        copyright: `Copyright © ${new Date().getFullYear()} PikiwiDB 开源数据库社区`,
       },
       prism: {
         theme: prismThemes.github,

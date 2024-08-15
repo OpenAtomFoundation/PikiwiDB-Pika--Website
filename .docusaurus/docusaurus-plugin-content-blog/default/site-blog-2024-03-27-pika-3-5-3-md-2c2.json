@@ -1,0 +1,36 @@
+{
+  "permalink": "/blog/Pika-3.5.3",
+  "source": "@site/blog/2024-03-27-Pika-3.5.3.md",
+  "title": "What's new in Pika v3.5.3 ",
+  "description": "随着 Redis 宣布采用双协议以维护其商业利益之际，PikiwiDB(Pika) 社区非常荣幸地宣布，我们的最新 v3.5.3 正式生产可用版本现已发布。",
+  "date": "2024-03-27T00:00:00.000Z",
+  "tags": [],
+  "readingTime": 14.535,
+  "hasTruncateMarker": false,
+  "authors": [
+    {
+      "name": "360 中间件团队",
+      "title": "Pika 开源社区"
+    }
+  ],
+  "frontMatter": {
+    "title": "What's new in Pika v3.5.3 ",
+    "slug": "Pika-3.5.3",
+    "authors": [
+      {
+        "name": "360 中间件团队",
+        "title": "Pika 开源社区"
+      }
+    ],
+    "hide_table_of_contents": false
+  },
+  "unlisted": false,
+  "prevItem": {
+    "title": "What's new in Pika v3.5.4",
+    "permalink": "/blog/Pika-3.5.4"
+  },
+  "nextItem": {
+    "title": "What's new in Pika v3.5.0",
+    "permalink": "/blog/Pika-3.5.0"
+  }
+}

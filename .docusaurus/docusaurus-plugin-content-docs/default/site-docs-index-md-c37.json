@@ -1,7 +1,7 @@
 {
   "id": "index",
-  "title": "Pika 的简介与同 Redis 的比较",
-  "description": "Pika是什么",
+  "title": "介绍",
+  "description": "PikiwiDB是什么",
   "source": "@site/docs/index.md",
   "sourceDirName": ".",
   "slug": "/",
@@ -13,12 +13,12 @@
   "version": "current",
   "sidebarPosition": 0,
   "frontMatter": {
-    "title": "Pika 的简介与同 Redis 的比较",
+    "title": "介绍",
     "sidebar_position": 0
   },
   "sidebar": "tutorialSidebar",
   "next": {
-    "title": "Pika 的简介与同 Redis 的比较",
-    "permalink": "/docs/概况/Pika 的简介与同 Redis 的比较/"
+    "title": "概况",
+    "permalink": "/docs/概况/"
   }
 }

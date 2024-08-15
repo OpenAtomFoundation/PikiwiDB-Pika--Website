@@ -4,50 +4,50 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: '迁移友好',
+    title: '分布式架构',
     description: (
       <>
-        采取 Redis 协议的软件可以平滑过渡到 Pika
+        为大规模数据存储而规划，支持结合 Proxy 映射软件构建分布式数据集群
       </>
     ),
   },
   {
-    title: 'Redis 兼容',
+    title: '大规模数据存储',
     description: (
       <>
-        支持 Redis 中常用的数据结构
+        支持TB级别的高性能数据存储
       </>
     ),
   },
   {
-    title: '冷热数据',
+    title: '快速故障转移',
     description: (
       <>
-        支持冷热分级存储及热数据缓存机制
+        在单点故障产生之时可以快速恢复服务，最大程度减少对业务的冲击
       </>
     ),
   },
   {
-    title: '高容量存储',
+    title: '兼容 Redis',
     description: (
       <>
-        可支持数百 GB 数据持久化存储
+        缘起于对接 360 内部的数据存储需求，并被应用于替换 360 内部的 Redis 服务，顺利实现迁移
       </>
     ),
   },
   {
-    title: '分布式部署',
+    title: '社区驱动发展',
     description: (
       <>
-        容量调整便利，支持多种模式集群部署
+        在开放原子基金会指导下由开源社区驱动项目改进，吸收外部反馈，满足行业需求
       </>
     ),
   },
   {
-    title: '管理自治',
+    title: '协议友好',
     description: (
       <>
-        运维指令与文档非常完备
+        采行 BSD 协议开放源代码，欢迎根据自身需要定制 PikiwiDB
       </>
     ),
   },

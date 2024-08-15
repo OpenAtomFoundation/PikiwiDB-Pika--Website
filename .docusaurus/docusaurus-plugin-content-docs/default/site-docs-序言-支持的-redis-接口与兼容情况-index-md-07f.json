@@ -1,0 +1,28 @@
+{
+  "id": "序言/支持的 Redis 接口与兼容情况/index",
+  "title": "支持的 Redis 接口与兼容情况",
+  "description": "pika支持redis五种类型（分别为string、hash、list、set、zset）的接口，先列出其对redis的五种数据结构兼容统计。",
+  "source": "@site/docs/序言/支持的 Redis 接口与兼容情况/index.md",
+  "sourceDirName": "序言/支持的 Redis 接口与兼容情况",
+  "slug": "/序言/支持的 Redis 接口与兼容情况/",
+  "permalink": "/docs/序言/支持的 Redis 接口与兼容情况/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://atomgit.com/zouxiangneihe/website/tree/master/docs/序言/支持的 Redis 接口与兼容情况/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "支持的 Redis 接口与兼容情况",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "PikiwiDB(Pika) 简介",
+    "permalink": "/docs/序言/简介/"
+  },
+  "next": {
+    "title": "FAQ",
+    "permalink": "/docs/序言/FAQ/"
+  }
+}

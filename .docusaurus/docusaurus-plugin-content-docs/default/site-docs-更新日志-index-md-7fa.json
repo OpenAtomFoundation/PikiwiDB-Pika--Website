@@ -11,15 +11,15 @@
   "editUrl": "https://atomgit.com/zouxiangneihe/website/tree/master/docs/更新日志/index.md",
   "tags": [],
   "version": "current",
-  "sidebarPosition": 5,
+  "sidebarPosition": 50,
   "frontMatter": {
     "title": "更新日志",
-    "sidebar_position": 5
+    "sidebar_position": 50
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "编码规范",
-    "permalink": "/docs/开发文档/编码规范/"
+    "title": "Pika 主从同比",
+    "permalink": "/docs/设计与实现/Pika 传火计划/主从同步/"
   },
   "next": {
     "title": "版本日志",

@@ -8,7 +8,7 @@
           "label": "Next",
           "isLast": true,
           "path": "/docs",
-          "mainDocId": "概况/index",
+          "mainDocId": "序言/index",
           "docs": [
             {
               "id": "使用与运维/index",
@@ -96,6 +96,26 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "序言/FAQ/index",
+              "path": "/docs/序言/FAQ/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "序言/index",
+              "path": "/docs/序言/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "序言/支持的 Redis 接口与兼容情况/index",
+              "path": "/docs/序言/支持的 Redis 接口与兼容情况/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "序言/简介/index",
+              "path": "/docs/序言/简介/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "开发文档/index",
               "path": "/docs/开发文档/",
               "sidebar": "tutorialSidebar"
@@ -143,66 +163,6 @@
             {
               "id": "性能与优化/Redis 与 Pika scan 性能对比/index",
               "path": "/docs/性能与优化/Redis 与 Pika scan 性能对比/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "更新日志/index",
-              "path": "/docs/更新日志/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "更新日志/版本日志/index",
-              "path": "/docs/更新日志/版本日志/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "更新日志/版本日志/v3.5.0/index",
-              "path": "/docs/更新日志/版本日志/v3.5.0/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "更新日志/版本日志/v3.5.1/index",
-              "path": "/docs/更新日志/版本日志/v3.5.1/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "更新日志/版本日志/v3.5.2/index",
-              "path": "/docs/更新日志/版本日志/v3.5.2/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "更新日志/版本日志/v3.5.3/index",
-              "path": "/docs/更新日志/版本日志/v3.5.3/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "更新日志/版本日志/v3.5.4/index",
-              "path": "/docs/更新日志/版本日志/v3.5.4/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "更新日志/版本日志/v4.0.0/index",
-              "path": "/docs/更新日志/版本日志/v4.0.0/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "概况/FAQ/index",
-              "path": "/docs/概况/FAQ/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "概况/index",
-              "path": "/docs/概况/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "概况/Pika 介绍/index",
-              "path": "/docs/概况/Pika 介绍/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "概况/支持的 Redis 接口与兼容情况/index",
-              "path": "/docs/概况/支持的 Redis 接口与兼容情况/",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -325,8 +285,8 @@
           "sidebars": {
             "tutorialSidebar": {
               "link": {
-                "path": "/docs/概况/",
-                "label": "概况"
+                "path": "/docs/序言/",
+                "label": "序言"
               }
             }
           }

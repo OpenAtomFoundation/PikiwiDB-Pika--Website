@@ -38,16 +38,56 @@ export default [
     exact: true
   },
   {
+    path: '/blog',
+    component: ComponentCreator('/blog', '26b'),
+    exact: true
+  },
+  {
+    path: '/blog/archive',
+    component: ComponentCreator('/blog/archive', '182'),
+    exact: true
+  },
+  {
+    path: '/blog/Pika-3.5.0',
+    component: ComponentCreator('/blog/Pika-3.5.0', 'eeb'),
+    exact: true
+  },
+  {
+    path: '/blog/Pika-3.5.0',
+    component: ComponentCreator('/blog/Pika-3.5.0', '104'),
+    exact: true
+  },
+  {
+    path: '/blog/Pika-3.5.1',
+    component: ComponentCreator('/blog/Pika-3.5.1', '780'),
+    exact: true
+  },
+  {
+    path: '/blog/Pika-3.5.3',
+    component: ComponentCreator('/blog/Pika-3.5.3', 'f4a'),
+    exact: true
+  },
+  {
+    path: '/blog/Pika-3.5.4',
+    component: ComponentCreator('/blog/Pika-3.5.4', '7a0'),
+    exact: true
+  },
+  {
+    path: '/blog/PikiwiDB(Pika)-4.0.0',
+    component: ComponentCreator('/blog/PikiwiDB(Pika)-4.0.0', '6ff'),
+    exact: true
+  },
+  {
     path: '/docs',
-    component: ComponentCreator('/docs', 'e83'),
+    component: ComponentCreator('/docs', '54a'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', '2a6'),
+        component: ComponentCreator('/docs', '274'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', 'df6'),
+            component: ComponentCreator('/docs', '79a'),
             routes: [
               {
                 path: '/docs/使用与运维/',
@@ -152,6 +192,30 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
+                path: '/docs/序言/',
+                component: ComponentCreator('/docs/序言/', 'db5'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/序言/FAQ/',
+                component: ComponentCreator('/docs/序言/FAQ/', 'b59'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/序言/支持的 Redis 接口与兼容情况/',
+                component: ComponentCreator('/docs/序言/支持的 Redis 接口与兼容情况/', '10f'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/序言/简介/',
+                component: ComponentCreator('/docs/序言/简介/', '70a'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
                 path: '/docs/开发文档/',
                 component: ComponentCreator('/docs/开发文档/', '7cf'),
                 exact: true,
@@ -208,78 +272,6 @@ export default [
               {
                 path: '/docs/性能与优化/Redis 与 Pika scan 性能对比/',
                 component: ComponentCreator('/docs/性能与优化/Redis 与 Pika scan 性能对比/', '601'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/更新日志/',
-                component: ComponentCreator('/docs/更新日志/', '64c'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/更新日志/版本日志/',
-                component: ComponentCreator('/docs/更新日志/版本日志/', '8b2'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/更新日志/版本日志/v3.5.0/',
-                component: ComponentCreator('/docs/更新日志/版本日志/v3.5.0/', '2dc'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/更新日志/版本日志/v3.5.1/',
-                component: ComponentCreator('/docs/更新日志/版本日志/v3.5.1/', '9c1'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/更新日志/版本日志/v3.5.2/',
-                component: ComponentCreator('/docs/更新日志/版本日志/v3.5.2/', '8d4'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/更新日志/版本日志/v3.5.3/',
-                component: ComponentCreator('/docs/更新日志/版本日志/v3.5.3/', '072'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/更新日志/版本日志/v3.5.4/',
-                component: ComponentCreator('/docs/更新日志/版本日志/v3.5.4/', 'c1d'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/更新日志/版本日志/v4.0.0/',
-                component: ComponentCreator('/docs/更新日志/版本日志/v4.0.0/', '83a'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/概况/',
-                component: ComponentCreator('/docs/概况/', '769'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/概况/FAQ/',
-                component: ComponentCreator('/docs/概况/FAQ/', '214'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/概况/Pika 介绍/',
-                component: ComponentCreator('/docs/概况/Pika 介绍/', '5a3'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/概况/支持的 Redis 接口与兼容情况/',
-                component: ComponentCreator('/docs/概况/支持的 Redis 接口与兼容情况/', 'eaa'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

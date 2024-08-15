@@ -1,0 +1,81 @@
+{
+  "permalink": "/blog/welcome-docusaurus-v2",
+  "source": "@site/blog/2020-05-29-Hello-world.md",
+  "title": "Welcome Docusaurus",
+  "description": "This is my first post on Docusaurus.",
+  "date": "2020-05-29T00:00:00.000Z",
+  "tags": [
+    {
+      "inline": true,
+      "label": "hello",
+      "permalink": "/blog/tags/hello"
+    },
+    {
+      "inline": true,
+      "label": "docusaurus-v2",
+      "permalink": "/blog/tags/docusaurus-v-2"
+    }
+  ],
+  "readingTime": 0.145,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Joel Marcey",
+      "title": "Co-creator of Docusaurus 1",
+      "url": "https://github.com/JoelMarcey",
+      "image_url": "https://github.com/JoelMarcey.png",
+      "socials": {
+        "x": "joelmarcey",
+        "github": "JoelMarcey"
+      },
+      "imageURL": "https://github.com/JoelMarcey.png"
+    },
+    {
+      "name": "Sébastien Lorber",
+      "title": "Docusaurus maintainer",
+      "url": "https://sebastienlorber.com",
+      "image_url": "https://github.com/slorber.png",
+      "socials": {
+        "x": "sebastienlorber",
+        "github": "slorber"
+      },
+      "imageURL": "https://github.com/slorber.png"
+    }
+  ],
+  "frontMatter": {
+    "title": "Welcome Docusaurus",
+    "description": "This is my first post on Docusaurus.",
+    "slug": "welcome-docusaurus-v2",
+    "authors": [
+      {
+        "name": "Joel Marcey",
+        "title": "Co-creator of Docusaurus 1",
+        "url": "https://github.com/JoelMarcey",
+        "image_url": "https://github.com/JoelMarcey.png",
+        "socials": {
+          "x": "joelmarcey",
+          "github": "JoelMarcey"
+        },
+        "imageURL": "https://github.com/JoelMarcey.png"
+      },
+      {
+        "name": "Sébastien Lorber",
+        "title": "Docusaurus maintainer",
+        "url": "https://sebastienlorber.com",
+        "image_url": "https://github.com/slorber.png",
+        "socials": {
+          "x": "sebastienlorber",
+          "github": "slorber"
+        },
+        "imageURL": "https://github.com/slorber.png"
+      }
+    ],
+    "tags": [
+      "hello",
+      "docusaurus-v2"
+    ],
+    "image": "https://i.imgur.com/mErPwqL.png",
+    "hide_table_of_contents": false
+  },
+  "unlisted": false
+}

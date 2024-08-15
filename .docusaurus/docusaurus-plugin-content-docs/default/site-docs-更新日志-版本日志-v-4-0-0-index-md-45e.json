@@ -18,7 +18,11 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Pika 3.5.4 版本",
-    "permalink": "/docs/更新日志/版本日志/v3.5.4/"
+    "title": "版本日志",
+    "permalink": "/docs/更新日志/版本日志/"
+  },
+  "next": {
+    "title": "编码规范",
+    "permalink": "/docs/开发文档/"
   }
 }

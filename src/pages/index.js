@@ -13,13 +13,13 @@ function HomepageHeader() {
     <header className={clsx('hero hero--body', styles.heroBanner)}>
       <div className="container">
         <Heading as="h1" className="hero__title">
-        <img src = "/img/pika-logo.png"/>
+        <img src = "/img/PikiwiDB-Logo.png"/>
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/概况/Pika 介绍/">
+            to="/docs/序言">
             阅读文档
           </Link>
         </div>
@@ -32,8 +32,8 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`${siteConfig.title}`}
+      description="PikiwiDB 是一款支持持久化存储的键值数据库">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

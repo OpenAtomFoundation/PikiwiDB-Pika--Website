@@ -1,0 +1,36 @@
+{
+  "permalink": "/blog/Pika-3.5.1",
+  "source": "@site/blog/2023-09-28-Pika-3.5.1.md",
+  "title": "What's new in Pika v3.5.1",
+  "description": "Pika 社区很高兴宣布，我们今天发布已经过我们生产环境验证 v3.5.1 版本 https://github.com/OpenAtomFoundation/pika/releases/tag/v3.5.1 。",
+  "date": "2023-09-28T00:00:00.000Z",
+  "tags": [],
+  "readingTime": 4.385,
+  "hasTruncateMarker": false,
+  "authors": [
+    {
+      "name": "于雨",
+      "title": "dubbo-go开源社区"
+    }
+  ],
+  "frontMatter": {
+    "title": "What's new in Pika v3.5.1",
+    "slug": "Pika-3.5.1",
+    "authors": [
+      {
+        "name": "于雨",
+        "title": "dubbo-go开源社区"
+      }
+    ],
+    "hide_table_of_contents": false
+  },
+  "unlisted": false,
+  "prevItem": {
+    "title": "What's new in Pika v3.5.0",
+    "permalink": "/blog/Pika-3.5.0"
+  },
+  "nextItem": {
+    "title": "What's new in Pika v3.5.0",
+    "permalink": "/blog/Pika-3.5.0"
+  }
+}

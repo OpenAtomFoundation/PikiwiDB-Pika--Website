@@ -11,10 +11,10 @@
   "editUrl": "https://atomgit.com/zouxiangneihe/website/tree/master/docs/性能与优化/index.md",
   "tags": [],
   "version": "current",
-  "sidebarPosition": 2,
+  "sidebarPosition": 30,
   "frontMatter": {
     "title": "性能与优化",
-    "sidebar_position": 2
+    "sidebar_position": 30
   },
   "sidebar": "tutorialSidebar",
   "previous": {

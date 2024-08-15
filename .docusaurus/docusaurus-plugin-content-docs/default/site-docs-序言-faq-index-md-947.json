@@ -1,0 +1,28 @@
+{
+  "id": "序言/FAQ/index",
+  "title": "FAQ",
+  "description": "1 编译安装",
+  "source": "@site/docs/序言/FAQ/index.md",
+  "sourceDirName": "序言/FAQ",
+  "slug": "/序言/FAQ/",
+  "permalink": "/docs/序言/FAQ/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://atomgit.com/zouxiangneihe/website/tree/master/docs/序言/FAQ/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "FAQ",
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "支持的 Redis 接口与兼容情况",
+    "permalink": "/docs/序言/支持的 Redis 接口与兼容情况/"
+  },
+  "next": {
+    "title": "使用与运维",
+    "permalink": "/docs/使用与运维/"
+  }
+}

@@ -11,15 +11,15 @@
   "editUrl": "https://atomgit.com/zouxiangneihe/website/tree/master/docs/使用与运维/index.md",
   "tags": [],
   "version": "current",
-  "sidebarPosition": 1,
+  "sidebarPosition": 20,
   "frontMatter": {
     "title": "使用与运维",
-    "sidebar_position": 1
+    "sidebar_position": 20
   },
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "FAQ",
-    "permalink": "/docs/概况/FAQ/"
+    "permalink": "/docs/序言/FAQ/"
   },
   "next": {
     "title": "安装使用",

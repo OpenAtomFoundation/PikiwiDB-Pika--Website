@@ -1,0 +1,24 @@
+{
+  "id": "序言/index",
+  "title": "序言",
+  "description": "欢迎来到 PikiwiDB(Pika) 的世界。接下来的篇章旨在于帮助你建立对 PikiwiDB 数据库的基本了解，你将会阅读到：",
+  "source": "@site/docs/序言/index.md",
+  "sourceDirName": "序言",
+  "slug": "/序言/",
+  "permalink": "/docs/序言/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://atomgit.com/zouxiangneihe/website/tree/master/docs/序言/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 10,
+  "frontMatter": {
+    "title": "序言",
+    "sidebar_position": 10
+  },
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "PikiwiDB(Pika) 简介",
+    "permalink": "/docs/序言/简介/"
+  }
+}

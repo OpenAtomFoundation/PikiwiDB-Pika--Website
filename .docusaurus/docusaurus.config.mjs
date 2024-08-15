@@ -4,13 +4,13 @@
  * Modify the docusaurus.config.js file at your site's root instead.
  */
 export default {
-  "title": "Pika",
-  "tagline": "低成本数据持久化数据库",
+  "title": "PikiwiDB(Pika)",
+  "tagline": "为海量数据存储设计的高可用键值数据库",
   "favicon": "img/favicon.ico",
-  "url": "https://pikiwidb.com",
+  "url": "https://www.pikiwidb.com",
   "baseUrl": "/",
-  "organizationName": "Pika 开源社区",
-  "projectName": "Pika",
+  "organizationName": "PikiwiDB(Pika) 开源社区",
+  "projectName": "PikiwiDB(Pika)",
   "onBrokenLinks": "throw",
   "onBrokenMarkdownLinks": "warn",
   "i18n": {
@@ -53,9 +53,20 @@ export default {
       "title": "",
       "logo": {
         "alt": "Logo",
-        "src": "img/pika-logo.png"
+        "src": "img/PikiwiDB-Logo.png"
       },
-      "items": [],
+      "items": [
+        {
+          "to": "docs/序言",
+          "label": "文档",
+          "position": "left"
+        },
+        {
+          "to": "blog",
+          "label": "博客",
+          "position": "left"
+        }
+      ],
       "hideOnScroll": false
     },
     "footer": {
@@ -65,13 +76,13 @@ export default {
           "title": "微信公众号",
           "items": [
             {
-              "label": "Pika 公众号",
+              "label": "PikiwiDB(Pika) 公众号",
               "href": "https://mp.weixin.qq.com/s/CvIdQs3g31DC8JztyymuqQ"
             }
           ]
         }
       ],
-      "copyright": "Copyright © 2024 Pika 开源数据库社区"
+      "copyright": "Copyright © 2024 PikiwiDB 开源数据库社区"
     },
     "prism": {
       "theme": {
