@@ -1,0 +1,36 @@
+{
+  "permalink": "/blog/pika-blackwidow",
+  "source": "@site/blog/2020-7-16-pika-blackwidow.md",
+  "title": "Pika Blackwidow 引擎数据存储格式",
+  "description": "\bBlackwidow本质上是基于rocksdb的封装，使本身只支持kv存储的rocksdb能够支持多种数据结构, 目前Blackwidow支持五种数据结构的存储：String结构(实际上就是存储key, value), Hash结构，List结构，Set结构和ZSet结构， 因为Rocksdb的存储方式只有kv一种， 所以上述五种数据结构最终都要落盘到Rocksdb的kv存储方式上，下面我们展示Blackwidow和rocksdb的关系并且说明我们是如何用kv来模拟多数据结构的。",
+  "date": "2020-07-16T00:00:00.000Z",
+  "tags": [],
+  "readingTime": 12.29,
+  "hasTruncateMarker": false,
+  "authors": [
+    {
+      "name": "Axlgrep",
+      "title": "Pika 开源社区"
+    }
+  ],
+  "frontMatter": {
+    "title": "Pika Blackwidow 引擎数据存储格式",
+    "slug": "pika-blackwidow",
+    "authors": [
+      {
+        "name": "Axlgrep",
+        "title": "Pika 开源社区"
+      }
+    ],
+    "hide_table_of_contents": false
+  },
+  "unlisted": false,
+  "prevItem": {
+    "title": "What's new in Pika v3.5.0",
+    "permalink": "/blog/Pika-3.5.0"
+  },
+  "nextItem": {
+    "title": "pika_port 迁移工具",
+    "permalink": "/blog/Pika-Tools-Port-Bin"
+  }
+}

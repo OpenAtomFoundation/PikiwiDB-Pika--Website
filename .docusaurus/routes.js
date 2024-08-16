@@ -39,7 +39,7 @@ export default [
   },
   {
     path: '/blog',
-    component: ComponentCreator('/blog', '26b'),
+    component: ComponentCreator('/blog', 'b7e'),
     exact: true
   },
   {
@@ -70,6 +70,16 @@ export default [
   {
     path: '/blog/Pika-3.5.4',
     component: ComponentCreator('/blog/Pika-3.5.4', '7a0'),
+    exact: true
+  },
+  {
+    path: '/blog/pika-blackwidow',
+    component: ComponentCreator('/blog/pika-blackwidow', '396'),
+    exact: true
+  },
+  {
+    path: '/blog/Pika-Tools-Port-Bin',
+    component: ComponentCreator('/blog/Pika-Tools-Port-Bin', 'dc3'),
     exact: true
   },
   {

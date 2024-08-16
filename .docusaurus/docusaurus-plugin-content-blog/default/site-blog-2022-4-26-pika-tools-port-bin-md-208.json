@@ -1,0 +1,32 @@
+{
+  "permalink": "/blog/Pika-Tools-Port-Bin",
+  "source": "@site/blog/2022-4-26-Pika-Tools-Port-Bin.md",
+  "title": "pika_port 迁移工具",
+  "description": "项目作者：",
+  "date": "2022-04-26T00:00:00.000Z",
+  "tags": [],
+  "readingTime": 2.56,
+  "hasTruncateMarker": false,
+  "authors": [
+    {
+      "name": "于雨",
+      "title": "Pika 开源社区"
+    }
+  ],
+  "frontMatter": {
+    "title": "pika_port 迁移工具",
+    "slug": "Pika-Tools-Port-Bin",
+    "authors": [
+      {
+        "name": "于雨",
+        "title": "Pika 开源社区"
+      }
+    ],
+    "hide_table_of_contents": false
+  },
+  "unlisted": false,
+  "prevItem": {
+    "title": "What's new in Pika v3.5.0",
+    "permalink": "/blog/Pika-3.5.0"
+  }
+}

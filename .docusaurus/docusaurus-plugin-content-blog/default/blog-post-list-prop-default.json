@@ -1,5 +1,5 @@
 {
-  "title": "Recent posts",
+  "title": "全部文章",
   "items": [
     {
       "title": "What's new in PikiwiDB(Pika) v4.0.0",
@@ -24,6 +24,21 @@
     {
       "title": "What's new in Pika v3.5.1",
       "permalink": "/blog/Pika-3.5.1",
+      "unlisted": false
+    },
+    {
+      "title": "What's new in Pika v3.5.0",
+      "permalink": "/blog/Pika-3.5.0",
+      "unlisted": false
+    },
+    {
+      "title": "Pika Blackwidow 引擎数据存储格式",
+      "permalink": "/blog/pika-blackwidow",
+      "unlisted": false
+    },
+    {
+      "title": "pika_port 迁移工具",
+      "permalink": "/blog/Pika-Tools-Port-Bin",
       "unlisted": false
     }
   ]

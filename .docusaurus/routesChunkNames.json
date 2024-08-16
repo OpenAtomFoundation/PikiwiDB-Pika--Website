@@ -42,7 +42,7 @@
       "plugin": "plugin---docusaurus-debugb-38-ad3"
     }
   },
-  "/blog-26b": {
+  "/blog-b7e": {
     "__comp": "__comp---theme-blog-list-pagea-6-a-7ba",
     "__context": {
       "plugin": "plugin---blog-369-22e"
@@ -66,6 +66,12 @@
       },
       {
         "content": "content---blog-257-76c"
+      },
+      {
+        "content": "content---blogc-8-b-001"
+      },
+      {
+        "content": "content---blogc-82-eb2"
       }
     ],
     "__props": "__props---blogc-15-573"
@@ -81,7 +87,7 @@
     "__comp": "__comp---theme-blog-post-pageccc-cab",
     "__context": {
       "data": {
-        "blogMetadata": "blogMetadata---blog-pika-3-2-0-performanceace-460"
+        "blogMetadata": "blogMetadata---blog-pika-3-5-0-ace-104"
       },
       "plugin": "plugin---blog-369-22e"
     },
@@ -92,7 +98,7 @@
     "__comp": "__comp---theme-blog-post-pageccc-cab",
     "__context": {
       "data": {
-        "blogMetadata": "blogMetadata---blog-pika-3-2-0-performanceace-460"
+        "blogMetadata": "blogMetadata---blog-pika-3-5-0-ace-104"
       },
       "plugin": "plugin---blog-369-22e"
     },
@@ -103,7 +109,7 @@
     "__comp": "__comp---theme-blog-post-pageccc-cab",
     "__context": {
       "data": {
-        "blogMetadata": "blogMetadata---blog-pika-3-2-0-performanceace-460"
+        "blogMetadata": "blogMetadata---blog-pika-3-5-0-ace-104"
       },
       "plugin": "plugin---blog-369-22e"
     },
@@ -114,7 +120,7 @@
     "__comp": "__comp---theme-blog-post-pageccc-cab",
     "__context": {
       "data": {
-        "blogMetadata": "blogMetadata---blog-pika-3-2-0-performanceace-460"
+        "blogMetadata": "blogMetadata---blog-pika-3-5-0-ace-104"
       },
       "plugin": "plugin---blog-369-22e"
     },
@@ -125,18 +131,40 @@
     "__comp": "__comp---theme-blog-post-pageccc-cab",
     "__context": {
       "data": {
-        "blogMetadata": "blogMetadata---blog-pika-3-2-0-performanceace-460"
+        "blogMetadata": "blogMetadata---blog-pika-3-5-0-ace-104"
       },
       "plugin": "plugin---blog-369-22e"
     },
     "sidebar": "sidebar---blog-814-8ac",
     "content": "content---blog-pika-3-5-46-ed-a64"
   },
+  "/blog/pika-blackwidow-396": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "data": {
+        "blogMetadata": "blogMetadata---blog-pika-3-5-0-ace-104"
+      },
+      "plugin": "plugin---blog-369-22e"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-pika-blackwidow-569-00a"
+  },
+  "/blog/Pika-Tools-Port-Bin-dc3": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "data": {
+        "blogMetadata": "blogMetadata---blog-pika-3-5-0-ace-104"
+      },
+      "plugin": "plugin---blog-369-22e"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-pika-tools-port-binfdb-f2f"
+  },
   "/blog/PikiwiDB-Pika--4.0.0-c12": {
     "__comp": "__comp---theme-blog-post-pageccc-cab",
     "__context": {
       "data": {
-        "blogMetadata": "blogMetadata---blog-pika-3-2-0-performanceace-460"
+        "blogMetadata": "blogMetadata---blog-pika-3-5-0-ace-104"
       },
       "plugin": "plugin---blog-369-22e"
     },

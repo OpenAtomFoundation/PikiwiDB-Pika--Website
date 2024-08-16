@@ -1,0 +1,21 @@
+{
+  "permalink": "/blog/2020/7/16/Pika-s",
+  "source": "@site/blog/2020-7-16-Pika-s.md",
+  "title": "Pika-s",
+  "description": "",
+  "date": "2020-07-16T00:00:00.000Z",
+  "tags": [],
+  "readingTime": 0,
+  "hasTruncateMarker": false,
+  "authors": [],
+  "frontMatter": {},
+  "unlisted": false,
+  "prevItem": {
+    "title": "What's new in Pika v3.5.0",
+    "permalink": "/blog/Pika-3.5.0"
+  },
+  "nextItem": {
+    "title": "pika_port 迁移工具",
+    "permalink": "/blog/Pika-Tools-Port-Bin"
+  }
+}

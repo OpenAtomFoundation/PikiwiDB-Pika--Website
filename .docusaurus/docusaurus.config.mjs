@@ -37,6 +37,10 @@ export default {
         },
         "theme": {
           "customCss": "./src/css/custom.css"
+        },
+        "blog": {
+          "blogSidebarTitle": "全部文章",
+          "blogSidebarCount": "ALL"
         }
       }
     ]
