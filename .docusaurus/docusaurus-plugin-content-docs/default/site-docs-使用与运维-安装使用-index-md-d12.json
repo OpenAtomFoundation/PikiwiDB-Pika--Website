@@ -11,18 +11,18 @@
   "editUrl": "https://atomgit.com/zouxiangneihe/website/tree/master/docs/使用与运维/安装使用/index.md",
   "tags": [],
   "version": "current",
-  "sidebarPosition": 0,
+  "sidebarPosition": 100,
   "frontMatter": {
     "title": "安装使用",
-    "sidebar_position": 0
+    "sidebar_position": 100
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "使用与运维",
-    "permalink": "/docs/使用与运维/"
+    "title": "副本一致性（使用文档）",
+    "permalink": "/docs/使用与运维/副本一致性（使用文档）/"
   },
   "next": {
-    "title": "配置文件说明",
-    "permalink": "/docs/使用与运维/配置文件说明/"
+    "title": "副本一致性（设计文档）",
+    "permalink": "/docs/使用与运维/副本一致性（设计文档）/"
   }
 }

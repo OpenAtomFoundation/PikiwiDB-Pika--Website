@@ -1,6 +1,6 @@
 ---
 title: "page info 信息说明"
-sidebar_position: 3
+sidebar_position: 30
 ---
 
 执行`INFO`命令

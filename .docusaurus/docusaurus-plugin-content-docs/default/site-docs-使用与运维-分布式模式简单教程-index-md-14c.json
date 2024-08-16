@@ -1,0 +1,28 @@
+{
+  "id": "使用与运维/分布式模式简单教程/index",
+  "title": "分布式模式简单教程",
+  "description": "关于sharding mode，pika底层提供slot 的概念。Pika将key进行哈希取模之后散列到各个slot当中处理。sharding mode 根据线上的具体情况可以应用于单个pika，也可以应用到多个pika组成的pika cluster。这个tutorial主要介绍开启sharding mode 需要了解的一些概念，以及需要调整的一些配置参数。",
+  "source": "@site/docs/使用与运维/分布式模式简单教程/index.md",
+  "sourceDirName": "使用与运维/分布式模式简单教程",
+  "slug": "/使用与运维/分布式模式简单教程/",
+  "permalink": "/docs/使用与运维/分布式模式简单教程/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://atomgit.com/zouxiangneihe/website/tree/master/docs/使用与运维/分布式模式简单教程/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 65,
+  "frontMatter": {
+    "title": "分布式模式简单教程",
+    "sidebar_position": 65
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "订阅",
+    "permalink": "/docs/使用与运维/订阅/"
+  },
+  "next": {
+    "title": "自动容灾",
+    "permalink": "/docs/使用与运维/自动容灾/"
+  }
+}

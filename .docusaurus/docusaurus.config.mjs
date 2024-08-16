@@ -80,6 +80,24 @@ export default {
               "href": "https://mp.weixin.qq.com/s/CvIdQs3g31DC8JztyymuqQ"
             }
           ]
+        },
+        {
+          "title": "Github 仓库",
+          "items": [
+            {
+              "label": "PikiwiDB(Pika) 仓库",
+              "href": "https://github.com/OpenAtomFoundation/pika"
+            }
+          ]
+        },
+        {
+          "title": "文档仓库",
+          "items": [
+            {
+              "label": "PikiwiDB(Pika) 文档仓库",
+              "href": "https://github.com/pikiwidb/website"
+            }
+          ]
         }
       ],
       "copyright": "Copyright © 2024 PikiwiDB 开源数据库社区"

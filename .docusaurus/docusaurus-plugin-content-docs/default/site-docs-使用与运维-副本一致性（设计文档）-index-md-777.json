@@ -1,0 +1,28 @@
+{
+  "id": "使用与运维/副本一致性（设计文档）/index",
+  "title": "副本一致性（设计文档）",
+  "description": "目前线程模型",
+  "source": "@site/docs/使用与运维/副本一致性（设计文档）/index.md",
+  "sourceDirName": "使用与运维/副本一致性（设计文档）",
+  "slug": "/使用与运维/副本一致性（设计文档）/",
+  "permalink": "/docs/使用与运维/副本一致性（设计文档）/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://atomgit.com/zouxiangneihe/website/tree/master/docs/使用与运维/副本一致性（设计文档）/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 105,
+  "frontMatter": {
+    "title": "副本一致性（设计文档）",
+    "sidebar_position": 105
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "安装使用",
+    "permalink": "/docs/使用与运维/安装使用/"
+  },
+  "next": {
+    "title": "Pika 最佳实践",
+    "permalink": "/docs/使用与运维/Pika 最佳实践/"
+  }
+}

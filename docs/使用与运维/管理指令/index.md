@@ -1,6 +1,6 @@
 ---
 title: "管理指令"
-sidebar_position: 4
+sidebar_position: 40
 ---
 
 ## client kill all

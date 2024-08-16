@@ -11,18 +11,18 @@
   "editUrl": "https://atomgit.com/zouxiangneihe/website/tree/master/docs/使用与运维/数据目录/index.md",
   "tags": [],
   "version": "current",
-  "sidebarPosition": 2,
+  "sidebarPosition": 30,
   "frontMatter": {
     "title": "数据目录",
-    "sidebar_position": 2
+    "sidebar_position": 30
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "配置文件说明",
-    "permalink": "/docs/使用与运维/配置文件说明/"
-  },
-  "next": {
     "title": "page info 信息说明",
     "permalink": "/docs/使用与运维/page info 信息说明/"
+  },
+  "next": {
+    "title": "管理指令",
+    "permalink": "/docs/使用与运维/管理指令/"
   }
 }

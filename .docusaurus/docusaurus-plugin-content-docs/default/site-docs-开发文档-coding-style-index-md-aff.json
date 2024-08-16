@@ -1,0 +1,24 @@
+{
+  "id": "开发文档/coding-style/index",
+  "title": "c++ coding style",
+  "description": "header file",
+  "source": "@site/docs/开发文档/coding-style/index.md",
+  "sourceDirName": "开发文档/coding-style",
+  "slug": "/开发文档/coding-style/",
+  "permalink": "/docs/开发文档/coding-style/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://atomgit.com/zouxiangneihe/website/tree/master/docs/开发文档/coding-style/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "c++ coding style",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "编码规范",
+    "permalink": "/docs/开发文档/编码规范/"
+  }
+}

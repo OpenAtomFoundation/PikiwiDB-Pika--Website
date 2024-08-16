@@ -11,15 +11,15 @@
   "editUrl": "https://atomgit.com/zouxiangneihe/website/tree/master/docs/使用与运维/自动容灾/index.md",
   "tags": [],
   "version": "current",
-  "sidebarPosition": 7,
+  "sidebarPosition": 70,
   "frontMatter": {
     "title": "自动容灾",
-    "sidebar_position": 7
+    "sidebar_position": 70
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "订阅",
-    "permalink": "/docs/使用与运维/订阅/"
+    "title": "分布式模式简单教程",
+    "permalink": "/docs/使用与运维/分布式模式简单教程/"
   },
   "next": {
     "title": "多库版命令",

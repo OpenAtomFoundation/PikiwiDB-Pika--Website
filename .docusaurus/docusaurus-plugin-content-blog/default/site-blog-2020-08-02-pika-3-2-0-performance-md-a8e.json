@@ -1,0 +1,32 @@
+{
+  "permalink": "/blog/Pika-3.2.0-performance",
+  "source": "@site/blog/2020-08-02-Pika-3.2.0-performance.md",
+  "title": "Pika 3.2.0 性能评测",
+  "description": "Performance：",
+  "date": "2020-08-02T00:00:00.000Z",
+  "tags": [],
+  "readingTime": 2.505,
+  "hasTruncateMarker": false,
+  "authors": [
+    {
+      "name": "whoiami",
+      "title": "Pika 社区"
+    }
+  ],
+  "frontMatter": {
+    "title": "Pika 3.2.0 性能评测",
+    "slug": "Pika-3.2.0-performance",
+    "authors": [
+      {
+        "name": "whoiami",
+        "title": "Pika 社区"
+      }
+    ],
+    "hide_table_of_contents": false
+  },
+  "unlisted": false,
+  "prevItem": {
+    "title": "What's new in Pika v3.5.0",
+    "permalink": "/blog/Pika-3.5.0"
+  }
+}

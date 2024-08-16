@@ -11,10 +11,10 @@
   "editUrl": "https://atomgit.com/zouxiangneihe/website/tree/master/docs/使用与运维/差异化命令/index.md",
   "tags": [],
   "version": "current",
-  "sidebarPosition": 5,
+  "sidebarPosition": 50,
   "frontMatter": {
     "title": "差异化命令",
-    "sidebar_position": 5
+    "sidebar_position": 50
   },
   "sidebar": "tutorialSidebar",
   "previous": {

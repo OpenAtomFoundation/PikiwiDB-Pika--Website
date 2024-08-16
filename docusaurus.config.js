@@ -91,6 +91,24 @@ const config = {
               },
             ],
           },
+          {
+            title: 'Github 仓库',
+            items: [
+              {
+                label: 'PikiwiDB(Pika) 仓库',
+                href: 'https://github.com/OpenAtomFoundation/pika',
+              },
+            ],
+          },
+          {
+            title: '文档仓库',
+            items: [
+              {
+                label: 'PikiwiDB(Pika) 文档仓库',
+                href: 'https://github.com/pikiwidb/website',
+              },
+            ],
+          },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} PikiwiDB 开源数据库社区`,
       },

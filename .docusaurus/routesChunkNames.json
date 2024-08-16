@@ -81,7 +81,7 @@
     "__comp": "__comp---theme-blog-post-pageccc-cab",
     "__context": {
       "data": {
-        "blogMetadata": "blogMetadata---blog-pika-3-5-0-ace-104"
+        "blogMetadata": "blogMetadata---blog-pika-3-2-0-performanceace-460"
       },
       "plugin": "plugin---blog-369-22e"
     },
@@ -92,7 +92,7 @@
     "__comp": "__comp---theme-blog-post-pageccc-cab",
     "__context": {
       "data": {
-        "blogMetadata": "blogMetadata---blog-pika-3-5-0-ace-104"
+        "blogMetadata": "blogMetadata---blog-pika-3-2-0-performanceace-460"
       },
       "plugin": "plugin---blog-369-22e"
     },
@@ -103,7 +103,7 @@
     "__comp": "__comp---theme-blog-post-pageccc-cab",
     "__context": {
       "data": {
-        "blogMetadata": "blogMetadata---blog-pika-3-5-0-ace-104"
+        "blogMetadata": "blogMetadata---blog-pika-3-2-0-performanceace-460"
       },
       "plugin": "plugin---blog-369-22e"
     },
@@ -114,7 +114,7 @@
     "__comp": "__comp---theme-blog-post-pageccc-cab",
     "__context": {
       "data": {
-        "blogMetadata": "blogMetadata---blog-pika-3-5-0-ace-104"
+        "blogMetadata": "blogMetadata---blog-pika-3-2-0-performanceace-460"
       },
       "plugin": "plugin---blog-369-22e"
     },
@@ -125,35 +125,35 @@
     "__comp": "__comp---theme-blog-post-pageccc-cab",
     "__context": {
       "data": {
-        "blogMetadata": "blogMetadata---blog-pika-3-5-0-ace-104"
+        "blogMetadata": "blogMetadata---blog-pika-3-2-0-performanceace-460"
       },
       "plugin": "plugin---blog-369-22e"
     },
     "sidebar": "sidebar---blog-814-8ac",
     "content": "content---blog-pika-3-5-46-ed-a64"
   },
-  "/blog/PikiwiDB(Pika)-4.0.0-6ff": {
+  "/blog/PikiwiDB-Pika--4.0.0-c12": {
     "__comp": "__comp---theme-blog-post-pageccc-cab",
     "__context": {
       "data": {
-        "blogMetadata": "blogMetadata---blog-pika-3-5-0-ace-104"
+        "blogMetadata": "blogMetadata---blog-pika-3-2-0-performanceace-460"
       },
       "plugin": "plugin---blog-369-22e"
     },
     "sidebar": "sidebar---blog-814-8ac",
-    "content": "content---blog-pikiwi-db-pika-4-0-0878-70e"
+    "content": "content---blog-pikiwi-db-pika-4-0-0878-7df"
   },
-  "/docs-54a": {
+  "/docs-3c2": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---docsaba-d7c"
     }
   },
-  "/docs-274": {
+  "/docs-708": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "__props": "__props---docs-005-788"
   },
-  "/docs-79a": {
+  "/docs-7e3": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/docs/使用与运维/-5f5": {
@@ -168,6 +168,10 @@
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-使用与运维-pika-最佳实践-03-a-1d2"
   },
+  "/docs/使用与运维/分布式模式简单教程/-3df": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-使用与运维-分布式模式简单教程-14-c-ccb"
+  },
   "/docs/使用与运维/分片教程/-c6b": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-使用与运维-分片教程-a-77-8a8"
@@ -175,6 +179,10 @@
   "/docs/使用与运维/副本一致性（使用文档）/-e86": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-使用与运维-副本一致性（使用文档）-069-951"
+  },
+  "/docs/使用与运维/副本一致性（设计文档）/-b1e": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-使用与运维-副本一致性（设计文档）-777-06f"
   },
   "/docs/使用与运维/升级指南/-9cf": {
     "__comp": "__comp---theme-doc-item-178-a40",
@@ -207,6 +215,10 @@
   "/docs/使用与运维/数据目录/-d15": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-使用与运维-数据目录-1-b-3-f3a"
+  },
+  "/docs/使用与运维/服务器状态监控/-a79": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-使用与运维-服务器状态监控-fdc-11a"
   },
   "/docs/使用与运维/管理指令/-0bc": {
     "__comp": "__comp---theme-doc-item-178-a40",
@@ -243,6 +255,10 @@
   "/docs/开发文档/-7cf": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-开发文档-fac-613"
+  },
+  "/docs/开发文档/coding-style/-329": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-开发文档-coding-style-aff-bb3"
   },
   "/docs/开发文档/编码规范/-f7c": {
     "__comp": "__comp---theme-doc-item-178-a40",

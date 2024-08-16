@@ -1,6 +1,6 @@
 ---
 title: "订阅"
-sidebar_position: 6
+sidebar_position: 60
 ---
 
 # Pika Pub/Sub文档

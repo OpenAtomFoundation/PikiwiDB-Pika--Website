@@ -1,6 +1,6 @@
 ---
 title: What's new in PikiwiDB(Pika) v4.0.0 
-slug: PikiwiDB(Pika)-4.0.0
+slug: PikiwiDB-Pika--4.0.0
 
 authors:
   - name: 360 车金鸽

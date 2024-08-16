@@ -1,6 +1,6 @@
 ---
 title: "配置文件说明"
-sidebar_position: 1
+sidebar_position: 20
 ---
 
 ```yaml

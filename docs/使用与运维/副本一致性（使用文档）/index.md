@@ -1,6 +1,6 @@
 ---
 title: "副本一致性（使用文档）"
-sidebar_position: 10
+sidebar_position: 100
 ---
 
 ### 简介

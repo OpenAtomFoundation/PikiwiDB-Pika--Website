@@ -11,10 +11,10 @@
   "editUrl": "https://atomgit.com/zouxiangneihe/website/tree/master/docs/使用与运维/升级指南/index.md",
   "tags": [],
   "version": "current",
-  "sidebarPosition": 11,
+  "sidebarPosition": 140,
   "frontMatter": {
     "title": "升级指南",
-    "sidebar_position": 11
+    "sidebar_position": 140
   },
   "sidebar": "tutorialSidebar",
   "previous": {

@@ -73,21 +73,21 @@ export default [
     exact: true
   },
   {
-    path: '/blog/PikiwiDB(Pika)-4.0.0',
-    component: ComponentCreator('/blog/PikiwiDB(Pika)-4.0.0', '6ff'),
+    path: '/blog/PikiwiDB-Pika--4.0.0',
+    component: ComponentCreator('/blog/PikiwiDB-Pika--4.0.0', 'c12'),
     exact: true
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '54a'),
+    component: ComponentCreator('/docs', '3c2'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', '274'),
+        component: ComponentCreator('/docs', '708'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', '79a'),
+            component: ComponentCreator('/docs', '7e3'),
             routes: [
               {
                 path: '/docs/使用与运维/',
@@ -108,6 +108,12 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
+                path: '/docs/使用与运维/分布式模式简单教程/',
+                component: ComponentCreator('/docs/使用与运维/分布式模式简单教程/', '3df'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
                 path: '/docs/使用与运维/分片教程/',
                 component: ComponentCreator('/docs/使用与运维/分片教程/', 'c6b'),
                 exact: true,
@@ -116,6 +122,12 @@ export default [
               {
                 path: '/docs/使用与运维/副本一致性（使用文档）/',
                 component: ComponentCreator('/docs/使用与运维/副本一致性（使用文档）/', 'e86'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/使用与运维/副本一致性（设计文档）/',
+                component: ComponentCreator('/docs/使用与运维/副本一致性（设计文档）/', 'b1e'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -164,6 +176,12 @@ export default [
               {
                 path: '/docs/使用与运维/数据目录/',
                 component: ComponentCreator('/docs/使用与运维/数据目录/', 'd15'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/使用与运维/服务器状态监控/',
+                component: ComponentCreator('/docs/使用与运维/服务器状态监控/', 'a79'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -218,6 +236,12 @@ export default [
               {
                 path: '/docs/开发文档/',
                 component: ComponentCreator('/docs/开发文档/', '7cf'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/开发文档/coding-style/',
+                component: ComponentCreator('/docs/开发文档/coding-style/', '329'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

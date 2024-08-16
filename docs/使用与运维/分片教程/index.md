@@ -1,6 +1,6 @@
 ---
-title: "分片教程"
-sidebar_position: 9
+title: "分片教程(3.1.2 ‐ 3.3.6)"
+sidebar_position: 90
 ---
 
 ## Pika自版本3.1.2起开始对分片做了一系列支持，为此我们为分片模式添加了一系列的命令.

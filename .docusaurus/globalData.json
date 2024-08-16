@@ -26,6 +26,11 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "使用与运维/分布式模式简单教程/index",
+              "path": "/docs/使用与运维/分布式模式简单教程/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "使用与运维/分片教程/index",
               "path": "/docs/使用与运维/分片教程/",
               "sidebar": "tutorialSidebar"
@@ -33,6 +38,11 @@
             {
               "id": "使用与运维/副本一致性（使用文档）/index",
               "path": "/docs/使用与运维/副本一致性（使用文档）/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "使用与运维/副本一致性（设计文档）/index",
+              "path": "/docs/使用与运维/副本一致性（设计文档）/",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -76,6 +86,11 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "使用与运维/服务器状态监控/index",
+              "path": "/docs/使用与运维/服务器状态监控/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "使用与运维/管理指令/index",
               "path": "/docs/使用与运维/管理指令/",
               "sidebar": "tutorialSidebar"
@@ -113,6 +128,11 @@
             {
               "id": "序言/简介/index",
               "path": "/docs/序言/简介/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "开发文档/coding-style/index",
+              "path": "/docs/开发文档/coding-style/",
               "sidebar": "tutorialSidebar"
             },
             {

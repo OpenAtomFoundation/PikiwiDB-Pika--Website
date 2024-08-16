@@ -1,6 +1,6 @@
 ---
 title: "差异化命令"
-sidebar_position: 5
+sidebar_position: 50
 ---
 
 #### config [get | set | rewrite]

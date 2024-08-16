@@ -11,15 +11,15 @@
   "editUrl": "https://atomgit.com/zouxiangneihe/website/tree/master/docs/使用与运维/Pika 最佳实践/index.md",
   "tags": [],
   "version": "current",
-  "sidebarPosition": 11,
+  "sidebarPosition": 110,
   "frontMatter": {
     "title": "Pika 最佳实践",
-    "sidebar_position": 11
+    "sidebar_position": 110
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "副本一致性（使用文档）",
-    "permalink": "/docs/使用与运维/副本一致性（使用文档）/"
+    "title": "副本一致性（设计文档）",
+    "permalink": "/docs/使用与运维/副本一致性（设计文档）/"
   },
   "next": {
     "title": "升级指南",

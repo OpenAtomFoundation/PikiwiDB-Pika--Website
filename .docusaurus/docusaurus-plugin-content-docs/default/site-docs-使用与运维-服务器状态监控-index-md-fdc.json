@@ -1,0 +1,28 @@
+{
+  "id": "使用与运维/服务器状态监控/index",
+  "title": "服务器状态监控",
+  "description": "在pika的使用中，也为用户提供了丰富的info展示，用于监控服务器的运行状态。",
+  "source": "@site/docs/使用与运维/服务器状态监控/index.md",
+  "sourceDirName": "使用与运维/服务器状态监控",
+  "slug": "/使用与运维/服务器状态监控/",
+  "permalink": "/docs/使用与运维/服务器状态监控/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://atomgit.com/zouxiangneihe/website/tree/master/docs/使用与运维/服务器状态监控/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 85,
+  "frontMatter": {
+    "title": "服务器状态监控",
+    "sidebar_position": 85
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "多库版命令",
+    "permalink": "/docs/使用与运维/多库版命令/"
+  },
+  "next": {
+    "title": "分片教程(3.1.2 ‐ 3.3.6)",
+    "permalink": "/docs/使用与运维/分片教程/"
+  }
+}

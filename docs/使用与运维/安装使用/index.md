@@ -1,6 +1,6 @@
 ---
 title: "安装使用"
-sidebar_position: 0
+sidebar_position: 100
 ---
 
 ## 快速试用

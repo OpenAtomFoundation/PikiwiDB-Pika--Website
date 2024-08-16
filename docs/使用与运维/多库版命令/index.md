@@ -1,6 +1,6 @@
 ---
 title: "多库版命令"
-sidebar_position: 8
+sidebar_position: 80
 ---
 
 ## Pika自版本3.1.0起开始支持多db，为了兼容多db部分命令、配置参数发生了变化，具体变化如下：

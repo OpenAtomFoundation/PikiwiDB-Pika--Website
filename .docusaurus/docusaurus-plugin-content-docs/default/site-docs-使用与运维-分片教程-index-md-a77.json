@@ -1,6 +1,6 @@
 {
   "id": "使用与运维/分片教程/index",
-  "title": "分片教程",
+  "title": "分片教程(3.1.2 ‐ 3.3.6)",
   "description": "Pika自版本3.1.2起开始对分片做了一系列支持，为此我们为分片模式添加了一系列的命令.",
   "source": "@site/docs/使用与运维/分片教程/index.md",
   "sourceDirName": "使用与运维/分片教程",
@@ -11,15 +11,15 @@
   "editUrl": "https://atomgit.com/zouxiangneihe/website/tree/master/docs/使用与运维/分片教程/index.md",
   "tags": [],
   "version": "current",
-  "sidebarPosition": 9,
+  "sidebarPosition": 90,
   "frontMatter": {
-    "title": "分片教程",
-    "sidebar_position": 9
+    "title": "分片教程(3.1.2 ‐ 3.3.6)",
+    "sidebar_position": 90
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "多库版命令",
-    "permalink": "/docs/使用与运维/多库版命令/"
+    "title": "服务器状态监控",
+    "permalink": "/docs/使用与运维/服务器状态监控/"
   },
   "next": {
     "title": "副本一致性（使用文档）",

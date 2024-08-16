@@ -20,5 +20,9 @@
   "previous": {
     "title": "编码规范",
     "permalink": "/docs/开发文档/"
+  },
+  "next": {
+    "title": "c++ coding style",
+    "permalink": "/docs/开发文档/coding-style/"
   }
 }

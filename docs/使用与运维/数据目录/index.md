@@ -1,6 +1,6 @@
 ---
 title: "数据目录"
-sidebar_position: 2
+sidebar_position: 30
 ---
 
 #### db目录

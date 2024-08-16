@@ -11,15 +11,15 @@
   "editUrl": "https://atomgit.com/zouxiangneihe/website/tree/master/docs/使用与运维/管理指令/index.md",
   "tags": [],
   "version": "current",
-  "sidebarPosition": 4,
+  "sidebarPosition": 40,
   "frontMatter": {
     "title": "管理指令",
-    "sidebar_position": 4
+    "sidebar_position": 40
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "page info 信息说明",
-    "permalink": "/docs/使用与运维/page info 信息说明/"
+    "title": "数据目录",
+    "permalink": "/docs/使用与运维/数据目录/"
   },
   "next": {
     "title": "差异化命令",

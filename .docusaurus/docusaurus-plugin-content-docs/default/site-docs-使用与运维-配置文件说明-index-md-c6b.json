@@ -11,18 +11,18 @@
   "editUrl": "https://atomgit.com/zouxiangneihe/website/tree/master/docs/使用与运维/配置文件说明/index.md",
   "tags": [],
   "version": "current",
-  "sidebarPosition": 1,
+  "sidebarPosition": 20,
   "frontMatter": {
     "title": "配置文件说明",
-    "sidebar_position": 1
+    "sidebar_position": 20
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "安装使用",
-    "permalink": "/docs/使用与运维/安装使用/"
+    "title": "使用与运维",
+    "permalink": "/docs/使用与运维/"
   },
   "next": {
-    "title": "数据目录",
-    "permalink": "/docs/使用与运维/数据目录/"
+    "title": "page info 信息说明",
+    "permalink": "/docs/使用与运维/page info 信息说明/"
   }
 }
