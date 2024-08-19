@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="zh-Hans" dir="ltr" class="blog-wrapper blog-post-page plugin-blog plugin-id-default" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.4.0">
+<title data-rh="true">What&#x27;s new in PikiwiDB(Pika) v4.0.0 | PikiwiDB(Pika)</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://www.pikiwidb.com/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://www.pikiwidb.com/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://www.pikiwidb.com/blog/PikiwiDB-Pika--4.0.0"><meta data-rh="true" property="og:locale" content="zh_Hans"><meta data-rh="true" name="docusaurus_locale" content="zh-Hans"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="zh-Hans"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" property="og:title" content="What&#x27;s new in PikiwiDB(Pika) v4.0.0 | PikiwiDB(Pika)"><meta data-rh="true" name="description" content="尊敬的社区成员及技术爱好者们："><meta data-rh="true" property="og:description" content="尊敬的社区成员及技术爱好者们："><meta data-rh="true" property="og:type" content="article"><meta data-rh="true" property="article:published_time" content="2024-07-08T00:00:00.000Z"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://www.pikiwidb.com/blog/PikiwiDB-Pika--4.0.0"><link data-rh="true" rel="alternate" href="https://www.pikiwidb.com/blog/PikiwiDB-Pika--4.0.0" hreflang="zh-Hans"><link data-rh="true" rel="alternate" href="https://www.pikiwidb.com/blog/PikiwiDB-Pika--4.0.0" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://www.pikiwidb.com/blog/PikiwiDB-Pika--4.0.0","mainEntityOfPage":"https://www.pikiwidb.com/blog/PikiwiDB-Pika--4.0.0","url":"https://www.pikiwidb.com/blog/PikiwiDB-Pika--4.0.0","headline":"What's new in PikiwiDB(Pika) v4.0.0","name":"What's new in PikiwiDB(Pika) v4.0.0","description":"尊敬的社区成员及技术爱好者们：","datePublished":"2024-07-08T00:00:00.000Z","author":{"@type":"Person","name":"360 车金鸽","description":"Pika 开源社区"},"keywords":[],"isPartOf":{"@type":"Blog","@id":"https://www.pikiwidb.com/blog","name":"Blog"}}</script><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="PikiwiDB(Pika) RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="PikiwiDB(Pika) Atom Feed">
+
+
+
+<link rel="stylesheet" href="/css/katex.min.css"><link rel="stylesheet" href="/assets/css/styles.bf00f426.css">
+<script src="/assets/js/runtime~main.8cd2d291.js" defer="defer"></script>
+<script src="/assets/js/main.6530b181.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="跳到主要内容"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">跳到主要内容</a></div><nav aria-label="主导航" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="切换导航栏" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/PikiwiDB-Logo.png" alt="Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/PikiwiDB-Logo.png" alt="Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate"></b></a><a class="navbar__item navbar__link" href="/docs/序言">文档</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/blog">博客</a></div><div class="navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="切换浅色/暗黑模式（当前为浅色模式）" aria-label="切换浅色/暗黑模式（当前为浅色模式）" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="container margin-vert--lg"><div class="row"><aside class="col col--3"><nav class="sidebar_re4s thin-scrollbar" aria-label="最近博文导航"><div class="sidebarItemTitle_pO2u margin-bottom--md">全部文章</div><ul class="sidebarItemList_Yudw clean-list"><li class="sidebarItem__DBe"><a aria-current="page" class="sidebarItemLink_mo7H sidebarItemLinkActive_I1ZP" href="/blog/PikiwiDB-Pika--4.0.0">What&#x27;s new in PikiwiDB(Pika) v4.0.0</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/blog/Pika-3.5.4">What&#x27;s new in Pika v3.5.4</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/blog/Pika-3.5.3">What&#x27;s new in Pika v3.5.3 </a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/blog/Pika-3.5.0">What&#x27;s new in Pika v3.5.0</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/blog/Pika-3.5.1">What&#x27;s new in Pika v3.5.1</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/blog/Pika-3.5.0">What&#x27;s new in Pika v3.5.0</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/blog/pika-blackwidow">Pika Blackwidow 引擎数据存储格式</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/blog/Pika-Tools-Port-Bin">pika_port 迁移工具</a></li></ul></nav></aside><main class="col col--7"><article><header><h1 class="title_f1Hy">What&#x27;s new in PikiwiDB(Pika) v4.0.0</h1><div class="container_mt6G margin-vert--md"><time datetime="2024-07-08T00:00:00.000Z">2024年7月8日</time> · <!-- -->阅读需 18 分钟</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--6 authorCol_Hf19"><div class="avatar margin-bottom--sm"><div class="avatar__intro"><div class="avatar__name"><span>360 车金鸽</span></div><small class="avatar__subtitle">Pika 开源社区</small></div></div></div></div></header><div id="__blog-post-container" class="markdown"><p>尊敬的社区成员及技术爱好者们：
+PikiwiDB 社区荣耀地宣告——经过 9 个月打磨并在生产环境稳定运行 5 个月的 PikiwiDB(Pika) v4.0.0 【下文简称 Pika】今天正式发布。希望基于第三代存储引擎 Floyd 的这个新版本能为社区用户们带来更卓越的体验。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="1-重大改进">1 重大改进<a class="hash-link" aria-label="1 重大改进的直接链接" title="1 重大改进的直接链接" href="/blog/PikiwiDB-Pika--4.0.0#1-重大改进">​</a></h2>
+<p>1.1 第三代存储引擎 Floyd
+Floyd 如同其前代 Blackwidow，基于 RocksDB，不仅支持基础的 String 结构，也原生支持了 Hash、List、Set、Stream及 ZSet 等 KKV 形式的复合数据结构。</p>
+<ul>
+<li>RocksDB 实例数可配置</li>
+</ul>
+<p>摒弃了 Blackwidow 按数据类型采用 RocksDB 实例的物理隔离模式，Floyd 采用了 RocksDB 的 Column-Family 虚拟隔离机制，在单个 RocksDB 实例下可存储所有类型的数据。用户可自由设定 Pika 实例中每个 DB【等同于Redis DB】中 RocksDB 实例的数量，而数据的存储则依据 key 的 hash 值分配至相应的 RocksDB 实例，减小了数据的空间放大和读放大效应，实现了机器资源的高效利用。</p>
+<ul>
+<li>禁止重复 key</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="2024-05-16-PikiwiDB(Pika)-4.0.0-key" src="/assets/images/2024-07-08-PikiwiDB(Pika)-4.0.0-key-357e46564ca61e525f598aa7ac52b886.png" width="1080" height="1006" class="img_ev3q">
+基于 RocksDB 的 Column-Family 虚拟隔离机制，Floyd 把所有类型的 key 和 string 一起存储在 Column-Family 0。在此存储基础之上，可明确禁止不同类型的 key 重复，这一设计旨在杜绝潜在的数据冗余与不一致性，与 Redis 服务特性保持一致，进一步提升了系统的整体效率与数据质量。</p>
+<ul>
+<li>Floyd 详细说明</li>
+</ul>
+<p>如果对 Floyd 存储引擎感兴趣，请详阅《Floyd 存储引擎》【链接：<a href="https://github.com/OpenAtomFoundation/pika/discussions/2052%E3%80%91%E3%80%82%E7%94%B1%E4%BA%8E" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/discussions/2052】。由于</a> Floyd 前后进行了多个版本的迭代，所以阅读该 github discussion 文档时请注意前后时间，如有相关冲突性说法，以最新日期的文字为准。</p>
+<p>关键 PR：</p>
+<ul>
+<li>PikiwiDB(Pika)  支持 Floyd 存储引擎<br>
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2413" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2413</a></li>
+<li>添加 Floyd 的 compaction-filter 的 Gtest<br>
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2669" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2669</a></li>
+<li>Pika 不支持不同类型的重复 key, 写入重复 key 返回非法类型<br>
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2609" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2609</a></li>
+<li>对 HyperLogLog 和 String 进行类型隔离，确保 HyperLogLog 操作与 String 操作明确区分开<br>
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2720" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2720</a></li>
+<li>添加支持分区索引过滤的功能<br>
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2601" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2601</a></li>
+</ul>
+<p>1.2 Mget 批量查询缓存</p>
+<p>Pika v3.5.2 的热数据缓存只实现了对热点 Key 的点查(如get/hget)，在后续的 v3.5.3 和 v3.5.4 修复若干 bug 后，对热数据的点查目前已经非常稳定。然而并未支持批量查询(如 mget etc)。
+内部业务侧反馈批量查询速度比较慢，在 40C/256GiB/2TiB SATA SSD 规格机器上数据量超过 100GiB 时，Pika v3.3.6 30% 批量查询延迟超过 35ms。但由于 Pika 热数据缓存尚未支持批量查询，性能并未改善。</p>
+<p>为了满足业务需求，Pika 团队开发了批量查询热数据缓存功能，显著提升了批量查询性能，降低了查询延迟和失败率。相关技术细节请阅读《PikiwiDB (Pika) 混合存储之批量查询》 【链接：<a href="https://mp.weixin.qq.com/s/KFLPruSdB66TMRxUfR9PbQ" target="_blank" rel="noopener noreferrer">https://mp.weixin.qq.com/s/KFLPruSdB66TMRxUfR9PbQ</a> 】。</p>
+<p>关键 PR ：</p>
+<ul>
+<li>Mget 支持多 key 查询缓存, 记录未命中的 key 去 DB 中查询，提升 Pika 服务的读性能<br>
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2675" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2675</a></li>
+<li>修复 Mget 没有使用解析 ttl 的函数导致出现部分key的ttl未被更新，数据不一致的问题<br>
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2730" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2730</a></li>
+</ul>
+<p>1.3 主从复制</p>
+<p>Pika v3.3.6 有很多主从复制的缺陷。v4.0.0 版本对 Pika 全量复制及增量复制进行了大量优化和 bug 修复，取得了非常好的效果。
+并在 info 命令中输出了 &quot;repl_connect_status&quot; 指标(PR 2638)，以方便用户更加明确清晰的确定当前的主从复制状态。</p>
+<p>关键 PR ：</p>
+<ul>
+<li>修复批量扩容时，多个 slave 同时连接 master, 短时间多次 bgsave 导致部分从节点数据不完整的问题<br>
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2746" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2746</a></li>
+<li>修复 Spop 在写 binlog 时可能会出现竞态问题<br>
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2647" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2647</a></li>
+<li>修复多 DB 下全量同步超时后不重试的问题<br>
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2667" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2667</a></li>
+<li>修复多 DB 主从超时场景下，可能会出现窗口崩溃的问题<br>
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2666" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2666</a></li>
+<li>修复主从同步限速逻辑中重复解锁的问题<br>
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2657" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2657</a></li>
+<li>重构主从复制模式 slave 节点的主从同步线程模型，尽可能减少 binlog 消费阻塞问题<br>
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2638" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2638</a></li>
+</ul>
+<p>1.4 Redis Stream</p>
+<p>Redis Stream 类似于消息队列（MQ），以便更安全地传递消息。为了确保数据的安全性，底层引擎 BlackWidow 和 Floyd 中特别添加了对 Stream 数据类型的支持。
+关键 PR：</p>
+<ul>
+<li>修复 pkpatternmatchdel 命令使用错误导致的 stream 类型数据删除异常的问题<br>
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2726" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2726</a></li>
+<li>修复 Keyspace 命令未计算 Stream 类型数据的问题<br>
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2705" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2705</a></li>
+</ul>
+<p>1.5 Compaction</p>
+<p>PikiwiDB(Pika) 的底层磁盘存储引擎 RocksDB 在进行 compaction 时会显著影响 PikiwiDB(Pika) 的读写性能。因此，控制好 compaction 是优化 Pika 读写性能的关键。</p>
+<p>Floyd 使用了 v8.7.3 版本的 RocksDB，开放了更多 RocksDB 参数，以方便用户优化 RocksDB 性能：</p>
+<ul>
+<li>enable-partitioned-index-filters： 支持加载分区索引过滤器，加快 RocksDB 查找速度。</li>
+<li>min-write-buffer-number-to-merge: 默认值为 1，如果将此值设置得更大，意味着需要更多的写缓冲区被填满后才进行 flush。这样可以减少 flush 的频率，增加数据在内存中的累积量，从而可能提高写入吞吐量。</li>
+<li>level0-stop-writes-trigger: 默认值为 36，定义了 L0 层中 sst 文件的最大数量，一旦达到这个数量，RocksDB 将会采取 暂停写入、强制 compaction 等措施来防止写入操作继续累积，以避免 L0 层变得过于庞大，进而可能导致写入放大、查询性能下降等问题。</li>
+<li>level0-slowdown-writes-trigger：默认值为 20，用于控制当 Level 0 的 SST 文件数量达到这个阈值时，触发写减速（write slowdown），防止 Level 0 的文件数量过多，导致后续 compaction 操作的压力过大。</li>
+<li>level0-file-num-compaction-trigger：默认值为 4，当 Level 0 的 SST 文件数量达到这个参数设定的阈值时，RocksDB 会开始执行 compaction 操作，将 Level 0 的文件合并到 Level 1，以减少 Level 0 的文件数量，降低读取延迟，并优化存储空间的利用率。</li>
+<li>max-subcompactions：默认值为 1，用于控制RocksDB 中并发执行的 sub-compaction 任务数量，其值为 1 表示关闭 sub-compaction。如果系统资源充足，建议提升该参数以优化 compaction 效率。</li>
+<li>max-bytes-for-level-base：指定了 L1 SST 文件总的大小。这个大小是 RocksDB 进行数据分层管理和 compaction 决策的重要依据：如果 L1 层的大小设置得太小，可能会导致 L0 层的 compaction 过于频繁，进而影响写性能。反之，如果设置得太大，可能会占用较多的磁盘空间，并且影响读取性能，因为读取操作可能需要跨越更多的层级。Pika 没有在 pika.conf 中开放此参数给用户配置，而是使用其他参数（level0-file-num-compaction-trigger 和 write-buffer-size）计算后的结果。</li>
+</ul>
+<p>storage_options_.options.max_bytes_for_level_base = g_pika_conf-&gt;level0_file_num_compaction_trigger() * g_pika_conf-&gt;write_buffer_size()</p>
+<p>关键 PR：
+添加 Floyd 的 compaction-filter 的 Gtest
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2669" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2669</a>
+添加支持分区索引过滤的功能
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2601" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2601</a>
+新增 RocksDB Compaction 策略动态调整参数，用户可以根据业务调整 Compaction 策略，降低 Compaction 操作对服务性能的损耗
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2538" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2538</a>
+1.6 可观测性
+v3.5 版本增加了包括命中率、每秒命中次数、Redis Cache 内存使用量、Redis Cache 个数、Redis Cache DB 个数 等指标，但是在集群方面的可观测性是缺失的。v4.0.0 对 Codis-Proxy 的 P99、P999、延迟等监控指标进行采集和展示，可以直观地反映线上 Codis-proxy 的运行情况。</p>
+<p>v4.0.0 开始还提供新的工具：根据 pika benchmark 工具压测结果自动生成可视化的统计图表。</p>
+<p>关键 PR：
+Codis 支持 info 命令, 可以通过该命令查询 Codis-proxy 的 info 信息
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2688" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2688</a>
+Codis-proxy 新增 P99 P95 等监控耗时指标
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2668" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2668</a>
+添加 Pika 压测指标，提升 Pika 压测效率，并输出可视化的统计图表
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2663" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2663</a></p>
+<p>1.7 测试集
+PikiwiDB(Pika)  测试集由 gtest 单测、Redis TCL 测试集和 Go 测试集组成。v4.0.0 中丰富了诸多特性的 go test 功能，并进一步完善了基本数据类型的 TCL 测试。
+关键 PR：
+添加 Floyd 的 compaction-filter 的 Gtest
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2669" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2669</a>
+Pika Geo 数据类型增加 TCL 测试，并修复测试过程中遇到的缺陷
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2753" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2753</a>
+1.8 跨平台
+PikiwiDB(Pika)  以往仅支持 centos 和 ubuntu 等 linux 平台，v3.5 开始支持 Mac 等平台。v4.0.0 将对 Mac 平台的支持扩展至 FreeBSD 平台。
+关键 PR：
+Pika 支持在 FreeBSD14 平台上进行编译
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2711" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2711</a>
+2 改进列表
+下面详细列出了本次发版的主要功能升级和改进。
+2.1 新特性</p>
+<ul>
+<li>Pika Geo 数据类型增加 TCL 测试，并修复测试过程中遇到的缺陷
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2753" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2753</a></li>
+<li>Pika 支持在 FreeBSD14 平台上进行编译打包
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2711" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2711</a></li>
+<li>Pika 线程整理，避免启动过多无用线程，对不同的线程进行命名，方便问题定位
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2697" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2697</a></li>
+<li>Mget 支持多 key 查询缓存, 记录未命中的 key 去 DB 中查询，提升 Pika 服务的读性能
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2675" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2675</a></li>
+<li>Codis 支持 info 命令, 可以通过该命令查询 Codis-proxy 的 info 信息
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2688" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2688</a></li>
+<li>添加 Floyd 的 compaction-filter 的 Gtest
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2669" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2669</a></li>
+<li>Codis-proxy 新增 P99 P95 等监控耗时指标
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2668" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2668</a></li>
+<li>添加 Pika 压测指标，提升 Pika 压测效率，并输出可视化的统计图表
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2663" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2663</a></li>
+<li>Pika 主从复制新增监控指标 repl_connect_status, 可以更加明确清晰的确定当前的 主从复制的状态
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2638" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2638</a></li>
+<li>Pika 不支持不同类型的重复 key, 写入重复 key 返回非法类型
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2609" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2609</a></li>
+<li>添加支持分区索引过滤的功能
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2601" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2601</a></li>
+<li>Pika 支持第三代存储引擎 Floyd, 通过支持多 rocksdb 实例、对 Blob 的使用进行优化、对过期数据的清理进行优化，提升了 Pika 实例的读写性能
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2413" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2413</a></li>
+</ul>
+<p>2.2 bug 修复</p>
+<ul>
+<li>修复 iter 未被析构，导致 pkpatternmatchdel 在返回之前不会删除 iter，这可能会导致 rocksdb 永远引用一个版本，导致数据不符合预期的问题
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2785" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2785</a></li>
+<li>修复 config 参数 min-blob-size 带单位时解析错误的问题
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2767" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2767</a></li>
+<li>修复 zverank 返回值异常的问题
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2673" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2673</a></li>
+<li>修复 Pika-port 传输数据过程中报错的问题
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2758" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2758</a></li>
+<li>修复因为堆上分配的缓冲区越界导致 Dbsize 命令运行时崩溃的问题
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2749" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2749</a></li>
+<li>修复批量扩容时，多个 slave 同时连接 master, 短时间多次 bgsave 导致部分从节点数据不完整的问题
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2746" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2746</a></li>
+<li>修复参数未初始化导致 slotsscan 等命令不能和 bgsave 命令相互制衡的问题
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2745" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2745</a></li>
+<li>修复 Slotmigrate 迁移数据的过程中，返回值设置错误，异常场景下会终止数据迁移的问题
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2741" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2741</a></li>
+<li>修复 Mget 没有使用解析 ttl 的函数导致出现部分key的ttl未被更新，数据不一致的问题
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2730" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2730</a></li>
+<li>修复 pkpatternmatchdel 命令使用错误导致的 stream 类型数据删除异常的问题
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2726" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2726</a></li>
+<li>修复 pkpatternmatchdel 不能正确删除掉对应的 keys 的问题
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2717" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2717</a></li>
+<li>修复 ACL 密码验证错误问题
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2714" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2714</a></li>
+<li>修复 Keyspace 命令未计算 Stream 类型数据的问题
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2705" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2705</a></li>
+<li>对部分命令定制化处理逻辑，避免写 binlog 导致从节点的 binlog 解析失败的问题
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2793" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2793</a></li>
+<li>修复 Pika cmdID 赋值在 Cmd 初始函数中，可能会导致并发构造的时候出现内存泄漏的问题
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2692" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2692</a></li>
+<li>修复 ExpectedStale 未考虑 String 类型, 如果存在已经过期的 String 类型的 key, ExpectedStale 会返回错误的问题
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2682" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2682</a></li>
+<li>修复 Spop 在写 binlog 时可能会出现竞态问题
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2674" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2674</a></li>
+<li>db instance 设置不合理时，给用户错误提示
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2672" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2672</a></li>
+<li>修复 server_stat 中的数据竞态问题
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2671" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2671</a></li>
+<li>修复多 DB 下全量同步超时后不重试的问题
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2667" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2667</a></li>
+<li>修复多 DB 下全量同步超时后不重试的问题
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2666" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2666</a></li>
+<li>修复主从同步限速逻辑中重复解锁的问题
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2657" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2657</a></li>
+<li>发版支持自动打包 centos7 和 centos8 平台的二进制编译包
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2535" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2535</a></li>
+<li>修复 Codis 侧的 getrange 命令没有返回预期结果的问题
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2510" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2510</a></li>
+</ul>
+<p>2.3 提升改进项</p>
+<ul>
+<li>更新 Pika Docker Readme, 可以按照 Readme 在 Docker 中部署 Pika 服务
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2743" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2743</a></li>
+<li>优化重复查询 meta value 导致影响 Pika 服务读写性能的问题
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2735" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2735</a></li>
+<li>支持对更多的 RocksDB 参数进行动态调整，用户根据不同的业务使用场景调整参数提升 Pika 的读写性能
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2728" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2728</a></li>
+<li>对 HyperLogLog 和 String 进行类型隔离，确保 HyperLogLog 操作与 String 操作明确区分开
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2720" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2720</a></li>
+<li>更新了 PR 标题验证，不允许在标题末尾出现中文字符
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2718" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2718</a></li>
+<li>重构主从复制模式 slave 节点的主从同步线程模型，尽可能减少 binlog 消费阻塞问题
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2638" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2638</a></li>
+<li>新增 RocksDB Compaction 策略动态调整参数，用户可以根据业务调整 Compaction 策略，降低 Compaction 操作对服务性能的损耗
+<a href="https://github.com/OpenAtomFoundation/pika/pull/2538" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/2538</a></li>
+</ul>
+<p>2.4 发版 tag</p>
+<p><a href="https://github.com/OpenAtomFoundation/pika/releases/tag/v4.0.0" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/releases/tag/v4.0.0</a>
+3 社区
+感谢所有为 v4.0.0 做出贡献的社区成员，包括 issue/PR 提交者、代码 reviewer 【排名不分先后，依据字母序列】：</p>
+<p>AlexStocks</p>
+<p>baerwang</p>
+<p>chejinge</p>
+<p>cheniujh</p>
+<p>chienguo</p>
+<p>guangkun123</p>
+<p>gukj-spel</p>
+<p>longfar-ncy</p>
+<p>lqxhub</p>
+<p>luky116</p>
+<p>Mixficsol</p>
+<p>saz97</p>
+<p>wangshao1</p>
+<p>PikiwiDB (Pika) 开源社区热烈欢迎您的参与和支持。如果您有任何问题、意见或建议，请扫码添加 PikiwiDB 小助手【微信号: PikiwiDB】为好友，它会拉您加入官方微信群。</p>
+<p><img decoding="async" loading="lazy" alt="2024-07-08-PikiwiDB(Pika)-4.0.0-connect" src="/assets/images/2024-07-08-PikiwiDB(Pika)-4.0.0-connect-c43aca0eeeb5cd09cc60b55f9a3df4e5.png" width="747" height="431" class="img_ev3q"></p></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="博文分页导航"><a class="pagination-nav__link pagination-nav__link--next" href="/blog/Pika-3.5.4"><div class="pagination-nav__sublabel">较旧一篇</div><div class="pagination-nav__label">What&#x27;s new in Pika v3.5.4</div></a></nav></main><div class="col col--2"><div class="tableOfContents_bqdL thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a class="table-of-contents__link toc-highlight" href="/blog/PikiwiDB-Pika--4.0.0#1-重大改进">1 重大改进</a></li></ul></div></div></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">微信公众号</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://mp.weixin.qq.com/s/CvIdQs3g31DC8JztyymuqQ" target="_blank" rel="noopener noreferrer" class="footer__link-item">PikiwiDB(Pika) 公众号<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">Github 仓库</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/OpenAtomFoundation/pika" target="_blank" rel="noopener noreferrer" class="footer__link-item">PikiwiDB(Pika) 仓库<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">文档仓库</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/pikiwidb/website" target="_blank" rel="noopener noreferrer" class="footer__link-item">PikiwiDB(Pika) 文档仓库<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2024 PikiwiDB 开源数据库社区</div></div></div></footer></div>
+</body>
+</html>

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkPikiwiDB_Pika_=self.webpackChunkPikiwiDB_Pika_||[]).push([[4284],{1912:i=>{i.exports=JSON.parse('{"blogBasePath":"/blog","blogTitle":"Blog"}')}}]);

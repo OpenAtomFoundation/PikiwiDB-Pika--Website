@@ -3,41 +3,6 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
-    path: '/__docusaurus/debug',
-    component: ComponentCreator('/__docusaurus/debug', '5ff'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/config',
-    component: ComponentCreator('/__docusaurus/debug/config', '5ba'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/content',
-    component: ComponentCreator('/__docusaurus/debug/content', 'a2b'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/globalData',
-    component: ComponentCreator('/__docusaurus/debug/globalData', 'c3c'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/metadata',
-    component: ComponentCreator('/__docusaurus/debug/metadata', '156'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/registry',
-    component: ComponentCreator('/__docusaurus/debug/registry', '88c'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/routes',
-    component: ComponentCreator('/__docusaurus/debug/routes', '000'),
-    exact: true
-  },
-  {
     path: '/blog',
     component: ComponentCreator('/blog', 'b7e'),
     exact: true
@@ -89,15 +54,15 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '3c2'),
+    component: ComponentCreator('/docs', 'c12'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', '708'),
+        component: ComponentCreator('/docs', 'fcc'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', '7e3'),
+            component: ComponentCreator('/docs', '6ad'),
             routes: [
               {
                 path: '/docs/使用与运维/',
@@ -138,30 +103,6 @@ export default [
               {
                 path: '/docs/使用与运维/副本一致性（设计文档）/',
                 component: ComponentCreator('/docs/使用与运维/副本一致性（设计文档）/', 'b1e'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/使用与运维/升级指南/',
-                component: ComponentCreator('/docs/使用与运维/升级指南/', '9cf'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/使用与运维/升级指南/如何升级到 Pika 3.0/',
-                component: ComponentCreator('/docs/使用与运维/升级指南/如何升级到 Pika 3.0/', 'bc4'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/使用与运维/升级指南/如何升级到 Pika 3.1 或 3.2/',
-                component: ComponentCreator('/docs/使用与运维/升级指南/如何升级到 Pika 3.1 或 3.2/', 'f12'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/使用与运维/升级指南/如何将 Pika 3.3.6 升级到 Pika 3.5/',
-                component: ComponentCreator('/docs/使用与运维/升级指南/如何将 Pika 3.3.6 升级到 Pika 3.5/', 'b2f'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

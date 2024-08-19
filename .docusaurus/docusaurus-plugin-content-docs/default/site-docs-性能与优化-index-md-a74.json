@@ -18,8 +18,8 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "如何将 Pika 3.3.6 升级到 Pika 3.5",
-    "permalink": "/docs/使用与运维/升级指南/如何将 Pika 3.3.6 升级到 Pika 3.5/"
+    "title": "Pika 最佳实践",
+    "permalink": "/docs/使用与运维/Pika 最佳实践/"
   },
   "next": {
     "title": "3.2.x 性能",

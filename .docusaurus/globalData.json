@@ -46,26 +46,6 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "使用与运维/升级指南/index",
-              "path": "/docs/使用与运维/升级指南/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "使用与运维/升级指南/如何升级到 Pika 3.0/index",
-              "path": "/docs/使用与运维/升级指南/如何升级到 Pika 3.0/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "使用与运维/升级指南/如何升级到 Pika 3.1 或 3.2/index",
-              "path": "/docs/使用与运维/升级指南/如何升级到 Pika 3.1 或 3.2/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "使用与运维/升级指南/如何将 Pika 3.3.6 升级到 Pika 3.5/index",
-              "path": "/docs/使用与运维/升级指南/如何将 Pika 3.3.6 升级到 Pika 3.5/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
               "id": "使用与运维/多库版命令/index",
               "path": "/docs/使用与运维/多库版命令/",
               "sidebar": "tutorialSidebar"
