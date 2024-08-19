@@ -46,7 +46,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://atomgit.com/zouxiangneihe/website/tree/master',
+            'https://github.com/pikiwidb/website/tree/main',
             remarkPlugins: [remarkMath],
             rehypePlugins: [rehypeKatex],
           },

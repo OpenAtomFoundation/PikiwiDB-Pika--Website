@@ -27,7 +27,7 @@ export default {
       {
         "docs": {
           "sidebarPath": "./sidebars.js",
-          "editUrl": "https://atomgit.com/zouxiangneihe/website/tree/master",
+          "editUrl": "https://github.com/pikiwidb/website/tree/main",
           "remarkPlugins": [
             null
           ],
