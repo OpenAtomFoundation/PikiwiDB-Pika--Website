@@ -89,6 +89,7 @@ pidfile : /data1/pika9001/pid/9001.pid
 maxclients : 20000
  
 # rocks-db的sst文件体积, sst文件是层级的, 文件越小, 速度越快, 合并代价越低, 但文件数量就会超多, 而文件越大, 速度相对变慢, 合并代价大, 但文件数量会很少, 默认是 20M
+# 在当前版本下面，我们并不支持超过 2G 的配置，请注意这一点
 target-file-size-base : 20971520
 
 # binlog(write2file)文件保留时间, 7天, 最小为1, 超过7天的文件会被自动清理
