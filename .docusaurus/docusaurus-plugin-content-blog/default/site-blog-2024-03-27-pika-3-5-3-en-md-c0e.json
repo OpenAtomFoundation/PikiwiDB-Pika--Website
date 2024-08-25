@@ -1,0 +1,36 @@
+{
+  "permalink": "/blog/Pika-3.5.3-en",
+  "source": "@site/blog/2024-03-27-Pika-3.5.3-en.md",
+  "title": "What's new in Pika v3.5.3 （英文版本）",
+  "description": "As Redis announces the adoption of dual protocols to maintain its commercial interests, the PikiwiDB (Pika) community is pleased to announce the release of the v3.5.3 stable version for production use today.",
+  "date": "2024-03-27T00:00:00.000Z",
+  "tags": [],
+  "readingTime": 8.965,
+  "hasTruncateMarker": false,
+  "authors": [
+    {
+      "name": "360 中间件团队",
+      "title": "Pika 开源社区"
+    }
+  ],
+  "frontMatter": {
+    "title": "What's new in Pika v3.5.3 （英文版本）",
+    "slug": "Pika-3.5.3-en",
+    "authors": [
+      {
+        "name": "360 中间件团队",
+        "title": "Pika 开源社区"
+      }
+    ],
+    "hide_table_of_contents": false
+  },
+  "unlisted": false,
+  "prevItem": {
+    "title": "What's new in PikiwiDB(Pika) v3.5.4",
+    "permalink": "/blog/Pika-3.5.4"
+  },
+  "nextItem": {
+    "title": "What's new in Pika v3.5.3 ",
+    "permalink": "/blog/Pika-3.5.3"
+  }
+}

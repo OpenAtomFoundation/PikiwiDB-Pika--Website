@@ -4,7 +4,7 @@
 
 ## 文档的主要内容与参与贡献的方式
 
-PikiwiDB（Pika） 的文档网站同 [PikiwiDB(Pika) Wiki](https://github.com/OpenAtomFoundation/Pika/wiki) 的内容保持一致，因此希望参与到 PikiwiDB 文档维护工作的话，欢迎在 Wiki 或者这里提交你的反馈意见。
+PikiwiDB（Pika） 的文档网站同 [PikiwiDB(Pika) Wiki](https:/w/github.com/OpenAtomFoundation/Pika/wiki) 的内容保持一致，因此希望参与到 PikiwiDB 文档维护工作的话，欢迎在 Wiki 或者这里提交你的反馈意见。
 
 ## 如何构建文档网站？
 

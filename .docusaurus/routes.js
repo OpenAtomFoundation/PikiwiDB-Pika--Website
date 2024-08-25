@@ -39,17 +39,12 @@ export default [
   },
   {
     path: '/blog',
-    component: ComponentCreator('/blog', 'b7e'),
+    component: ComponentCreator('/blog', '9a1'),
     exact: true
   },
   {
     path: '/blog/archive',
     component: ComponentCreator('/blog/archive', '182'),
-    exact: true
-  },
-  {
-    path: '/blog/Pika-3.5.0',
-    component: ComponentCreator('/blog/Pika-3.5.0', 'eeb'),
     exact: true
   },
   {
@@ -63,8 +58,18 @@ export default [
     exact: true
   },
   {
+    path: '/blog/Pika-3.5.2',
+    component: ComponentCreator('/blog/Pika-3.5.2', '853'),
+    exact: true
+  },
+  {
     path: '/blog/Pika-3.5.3',
     component: ComponentCreator('/blog/Pika-3.5.3', 'f4a'),
+    exact: true
+  },
+  {
+    path: '/blog/Pika-3.5.3-en',
+    component: ComponentCreator('/blog/Pika-3.5.3-en', '510'),
     exact: true
   },
   {
@@ -89,61 +94,175 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', 'c12'),
+    component: ComponentCreator('/docs', '346'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', 'fcc'),
+        component: ComponentCreator('/docs', '560'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', '6ad'),
+            component: ComponentCreator('/docs', '299'),
             routes: [
+              {
+                path: '/docs/开发文档/',
+                component: ComponentCreator('/docs/开发文档/', '7cf'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/开发文档/编码规范/',
+                component: ComponentCreator('/docs/开发文档/编码规范/', 'f7c'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/开发文档/coding-style/',
+                component: ComponentCreator('/docs/开发文档/coding-style/', '329'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/设计与实现/',
+                component: ComponentCreator('/docs/设计与实现/', '9ca'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/设计与实现/副本一致性/',
+                component: ComponentCreator('/docs/设计与实现/副本一致性/', '97a'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/设计与实现/旧存储结构/',
+                component: ComponentCreator('/docs/设计与实现/旧存储结构/', 'f6e'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/设计与实现/快照式备份/',
+                component: ComponentCreator('/docs/设计与实现/快照式备份/', '1e5'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/设计与实现/全同步/',
+                component: ComponentCreator('/docs/设计与实现/全同步/', '248'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/设计与实现/锁的应用/',
+                component: ComponentCreator('/docs/设计与实现/锁的应用/', '581'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/设计与实现/线程模型/',
+                component: ComponentCreator('/docs/设计与实现/线程模型/', '334'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/设计与实现/新存储方案：详细解析/',
+                component: ComponentCreator('/docs/设计与实现/新存储方案：详细解析/', '948'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/设计与实现/新存储结构/',
+                component: ComponentCreator('/docs/设计与实现/新存储结构/', '571'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/设计与实现/增量同步/',
+                component: ComponentCreator('/docs/设计与实现/增量同步/', 'ea1'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/设计与实现/整体技术架构/',
+                component: ComponentCreator('/docs/设计与实现/整体技术架构/', 'ccd'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/设计与实现/主从同步/',
+                component: ComponentCreator('/docs/设计与实现/主从同步/', '4d3'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/设计与实现/NoSQL 原理概述/',
+                component: ComponentCreator('/docs/设计与实现/NoSQL 原理概述/', '472'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/设计与实现/Pika 传火计划/',
+                component: ComponentCreator('/docs/设计与实现/Pika 传火计划/', '2f6'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/设计与实现/Pika 传火计划/读写流程/',
+                component: ComponentCreator('/docs/设计与实现/Pika 传火计划/读写流程/', '5dc'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/设计与实现/Pika 传火计划/线程模型/',
+                component: ComponentCreator('/docs/设计与实现/Pika 传火计划/线程模型/', '6ce'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/设计与实现/Pika 传火计划/主从同步/',
+                component: ComponentCreator('/docs/设计与实现/Pika 传火计划/主从同步/', '911'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/设计与实现/Pika 与 Codis/',
+                component: ComponentCreator('/docs/设计与实现/Pika 与 Codis/', 'f53'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/设计与实现/Pika 源码学习笔记/',
+                component: ComponentCreator('/docs/设计与实现/Pika 源码学习笔记/', '48f'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/设计与实现/Pika 源码学习笔记/通信和线程模型/',
+                component: ComponentCreator('/docs/设计与实现/Pika 源码学习笔记/通信和线程模型/', 'a01'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/设计与实现/Pika 源码学习笔记/Pika 的命令执行框架/',
+                component: ComponentCreator('/docs/设计与实现/Pika 源码学习笔记/Pika 的命令执行框架/', '26a'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/设计与实现/Pika 源码学习笔记/Pika 和 RockSDB 的对接/',
+                component: ComponentCreator('/docs/设计与实现/Pika 源码学习笔记/Pika 和 RockSDB 的对接/', '9cf'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/设计与实现/Pika 源码学习笔记/PubSub 机制/',
+                component: ComponentCreator('/docs/设计与实现/Pika 源码学习笔记/PubSub 机制/', 'e15'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
               {
                 path: '/docs/使用与运维/',
                 component: ComponentCreator('/docs/使用与运维/', '5f5'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/使用与运维/page info 信息说明/',
-                component: ComponentCreator('/docs/使用与运维/page info 信息说明/', 'eef'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/使用与运维/Pika 最佳实践/',
-                component: ComponentCreator('/docs/使用与运维/Pika 最佳实践/', '5e2'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/使用与运维/分布式模式简单教程/',
-                component: ComponentCreator('/docs/使用与运维/分布式模式简单教程/', '3df'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/使用与运维/分片教程/',
-                component: ComponentCreator('/docs/使用与运维/分片教程/', 'c6b'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/使用与运维/副本一致性（使用文档）/',
-                component: ComponentCreator('/docs/使用与运维/副本一致性（使用文档）/', 'e86'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/使用与运维/副本一致性（设计文档）/',
-                component: ComponentCreator('/docs/使用与运维/副本一致性（设计文档）/', 'b1e'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/使用与运维/多库版命令/',
-                component: ComponentCreator('/docs/使用与运维/多库版命令/', '3c5'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -160,8 +279,26 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/使用与运维/数据目录/',
-                component: ComponentCreator('/docs/使用与运维/数据目录/', 'd15'),
+                path: '/docs/使用与运维/订阅/',
+                component: ComponentCreator('/docs/使用与运维/订阅/', '18e'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/使用与运维/多库版命令/',
+                component: ComponentCreator('/docs/使用与运维/多库版命令/', '3c5'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/使用与运维/分布式模式简单教程/',
+                component: ComponentCreator('/docs/使用与运维/分布式模式简单教程/', '3df'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/使用与运维/分片教程/',
+                component: ComponentCreator('/docs/使用与运维/分片教程/', 'c6b'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -172,20 +309,20 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
+                path: '/docs/使用与运维/副本一致性（设计文档）/',
+                component: ComponentCreator('/docs/使用与运维/副本一致性（设计文档）/', 'b1e'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/使用与运维/副本一致性（使用文档）/',
+                component: ComponentCreator('/docs/使用与运维/副本一致性（使用文档）/', 'e86'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
                 path: '/docs/使用与运维/管理指令/',
                 component: ComponentCreator('/docs/使用与运维/管理指令/', '0bc'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/使用与运维/自动容灾/',
-                component: ComponentCreator('/docs/使用与运维/自动容灾/', '1d2'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/使用与运维/订阅/',
-                component: ComponentCreator('/docs/使用与运维/订阅/', '18e'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -196,44 +333,26 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/序言/',
-                component: ComponentCreator('/docs/序言/', 'db5'),
+                path: '/docs/使用与运维/数据目录/',
+                component: ComponentCreator('/docs/使用与运维/数据目录/', 'd15'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/序言/FAQ/',
-                component: ComponentCreator('/docs/序言/FAQ/', 'b59'),
+                path: '/docs/使用与运维/自动容灾/',
+                component: ComponentCreator('/docs/使用与运维/自动容灾/', '1d2'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/序言/支持的 Redis 接口与兼容情况/',
-                component: ComponentCreator('/docs/序言/支持的 Redis 接口与兼容情况/', '10f'),
+                path: '/docs/使用与运维/page info 信息说明/',
+                component: ComponentCreator('/docs/使用与运维/page info 信息说明/', 'eef'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/序言/简介/',
-                component: ComponentCreator('/docs/序言/简介/', '70a'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/开发文档/',
-                component: ComponentCreator('/docs/开发文档/', '7cf'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/开发文档/coding-style/',
-                component: ComponentCreator('/docs/开发文档/coding-style/', '329'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/开发文档/编码规范/',
-                component: ComponentCreator('/docs/开发文档/编码规范/', 'f7c'),
+                path: '/docs/使用与运维/Pika 最佳实践/',
+                component: ComponentCreator('/docs/使用与运维/Pika 最佳实践/', '5e2'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -256,14 +375,14 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/性能与优化/Pika 优化案例/',
-                component: ComponentCreator('/docs/性能与优化/Pika 优化案例/', '088'),
+                path: '/docs/性能与优化/Pika 内存使用/',
+                component: ComponentCreator('/docs/性能与优化/Pika 内存使用/', 'c7d'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/性能与优化/Pika 优化案例/喜马拉雅 Redis 与 Pika 缓存使用军规/',
-                component: ComponentCreator('/docs/性能与优化/Pika 优化案例/喜马拉雅 Redis 与 Pika 缓存使用军规/', '51b'),
+                path: '/docs/性能与优化/Pika 优化案例/',
+                component: ComponentCreator('/docs/性能与优化/Pika 优化案例/', '088'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -274,8 +393,8 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/性能与优化/Pika 内存使用/',
-                component: ComponentCreator('/docs/性能与优化/Pika 内存使用/', 'c7d'),
+                path: '/docs/性能与优化/Pika 优化案例/喜马拉雅 Redis 与 Pika 缓存使用军规/',
+                component: ComponentCreator('/docs/性能与优化/Pika 优化案例/喜马拉雅 Redis 与 Pika 缓存使用军规/', '51b'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -286,140 +405,26 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/设计与实现/',
-                component: ComponentCreator('/docs/设计与实现/', '9ca'),
+                path: '/docs/序言/',
+                component: ComponentCreator('/docs/序言/', 'db5'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/设计与实现/NoSQL 原理概述/',
-                component: ComponentCreator('/docs/设计与实现/NoSQL 原理概述/', '472'),
+                path: '/docs/序言/简介/',
+                component: ComponentCreator('/docs/序言/简介/', '70a'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/设计与实现/Pika 与 Codis/',
-                component: ComponentCreator('/docs/设计与实现/Pika 与 Codis/', 'f53'),
+                path: '/docs/序言/支持的 Redis 接口与兼容情况/',
+                component: ComponentCreator('/docs/序言/支持的 Redis 接口与兼容情况/', '10f'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/设计与实现/Pika 传火计划/',
-                component: ComponentCreator('/docs/设计与实现/Pika 传火计划/', '2f6'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/设计与实现/Pika 传火计划/主从同步/',
-                component: ComponentCreator('/docs/设计与实现/Pika 传火计划/主从同步/', '911'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/设计与实现/Pika 传火计划/线程模型/',
-                component: ComponentCreator('/docs/设计与实现/Pika 传火计划/线程模型/', '6ce'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/设计与实现/Pika 传火计划/读写流程/',
-                component: ComponentCreator('/docs/设计与实现/Pika 传火计划/读写流程/', '5dc'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/设计与实现/Pika 源码学习笔记/',
-                component: ComponentCreator('/docs/设计与实现/Pika 源码学习笔记/', '48f'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/设计与实现/Pika 源码学习笔记/Pika 和 RockSDB 的对接/',
-                component: ComponentCreator('/docs/设计与实现/Pika 源码学习笔记/Pika 和 RockSDB 的对接/', '9cf'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/设计与实现/Pika 源码学习笔记/Pika 的命令执行框架/',
-                component: ComponentCreator('/docs/设计与实现/Pika 源码学习笔记/Pika 的命令执行框架/', '26a'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/设计与实现/Pika 源码学习笔记/PubSub 机制/',
-                component: ComponentCreator('/docs/设计与实现/Pika 源码学习笔记/PubSub 机制/', 'e15'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/设计与实现/Pika 源码学习笔记/通信和线程模型/',
-                component: ComponentCreator('/docs/设计与实现/Pika 源码学习笔记/通信和线程模型/', 'a01'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/设计与实现/主从同步/',
-                component: ComponentCreator('/docs/设计与实现/主从同步/', '4d3'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/设计与实现/全同步/',
-                component: ComponentCreator('/docs/设计与实现/全同步/', '248'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/设计与实现/副本一致性/',
-                component: ComponentCreator('/docs/设计与实现/副本一致性/', '97a'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/设计与实现/增量同步/',
-                component: ComponentCreator('/docs/设计与实现/增量同步/', 'ea1'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/设计与实现/快照式备份/',
-                component: ComponentCreator('/docs/设计与实现/快照式备份/', '1e5'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/设计与实现/整体技术架构/',
-                component: ComponentCreator('/docs/设计与实现/整体技术架构/', 'ccd'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/设计与实现/新存储方案：详细解析/',
-                component: ComponentCreator('/docs/设计与实现/新存储方案：详细解析/', '948'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/设计与实现/新存储结构/',
-                component: ComponentCreator('/docs/设计与实现/新存储结构/', '571'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/设计与实现/旧存储结构/',
-                component: ComponentCreator('/docs/设计与实现/旧存储结构/', 'f6e'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/设计与实现/线程模型/',
-                component: ComponentCreator('/docs/设计与实现/线程模型/', '334'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/设计与实现/锁的应用/',
-                component: ComponentCreator('/docs/设计与实现/锁的应用/', '581'),
+                path: '/docs/序言/FAQ/',
+                component: ComponentCreator('/docs/序言/FAQ/', 'b59'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               }

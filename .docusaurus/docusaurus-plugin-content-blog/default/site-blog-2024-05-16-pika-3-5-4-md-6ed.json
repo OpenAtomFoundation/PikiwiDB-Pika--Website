@@ -1,25 +1,25 @@
 {
   "permalink": "/blog/Pika-3.5.4",
   "source": "@site/blog/2024-05-16-Pika-3.5.4.md",
-  "title": "What's new in Pika v3.5.4",
-  "description": "PikiwiDB(Pika) 社区非常荣幸地宣布，我们的最新 v3.5.4 正式生产可用版本现已发布。",
+  "title": "What's new in PikiwiDB(Pika) v3.5.4",
+  "description": "PikiwiDB (Pika) 社区非常荣幸地宣布，我们的最新 v3.5.4 正式生产可用版本现已发布。",
   "date": "2024-05-16T00:00:00.000Z",
   "tags": [],
-  "readingTime": 5.935,
+  "readingTime": 6.53,
   "hasTruncateMarker": false,
   "authors": [
     {
-      "name": "于雨",
-      "title": "dubbogo示土区"
+      "name": "陈俊华",
+      "title": "360"
     }
   ],
   "frontMatter": {
-    "title": "What's new in Pika v3.5.4",
+    "title": "What's new in PikiwiDB(Pika) v3.5.4",
     "slug": "Pika-3.5.4",
     "authors": [
       {
-        "name": "于雨",
-        "title": "dubbogo示土区"
+        "name": "陈俊华",
+        "title": "360"
       }
     ],
     "hide_table_of_contents": false
@@ -30,7 +30,7 @@
     "permalink": "/blog/PikiwiDB-Pika--4.0.0"
   },
   "nextItem": {
-    "title": "What's new in Pika v3.5.3 ",
-    "permalink": "/blog/Pika-3.5.3"
+    "title": "What's new in Pika v3.5.3 （英文版本）",
+    "permalink": "/blog/Pika-3.5.3-en"
   }
 }

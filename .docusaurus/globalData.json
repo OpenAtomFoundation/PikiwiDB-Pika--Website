@@ -11,103 +11,8 @@
           "mainDocId": "序言/index",
           "docs": [
             {
-              "id": "使用与运维/index",
-              "path": "/docs/使用与运维/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "使用与运维/page info 信息说明/index",
-              "path": "/docs/使用与运维/page info 信息说明/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "使用与运维/Pika 最佳实践/index",
-              "path": "/docs/使用与运维/Pika 最佳实践/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "使用与运维/分布式模式简单教程/index",
-              "path": "/docs/使用与运维/分布式模式简单教程/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "使用与运维/分片教程/index",
-              "path": "/docs/使用与运维/分片教程/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "使用与运维/副本一致性（使用文档）/index",
-              "path": "/docs/使用与运维/副本一致性（使用文档）/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "使用与运维/副本一致性（设计文档）/index",
-              "path": "/docs/使用与运维/副本一致性（设计文档）/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "使用与运维/多库版命令/index",
-              "path": "/docs/使用与运维/多库版命令/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "使用与运维/安装使用/index",
-              "path": "/docs/使用与运维/安装使用/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "使用与运维/差异化命令/index",
-              "path": "/docs/使用与运维/差异化命令/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "使用与运维/数据目录/index",
-              "path": "/docs/使用与运维/数据目录/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "使用与运维/服务器状态监控/index",
-              "path": "/docs/使用与运维/服务器状态监控/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "使用与运维/管理指令/index",
-              "path": "/docs/使用与运维/管理指令/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "使用与运维/自动容灾/index",
-              "path": "/docs/使用与运维/自动容灾/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "使用与运维/订阅/index",
-              "path": "/docs/使用与运维/订阅/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "使用与运维/配置文件说明/index",
-              "path": "/docs/使用与运维/配置文件说明/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "序言/FAQ/index",
-              "path": "/docs/序言/FAQ/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "序言/index",
-              "path": "/docs/序言/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "序言/支持的 Redis 接口与兼容情况/index",
-              "path": "/docs/序言/支持的 Redis 接口与兼容情况/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "序言/简介/index",
-              "path": "/docs/序言/简介/",
+              "id": "开发文档/编码规范/index",
+              "path": "/docs/开发文档/编码规范/",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -121,8 +26,198 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "开发文档/编码规范/index",
-              "path": "/docs/开发文档/编码规范/",
+              "id": "设计与实现/副本一致性/index",
+              "path": "/docs/设计与实现/副本一致性/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "设计与实现/旧存储结构/index",
+              "path": "/docs/设计与实现/旧存储结构/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "设计与实现/快照式备份/index",
+              "path": "/docs/设计与实现/快照式备份/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "设计与实现/全同步/index",
+              "path": "/docs/设计与实现/全同步/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "设计与实现/锁的应用/index",
+              "path": "/docs/设计与实现/锁的应用/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "设计与实现/线程模型/index",
+              "path": "/docs/设计与实现/线程模型/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "设计与实现/新存储方案：详细解析/index",
+              "path": "/docs/设计与实现/新存储方案：详细解析/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "设计与实现/新存储结构/index",
+              "path": "/docs/设计与实现/新存储结构/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "设计与实现/增量同步/index",
+              "path": "/docs/设计与实现/增量同步/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "设计与实现/整体技术架构/index",
+              "path": "/docs/设计与实现/整体技术架构/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "设计与实现/主从同步/index",
+              "path": "/docs/设计与实现/主从同步/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "设计与实现/index",
+              "path": "/docs/设计与实现/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "设计与实现/NoSQL 原理概述/index",
+              "path": "/docs/设计与实现/NoSQL 原理概述/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "设计与实现/Pika 传火计划/读写流程/index",
+              "path": "/docs/设计与实现/Pika 传火计划/读写流程/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "设计与实现/Pika 传火计划/线程模型/index",
+              "path": "/docs/设计与实现/Pika 传火计划/线程模型/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "设计与实现/Pika 传火计划/主从同步/index",
+              "path": "/docs/设计与实现/Pika 传火计划/主从同步/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "设计与实现/Pika 传火计划/index",
+              "path": "/docs/设计与实现/Pika 传火计划/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "设计与实现/Pika 与 Codis/index",
+              "path": "/docs/设计与实现/Pika 与 Codis/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "设计与实现/Pika 源码学习笔记/通信和线程模型/index",
+              "path": "/docs/设计与实现/Pika 源码学习笔记/通信和线程模型/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "设计与实现/Pika 源码学习笔记/index",
+              "path": "/docs/设计与实现/Pika 源码学习笔记/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "设计与实现/Pika 源码学习笔记/Pika 的命令执行框架/index",
+              "path": "/docs/设计与实现/Pika 源码学习笔记/Pika 的命令执行框架/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "设计与实现/Pika 源码学习笔记/Pika 和 RockSDB 的对接/index",
+              "path": "/docs/设计与实现/Pika 源码学习笔记/Pika 和 RockSDB 的对接/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "设计与实现/Pika 源码学习笔记/PubSub 机制/index",
+              "path": "/docs/设计与实现/Pika 源码学习笔记/PubSub 机制/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "使用与运维/安装使用/index",
+              "path": "/docs/使用与运维/安装使用/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "使用与运维/差异化命令/index",
+              "path": "/docs/使用与运维/差异化命令/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "使用与运维/订阅/index",
+              "path": "/docs/使用与运维/订阅/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "使用与运维/多库版命令/index",
+              "path": "/docs/使用与运维/多库版命令/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "使用与运维/分布式模式简单教程/index",
+              "path": "/docs/使用与运维/分布式模式简单教程/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "使用与运维/分片教程/index",
+              "path": "/docs/使用与运维/分片教程/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "使用与运维/服务器状态监控/index",
+              "path": "/docs/使用与运维/服务器状态监控/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "使用与运维/副本一致性（设计文档）/index",
+              "path": "/docs/使用与运维/副本一致性（设计文档）/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "使用与运维/副本一致性（使用文档）/index",
+              "path": "/docs/使用与运维/副本一致性（使用文档）/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "使用与运维/管理指令/index",
+              "path": "/docs/使用与运维/管理指令/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "使用与运维/配置文件说明/index",
+              "path": "/docs/使用与运维/配置文件说明/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "使用与运维/数据目录/index",
+              "path": "/docs/使用与运维/数据目录/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "使用与运维/自动容灾/index",
+              "path": "/docs/使用与运维/自动容灾/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "使用与运维/index",
+              "path": "/docs/使用与运维/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "使用与运维/page info 信息说明/index",
+              "path": "/docs/使用与运维/page info 信息说明/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "使用与运维/Pika 最佳实践/index",
+              "path": "/docs/使用与运维/Pika 最佳实践/",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -141,13 +236,8 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "性能与优化/Pika 优化案例/index",
-              "path": "/docs/性能与优化/Pika 优化案例/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "性能与优化/Pika 优化案例/喜马拉雅 Redis 与 Pika 缓存使用军规/index",
-              "path": "/docs/性能与优化/Pika 优化案例/喜马拉雅 Redis 与 Pika 缓存使用军规/",
+              "id": "性能与优化/Pika 内存使用/index",
+              "path": "/docs/性能与优化/Pika 内存使用/",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -156,8 +246,13 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "性能与优化/Pika 内存使用/index",
-              "path": "/docs/性能与优化/Pika 内存使用/",
+              "id": "性能与优化/Pika 优化案例/喜马拉雅 Redis 与 Pika 缓存使用军规/index",
+              "path": "/docs/性能与优化/Pika 优化案例/喜马拉雅 Redis 与 Pika 缓存使用军规/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "性能与优化/Pika 优化案例/index",
+              "path": "/docs/性能与优化/Pika 优化案例/",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -166,118 +261,23 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "设计与实现/index",
-              "path": "/docs/设计与实现/",
+              "id": "序言/简介/index",
+              "path": "/docs/序言/简介/",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "设计与实现/NoSQL 原理概述/index",
-              "path": "/docs/设计与实现/NoSQL 原理概述/",
+              "id": "序言/支持的 Redis 接口与兼容情况/index",
+              "path": "/docs/序言/支持的 Redis 接口与兼容情况/",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "设计与实现/Pika 与 Codis/index",
-              "path": "/docs/设计与实现/Pika 与 Codis/",
+              "id": "序言/FAQ/index",
+              "path": "/docs/序言/FAQ/",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "设计与实现/Pika 传火计划/index",
-              "path": "/docs/设计与实现/Pika 传火计划/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "设计与实现/Pika 传火计划/主从同步/index",
-              "path": "/docs/设计与实现/Pika 传火计划/主从同步/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "设计与实现/Pika 传火计划/线程模型/index",
-              "path": "/docs/设计与实现/Pika 传火计划/线程模型/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "设计与实现/Pika 传火计划/读写流程/index",
-              "path": "/docs/设计与实现/Pika 传火计划/读写流程/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "设计与实现/Pika 源码学习笔记/index",
-              "path": "/docs/设计与实现/Pika 源码学习笔记/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "设计与实现/Pika 源码学习笔记/Pika 和 RockSDB 的对接/index",
-              "path": "/docs/设计与实现/Pika 源码学习笔记/Pika 和 RockSDB 的对接/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "设计与实现/Pika 源码学习笔记/Pika 的命令执行框架/index",
-              "path": "/docs/设计与实现/Pika 源码学习笔记/Pika 的命令执行框架/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "设计与实现/Pika 源码学习笔记/PubSub 机制/index",
-              "path": "/docs/设计与实现/Pika 源码学习笔记/PubSub 机制/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "设计与实现/Pika 源码学习笔记/通信和线程模型/index",
-              "path": "/docs/设计与实现/Pika 源码学习笔记/通信和线程模型/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "设计与实现/主从同步/index",
-              "path": "/docs/设计与实现/主从同步/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "设计与实现/全同步/index",
-              "path": "/docs/设计与实现/全同步/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "设计与实现/副本一致性/index",
-              "path": "/docs/设计与实现/副本一致性/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "设计与实现/增量同步/index",
-              "path": "/docs/设计与实现/增量同步/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "设计与实现/快照式备份/index",
-              "path": "/docs/设计与实现/快照式备份/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "设计与实现/整体技术架构/index",
-              "path": "/docs/设计与实现/整体技术架构/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "设计与实现/新存储方案：详细解析/index",
-              "path": "/docs/设计与实现/新存储方案：详细解析/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "设计与实现/新存储结构/index",
-              "path": "/docs/设计与实现/新存储结构/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "设计与实现/旧存储结构/index",
-              "path": "/docs/设计与实现/旧存储结构/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "设计与实现/线程模型/index",
-              "path": "/docs/设计与实现/线程模型/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "设计与实现/锁的应用/index",
-              "path": "/docs/设计与实现/锁的应用/",
+              "id": "序言/index",
+              "path": "/docs/序言/",
               "sidebar": "tutorialSidebar"
             }
           ],

@@ -8,7 +8,7 @@ authors:
 hide_table_of_contents: false
 ---
 
-Blackwidow本质上是基于rocksdb的封装，使本身只支持kv存储的rocksdb能够支持多种数据结构, 目前Blackwidow支持五种数据结构的存储：String结构(实际上就是存储key, value), Hash结构，List结构，Set结构和ZSet结构， 因为Rocksdb的存储方式只有kv一种， 所以上述五种数据结构最终都要落盘到Rocksdb的kv存储方式上，下面我们展示Blackwidow和rocksdb的关系并且说明我们是如何用kv来模拟多数据结构的。
+Blackwidow本质上是基于rocksdb的封装，使本身只支持kv存储的rocksdb能够支持多种数据结构, 目前Blackwidow支持五种数据结构的存储：String结构(实际上就是存储key, value), Hash结构，List结构，Set结构和ZSet结构， 因为Rocksdb的存储方式只有kv一种， 所以上述五种数据结构最终都要落盘到Rocksdb的kv存储方式上，下面我们展示Blackwidow和rocksdb的关系并且说明我们是如何用kv来模拟多数据结构的。
 
 ![pika-blackwidow-1](pika-blackwidow-1.png)
 

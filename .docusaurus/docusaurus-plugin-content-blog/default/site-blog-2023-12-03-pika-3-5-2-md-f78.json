@@ -1,7 +1,7 @@
 {
-  "permalink": "/blog/Pika-3.5.0",
+  "permalink": "/blog/Pika-3.5.2",
   "source": "@site/blog/2023-12-03-Pika-3.5.2.md",
-  "title": "What's new in Pika v3.5.0",
+  "title": "What's new in Pika v3.5.2",
   "description": "Pika 社区近期发布了备受期待的 v3.5.2 版本 https://github.com/OpenAtomFoundation/pika/releases/tag/v3.5.2-alpha ，不仅解决了历史遗留的 Bug 问题，还引入了多项新特性。这些新特性主要包括 Pika 支持 Redis 事务、Pika 上层增加缓存层实现冷热数据分离、提升读性能、Codis-Proxy 支持动态修改配置参数等等，无疑将会让用户感受到更为高效和稳定的使用体验。",
   "date": "2023-12-03T00:00:00.000Z",
   "tags": [],
@@ -14,8 +14,8 @@
     }
   ],
   "frontMatter": {
-    "title": "What's new in Pika v3.5.0",
-    "slug": "Pika-3.5.0",
+    "title": "What's new in Pika v3.5.2",
+    "slug": "Pika-3.5.2",
     "authors": [
       {
         "name": "于雨",

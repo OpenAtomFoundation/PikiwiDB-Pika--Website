@@ -2,10 +2,10 @@
   "permalink": "/blog/Pika-3.5.3",
   "source": "@site/blog/2024-03-27-Pika-3.5.3.md",
   "title": "What's new in Pika v3.5.3 ",
-  "description": "随着 Redis 宣布采用双协议以维护其商业利益之际，PikiwiDB(Pika) 社区非常荣幸地宣布，我们的最新 v3.5.3 正式生产可用版本现已发布。",
+  "description": "随着 Redis 宣布采用双协议以维护其商业利益，PikiwiDB(Pika) 社区非常荣幸地宣布之际，我们的最新 v3.5.3 正式生产可用版本现已发布。",
   "date": "2024-03-27T00:00:00.000Z",
   "tags": [],
-  "readingTime": 14.535,
+  "readingTime": 14.775,
   "hasTruncateMarker": false,
   "authors": [
     {
@@ -26,11 +26,11 @@
   },
   "unlisted": false,
   "prevItem": {
-    "title": "What's new in Pika v3.5.4",
-    "permalink": "/blog/Pika-3.5.4"
+    "title": "What's new in Pika v3.5.3 （英文版本）",
+    "permalink": "/blog/Pika-3.5.3-en"
   },
   "nextItem": {
-    "title": "What's new in Pika v3.5.0",
-    "permalink": "/blog/Pika-3.5.0"
+    "title": "What's new in Pika v3.5.2",
+    "permalink": "/blog/Pika-3.5.2"
   }
 }
