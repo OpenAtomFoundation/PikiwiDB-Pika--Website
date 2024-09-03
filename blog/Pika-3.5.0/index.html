@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="zh-Hans" dir="ltr" class="blog-wrapper blog-post-page plugin-blog plugin-id-default" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.4.0">
+<title data-rh="true">What&#x27;s new in Pika v3.5.0 | PikiwiDB(Pika)</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://www.pikiwidb.com/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://www.pikiwidb.com/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://www.pikiwidb.com/blog/Pika-3.5.0"><meta data-rh="true" property="og:locale" content="zh_Hans"><meta data-rh="true" name="docusaurus_locale" content="zh-Hans"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="zh-Hans"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" property="og:title" content="What&#x27;s new in Pika v3.5.0 | PikiwiDB(Pika)"><meta data-rh="true" name="description" content="时隔两年，Pika 社区正式发布经由社区 50 多人参与开发并在 360 生产环境验证可用的 v3.5.0 版本，新版本在提升性能的同时，也支持了 Codis 集群部署，BlobDB KV 分离，增加 Exporter 等新特性。"><meta data-rh="true" property="og:description" content="时隔两年，Pika 社区正式发布经由社区 50 多人参与开发并在 360 生产环境验证可用的 v3.5.0 版本，新版本在提升性能的同时，也支持了 Codis 集群部署，BlobDB KV 分离，增加 Exporter 等新特性。"><meta data-rh="true" property="og:type" content="article"><meta data-rh="true" property="article:published_time" content="2023-08-25T00:00:00.000Z"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://www.pikiwidb.com/blog/Pika-3.5.0"><link data-rh="true" rel="alternate" href="https://www.pikiwidb.com/blog/Pika-3.5.0" hreflang="zh-Hans"><link data-rh="true" rel="alternate" href="https://www.pikiwidb.com/blog/Pika-3.5.0" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://www.pikiwidb.com/blog/Pika-3.5.0","mainEntityOfPage":"https://www.pikiwidb.com/blog/Pika-3.5.0","url":"https://www.pikiwidb.com/blog/Pika-3.5.0","headline":"What's new in Pika v3.5.0","name":"What's new in Pika v3.5.0","description":"时隔两年，Pika 社区正式发布经由社区 50 多人参与开发并在 360 生产环境验证可用的 v3.5.0 版本，新版本在提升性能的同时，也支持了 Codis 集群部署，BlobDB KV 分离，增加 Exporter 等新特性。","datePublished":"2023-08-25T00:00:00.000Z","author":{"@type":"Person","name":"于雨","description":"dubbogo示土区"},"keywords":[],"isPartOf":{"@type":"Blog","@id":"https://www.pikiwidb.com/blog","name":"Blog"}}</script><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="PikiwiDB(Pika) RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="PikiwiDB(Pika) Atom Feed">
+
+
+
+<link rel="stylesheet" href="/css/katex.min.css"><link rel="stylesheet" href="/assets/css/styles.bf00f426.css">
+<script src="/assets/js/runtime~main.ca847e55.js" defer="defer"></script>
+<script src="/assets/js/main.a98d41ac.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="跳到主要内容"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">跳到主要内容</a></div><nav aria-label="主导航" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="切换导航栏" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/PikiwiDB-Logo.png" alt="Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/PikiwiDB-Logo.png" alt="Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate"></b></a><a class="navbar__item navbar__link" href="/docs/序言">文档</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/blog">博客</a></div><div class="navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="切换浅色/暗黑模式（当前为浅色模式）" aria-label="切换浅色/暗黑模式（当前为浅色模式）" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="container margin-vert--lg"><div class="row"><aside class="col col--3"><nav class="sidebar_re4s thin-scrollbar" aria-label="最近博文导航"><div class="sidebarItemTitle_pO2u margin-bottom--md">全部文章</div><ul class="sidebarItemList_Yudw clean-list"><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/blog/PikiwiDB-Pika--4.0.0">What&#x27;s new in PikiwiDB(Pika) v4.0.0</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/blog/Pika-3.5.4">What&#x27;s new in PikiwiDB(Pika) v3.5.4</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/blog/Pika-3.5.3-en">What&#x27;s new in Pika v3.5.3 （英文版本）</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/blog/Pika-3.5.3">What&#x27;s new in Pika v3.5.3 </a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/blog/Pika-3.5.2">What&#x27;s new in Pika v3.5.2</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/blog/Pika-3.5.1">What&#x27;s new in Pika v3.5.1</a></li><li class="sidebarItem__DBe"><a aria-current="page" class="sidebarItemLink_mo7H sidebarItemLinkActive_I1ZP" href="/blog/Pika-3.5.0">What&#x27;s new in Pika v3.5.0</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/blog/pika-blackwidow">Pika Blackwidow 引擎数据存储格式</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/blog/Pika-Tools-Port-Bin">pika_port 迁移工具</a></li></ul></nav></aside><main class="col col--7"><article><header><h1 class="title_f1Hy">What&#x27;s new in Pika v3.5.0</h1><div class="container_mt6G margin-vert--md"><time datetime="2023-08-25T00:00:00.000Z">2023年8月25日</time> · <!-- -->阅读需 10 分钟</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--6 authorCol_Hf19"><div class="avatar margin-bottom--sm"><div class="avatar__intro"><div class="avatar__name"><span>于雨</span></div><small class="avatar__subtitle">dubbogo示土区</small></div></div></div></div></header><div id="__blog-post-container" class="markdown"><p>时隔两年，Pika 社区正式发布经由社区 50 多人参与开发并在 360 生产环境验证可用的 v3.5.0 版本，新版本在提升性能的同时，也支持了 Codis 集群部署，BlobDB KV 分离，增加 Exporter 等新特性。</p>
+<p>我们将详细介绍该版本引入的重要新特性。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="1-去除-rsync">1 去除 Rsync<a class="hash-link" aria-label="1 去除 Rsync的直接链接" title="1 去除 Rsync的直接链接" href="/blog/Pika-3.5.0#1-去除-rsync">​</a></h2>
+<p>在 v3.5.0 版本之前，Pika 使用 Rsync 工具进行引擎中存量数据的同步，Pika 进程启动时创建 Rsync 子进程。这种同步方式在实际使用中出现了一些问题，包括Pika 进程 crash 后重新拉起无法正常同步以及同步过程中 Rsync 进程无故退出等。在今年发布的 v3.5.0 版本中，我们在全量同步方案方面进行了重要的改进，摒弃了以往使用的 Rsync，实现了全新的数据同步方案，支持了断点续传，动态调节传输限速等特性，以确保同步过程更加稳定、可控。这些改进不仅增强了同步的可靠性，还为用户提供了更好的使用体验。</p>
+<ul>
+<li>
+<p>去除 Rsync 进程 ，使用自研全量同步方式
+<a href="https://github.com/OpenAtomFoundation/pika/pull/1805" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/1805</a></p>
+</li>
+<li>
+<p>实现断点续传，传输限速功能
+<a href="https://github.com/OpenAtomFoundation/pika/pull/1926" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/1926</a></p>
+</li>
+<li>
+<p>Pika 主从同步时，进行 master run_id 的检验
+<a href="https://github.com/OpenAtomFoundation/pika/pull/1805" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/1805</a></p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="2-兼容更多-redis-命令">2 兼容更多 Redis 命令<a class="hash-link" aria-label="2 兼容更多 Redis 命令的直接链接" title="2 兼容更多 Redis 命令的直接链接" href="/blog/Pika-3.5.0#2-兼容更多-redis-命令">​</a></h2>
+<p>在 v3.5.0 版本中，我们迈出了更大的一步，提升了对 Redis 命令的兼容性，对 Redis 命令提供了更广泛的支持。这个版本的改进使得 Pika 在与 Redis 生态系统的集成中表现更加出色，为用户提供了更丰富的功能和更广阔的可能性。我们对命令支持的扩展，为用户提供了更多的灵活性，以满足不同场景下的需求。</p>
+<ul>
+<li>支持 UNLINK 命令
+<a href="https://github.com/OpenAtomFoundation/pika/pull/1273" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/1273</a></li>
+<li>支持 INFO COMMANDSTATS 命令
+<a href="https://github.com/OpenAtomFoundation/pika/pull/1660" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/1660</a></li>
+<li>支持 HELLO、SETNAME 命令
+<a href="https://github.com/OpenAtomFoundation/pika/pull/1245" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/1245</a></li>
+<li>支持 BLPOP、BRPOP 命令
+<a href="https://github.com/OpenAtomFoundation/pika/pull/1548" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/1548</a></li>
+<li>新增 Pika 原创 DISKRECOVERY 命令
+<a href="https://github.com/OpenAtomFoundation/pika/pull/1843" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/1843</a></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="3-rocksdb-版本升级和分级压缩">3 RocksDB 版本升级和分级压缩<a class="hash-link" aria-label="3 RocksDB 版本升级和分级压缩的直接链接" title="3 RocksDB 版本升级和分级压缩的直接链接" href="/blog/Pika-3.5.0#3-rocksdb-版本升级和分级压缩">​</a></h2>
+<p>在 v3.5.0 版本中，我们进行了一项重要的升级，将 RocksDB 引擎升级至 v8.1.1 版本，并实现了分级压缩功能的整合。这一升级不仅是技术的飞跃，也是我们对系统性能和优化的持续关注的体现。通过这项升级，我们为 Pika 增加了更高级别的数据管理能力，同时也让系统更好地适应不同的压缩需求，为用户的数据存储和检索提供了更大的灵活性和效率。</p>
+<ul>
+<li>升级 RocksDB 版本到 v8.1.1
+<a href="https://github.com/OpenAtomFoundation/pika/pull/1396" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/1396</a></li>
+<li>实现 RocksDB 分级压缩
+<a href="https://github.com/OpenAtomFoundation/pika/pull/1365" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/1365</a></li>
+<li>新增 RocksDB 缓存配置项 num-shard-bits 能够从配置文件中读取
+<a href="https://github.com/OpenAtomFoundation/pika/pull/1189" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/1189</a></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="4-支持-blobdb">4 支持 BlobDB<a class="hash-link" aria-label="4 支持 BlobDB的直接链接" title="4 支持 BlobDB的直接链接" href="/blog/Pika-3.5.0#4-支持-blobdb">​</a></h2>
+<p>在 v3.5.0 版本中，我们引入了引人瞩目的创新--对 BlobDB 和 KV 存储层进行了分离，为我们的系统注入了新的活力。这个版本的升级使得 Pika 在数据存储方面更加灵活和高效。我们通过支持 BlobDB KV 分离，提供了更优化的数据存储结构，为用户的数据管理和查询操作带来了更深层次的优势。这一重要改进将在更多应用场景下展现出其强大的潜力。</p>
+<ul>
+<li>支持 BlobDB KV 分离
+<a href="https://github.com/OpenAtomFoundation/pika/pull/1456" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/1456</a></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="5-基于-codis-的集群模式">5 基于 Codis 的集群模式<a class="hash-link" aria-label="5 基于 Codis 的集群模式的直接链接" title="5 基于 Codis 的集群模式的直接链接" href="/blog/Pika-3.5.0#5-基于-codis-的集群模式">​</a></h2>
+<p>在 v3.5.0 版本中，我们积极引入了 Codis 集群模式，此外，我们不仅仅将 Codis 集群模式融入了系统中，还为其提供了迁移 slot 的命令支持，从而实现了更加智能化的集群管理。这一重大变革不仅扩展了 Pika 在大规模数据存储场景中的应用范围，还进一步提升了系统的可扩展性和高可用性。通过引入 Codis 集群模式，我们对用户的数据处理和管理提供了更优化的解决方案。</p>
+<ul>
+<li>
+<p>引入 Codis 到 Pika</p>
+<p><a href="https://github.com/OpenAtomFoundation/pika/pull/1279" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/1279</a></p>
+</li>
+<li>
+<p>引入 Codis 的 CI</p>
+<p><a href="https://github.com/OpenAtomFoundation/pika/pull/1311" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/1311</a></p>
+</li>
+<li>
+<p>支持 Codis 迁移 slot 命令</p>
+<p><a href="https://github.com/OpenAtomFoundation/pika/pull/1632" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/1632</a></p>
+</li>
+<li>
+<p>新增是否在 reload 的 slotmigrate 状态</p>
+<p><a href="https://github.com/OpenAtomFoundation/pika/pull/1700" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/1700</a></p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="6-可观测性">6 可观测性<a class="hash-link" aria-label="6 可观测性的直接链接" title="6 可观测性的直接链接" href="/blog/Pika-3.5.0#6-可观测性">​</a></h2>
+<p>在 v3.5.0 版本中，我们引入了一个创新性的工具--pika_exporter，以提升对 Pika 数据库的可观测性。这一工具的加入不仅是对我们对系统监测能力的持续增强的反映。而在版本的后续更新中，我们进一步充实了指标，不断丰富了 Pika 的可观测性。为用户提供了更为全面和精准的数据洞察力。</p>
+<ul>
+<li>
+<p>新增 Pika 可观测系统 pika_exporter</p>
+<p><a href="https://github.com/OpenAtomFoundation/pika/pull/1388" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/1388</a></p>
+</li>
+<li>
+<p>新增网络 I/O 流量监控指标</p>
+<p><a href="https://github.com/OpenAtomFoundation/pika/pull/1733" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/1733</a></p>
+</li>
+<li>
+<p>新增命令统计耗时指标</p>
+<p><a href="https://github.com/OpenAtomFoundation/pika/pull/1751" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/1751</a></p>
+</li>
+<li>
+<p>新增 estimate_pending_compaction_bytes 度量来分析碎片率指标</p>
+<p><a href="https://github.com/OpenAtomFoundation/pika/pull/1736" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/1736</a></p>
+</li>
+<li>
+<p>新增 RocksDB 指标</p>
+<p><a href="https://github.com/OpenAtomFoundation/pika/pull/1560" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/1560</a></p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="7-容器化部署">7 容器化部署<a class="hash-link" aria-label="7 容器化部署的直接链接" title="7 容器化部署的直接链接" href="/blog/Pika-3.5.0#7-容器化部署">​</a></h2>
+<p>在 v3.5.0 版本中，我们引入了一个具有创新意义的里程碑--pika-operator mvp 版本，这一版本在技术上实现了一个重要目标：将 Pika 单实例服务迁移到 Kubernetes（K8s）平台上的快速部署。这不仅是对我们持续关注行业发展的体现，也是我们不断提升用户体验的追求。通过 pika-operator，我们为用户提供了更便捷的部署方案，将 Pika 的高性能数据库引擎与 Kubernetes 的灵活性相融合，从而为用户的应用环境带来更高效、更弹性的支持。</p>
+<ul>
+<li>实现 Pika 单例服务在 K8s 上快速部署
+<a href="https://github.com/OpenAtomFoundation/pika/pull/1243" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/1243</a></li>
+<li>实现了在 MiniKube 环境中部署 Pika
+<a href="https://github.com/OpenAtomFoundation/pika/pull/1330" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/1330</a></li>
+<li>给 pika-operator 添加 E2E 测试
+<a href="https://github.com/OpenAtomFoundation/pika/pull/1347" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/1347</a></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="8-跨平台编译">8 跨平台编译<a class="hash-link" aria-label="8 跨平台编译的直接链接" title="8 跨平台编译的直接链接" href="/blog/Pika-3.5.0#8-跨平台编译">​</a></h2>
+<p>在 v3.5.0 版本中，Pika 呈现出一种全面性的蓬勃发展态势，得以在不同操作系统平台上展现其优越性。此版本的突破性之处在于，Pika 实现了对 MacOS、CentOS 和 Ubuntu 这些主要平台的完整编译和使用支持。这个举措不仅仅体现了我们对多样化技术环境的关注，也是为了最大程度地拓展用户基础，为广泛的用户群体提供灵活、高效的数据库解决方案。这种跨平台兼容性的加强将 Pika 推向更广阔的技术生态。</p>
+<ul>
+<li>支持 MacOS 平台
+<a href="https://github.com/OpenAtomFoundation/pika/pull/1372" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/1372</a></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="9-多平台集成测试及单元测试">9 多平台集成测试及单元测试<a class="hash-link" aria-label="9 多平台集成测试及单元测试的直接链接" title="9 多平台集成测试及单元测试的直接链接" href="/blog/Pika-3.5.0#9-多平台集成测试及单元测试">​</a></h2>
+<p>在 v3.5.0 版本中，我们迈出了一个令人瞩目的步伐，不仅在多个主要操作系统平台上实现了支持，还在测试领域实施了全面升级。我们为 Ubuntu、CentOS 和 MacOS 这三大平台搭建了持续集成（CI）环境，以确保系统的完整性和稳定性。在测试方面，我们引入了更为广泛的覆盖，包括 Go 语言的集成测试、TCL 的单元测试以及 Python 的端到端（E2E）测试。通过这些测试策略的升级，我们在确保系统性能和可靠性方面迈出了更大的一步。</p>
+<ul>
+<li>新增 CentOS 环境下的 CI
+<a href="https://github.com/OpenAtomFoundation/pika/pull/1534" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/1534</a></li>
+<li>新增 MacOS 环境下的 CI
+<a href="https://github.com/OpenAtomFoundation/pika/pull/1769" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/1769</a></li>
+<li>新增 E2E 测试框架
+<a href="https://github.com/OpenAtomFoundation/pika/pull/1347" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/1347</a></li>
+<li>新增在 Github CI Workflow 中添加 CMake 编译环境
+<a href="https://github.com/OpenAtomFoundation/pika/pull/1268" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/1268</a></li>
+<li>新增在 TCL 脚本中 populate 方法模拟 Redis debug populate 方法，用以填充测试数据
+<a href="https://github.com/OpenAtomFoundation/pika/pull/1693" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/1693</a></li>
+<li>新增在 blackwidow 中添加 CMake 文件，添加对 blackwidow 的单元测试
+<a href="https://github.com/OpenAtomFoundation/pika/pull/1246" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/1246</a></li>
+<li>移植 Redis 测试脚本
+<a href="https://github.com/OpenAtomFoundation/pika/pull/1357" target="_blank" rel="noopener noreferrer">https://github.com/OpenAtomFoundation/pika/pull/1357</a></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="10-others">10 Others<a class="hash-link" aria-label="10 Others的直接链接" title="10 Others的直接链接" href="/blog/Pika-3.5.0#10-others">​</a></h2>
+<p>若您有任何疑问，诚挚欢迎您扫描微信二维码，加入我们的交流群，与一众志同道合的成员展开深入的讨论，我们热切期待与您分享见解、交流心得，为共同的技术探索和创新之旅添砖加瓦。在这个群体中，我们将以卓越的智慧和互动的合作精神，构建出一个相互学习、不断进步的技术共同体。</p>
+<p><img decoding="async" loading="lazy" alt="2023-08-25-Pika-3.5.0" src="/assets/images/2023-08-25-Pika-3.5.0-connect-577bc269745e6841d8dc76a6b24e382c.png" width="747" height="431" class="img_ev3q"></p></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="博文分页导航"><a class="pagination-nav__link pagination-nav__link--prev" href="/blog/Pika-3.5.1"><div class="pagination-nav__sublabel">较新一篇</div><div class="pagination-nav__label">What&#x27;s new in Pika v3.5.1</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/blog/pika-blackwidow"><div class="pagination-nav__sublabel">较旧一篇</div><div class="pagination-nav__label">Pika Blackwidow 引擎数据存储格式</div></a></nav></main><div class="col col--2"><div class="tableOfContents_bqdL thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a class="table-of-contents__link toc-highlight" href="/blog/Pika-3.5.0#1-去除-rsync">1 去除 Rsync</a></li><li><a class="table-of-contents__link toc-highlight" href="/blog/Pika-3.5.0#2-兼容更多-redis-命令">2 兼容更多 Redis 命令</a></li><li><a class="table-of-contents__link toc-highlight" href="/blog/Pika-3.5.0#3-rocksdb-版本升级和分级压缩">3 RocksDB 版本升级和分级压缩</a></li><li><a class="table-of-contents__link toc-highlight" href="/blog/Pika-3.5.0#4-支持-blobdb">4 支持 BlobDB</a></li><li><a class="table-of-contents__link toc-highlight" href="/blog/Pika-3.5.0#5-基于-codis-的集群模式">5 基于 Codis 的集群模式</a></li><li><a class="table-of-contents__link toc-highlight" href="/blog/Pika-3.5.0#6-可观测性">6 可观测性</a></li><li><a class="table-of-contents__link toc-highlight" href="/blog/Pika-3.5.0#7-容器化部署">7 容器化部署</a></li><li><a class="table-of-contents__link toc-highlight" href="/blog/Pika-3.5.0#8-跨平台编译">8 跨平台编译</a></li><li><a class="table-of-contents__link toc-highlight" href="/blog/Pika-3.5.0#9-多平台集成测试及单元测试">9 多平台集成测试及单元测试</a></li><li><a class="table-of-contents__link toc-highlight" href="/blog/Pika-3.5.0#10-others">10 Others</a></li></ul></div></div></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">微信公众号</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://mp.weixin.qq.com/s/CvIdQs3g31DC8JztyymuqQ" target="_blank" rel="noopener noreferrer" class="footer__link-item">PikiwiDB(Pika) 公众号<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">Github 仓库</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/OpenAtomFoundation/pika" target="_blank" rel="noopener noreferrer" class="footer__link-item">PikiwiDB(Pika) 仓库<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">文档仓库</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/pikiwidb/website" target="_blank" rel="noopener noreferrer" class="footer__link-item">PikiwiDB(Pika) 文档仓库<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2024 PikiwiDB 开源数据库社区</div></div></div></footer></div>
+</body>
+</html>
