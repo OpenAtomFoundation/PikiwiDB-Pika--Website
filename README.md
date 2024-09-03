@@ -9,7 +9,7 @@ PikiwiDB（Pika） 的文档网站同 [PikiwiDB(Pika) Wiki](https:/w/github.com/
 ## 如何构建文档网站？
 
 ```shell
-git clone https://github.com/pikiwidb/website.git
+git clone https://github.com/OpenAtomFoundation/PikiwiDB-Pika--Website
 cd website
 npm install
 npm run start

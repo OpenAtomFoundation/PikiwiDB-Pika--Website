@@ -46,7 +46,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/pikiwidb/website/tree/main',
+            'https://github.com/OpenAtomFoundation/PikiwiDB-Pika--Website/tree/main',
             remarkPlugins: [remarkMath],
             rehypePlugins: [rehypeKatex],
           },
@@ -109,12 +109,12 @@ const config = {
             items: [
               {
                 label: 'PikiwiDB(Pika) 文档仓库',
-                href: 'https://github.com/pikiwidb/website',
+                href: 'https://github.com/OpenAtomFoundation/PikiwiDB-Pika--Website',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} PikiwiDB 开源数据库社区`,
+        copyright: `Copyright © ${new Date().getFullYear()} PikiwiDB(Pika) 开源数据库社区`,
       },
       prism: {
         theme: prismThemes.github,
