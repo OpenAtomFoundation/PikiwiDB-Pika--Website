@@ -90,7 +90,7 @@ const config = {
             title: '微信公众号',
             items: [
               {
-                label: 'PikiwiDB(Pika) 公众号',
+                label: 'PikiwiDB 公众号',
                 href: 'https://mp.weixin.qq.com/s/CvIdQs3g31DC8JztyymuqQ',
               },
             ],
@@ -99,7 +99,7 @@ const config = {
             title: 'Github 仓库',
             items: [
               {
-                label: 'PikiwiDB(Pika) 仓库',
+                label: 'PikiwiDB 仓库',
                 href: 'https://github.com/OpenAtomFoundation/pika',
               },
             ],
@@ -108,13 +108,13 @@ const config = {
             title: '文档仓库',
             items: [
               {
-                label: 'PikiwiDB(Pika) 文档仓库',
+                label: 'PikiwiDB 文档仓库',
                 href: 'https://github.com/OpenAtomFoundation/PikiwiDB-Pika--Website',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} PikiwiDB(Pika) 开源数据库社区`,
+        copyright: `Copyright © ${new Date().getFullYear()} PikiwiDB 开源数据库社区`,
       },
       prism: {
         theme: prismThemes.github,
