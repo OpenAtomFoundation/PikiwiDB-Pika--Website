@@ -15,7 +15,10 @@ function HomepageHeader() {
         <Heading as="h1" className="hero__title">
         <img src = "/img/PikiwiDB-Logo.png"/>
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p className="hero__subtitle">
+          为海量数据存储设计的高可用键值数据库<br/>
+          项目由开放原子基金会孵化
+        </p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
