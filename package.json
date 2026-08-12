@@ -4,15 +4,17 @@
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
-    "start": "docusaurus start",
-    "build": "docusaurus build",
+    "start": "node scripts/wiki-sync/sync.js && node scripts/wechat-sync/sync-from-mplist.js && node scripts/wechat-sync/sync.js --replace && docusaurus start",
+    "build": "node scripts/wiki-sync/sync.js && node scripts/wechat-sync/sync-from-mplist.js && node scripts/wechat-sync/sync.js --replace && docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "preinstall": "node preinstall.js"
+    "sync:wechat": "node scripts/wechat-sync/sync-from-mplist.js && node scripts/wechat-sync/sync.js --replace",
+    "sync:wiki": "node scripts/wiki-sync/sync.js",
+    "sync": "node scripts/wiki-sync/sync.js && node scripts/wechat-sync/sync-from-mplist.js && node scripts/wechat-sync/sync.js --replace"
   },
   "dependencies": {
     "@docusaurus/core": "3.4.0",
@@ -22,7 +24,11 @@
     "prism-react-renderer": "^2.3.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "react-markdown": "^10.1.0",
     "rehype-katex": "^7.0.0",
+    "rehype-raw": "^7.0.0",
+    "rehype-sanitize": "^6.0.0",
+    "remark-gfm": "^4.0.1",
     "remark-math": "^6.0.0"
   },
   "devDependencies": {

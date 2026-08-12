@@ -1,0 +1,163 @@
+.wikiHeader {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.wikiHeader h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.wikiSubtitle {
+  color: var(--ifm-color-emphasis-700);
+  font-size: 1rem;
+}
+
+.wikiUpdated {
+  color: var(--ifm-color-emphasis-500);
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+}
+
+.category {
+  margin-bottom: 2.5rem;
+}
+
+.categoryTitle {
+  font-size: 1.4rem;
+  font-weight: 700;
+  border-bottom: 2px solid var(--ifm-color-primary);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.pageList {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.pageList li {
+  margin-bottom: 0.5rem;
+}
+
+.wikiFooter {
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+  color: var(--ifm-color-emphasis-600);
+}
+
+/* 文档内容页样式 */
+.docContainer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.docHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.docHeader h1 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.docSourceLink {
+  font-size: 0.85rem;
+}
+
+.docContent {
+  line-height: 1.7;
+}
+
+.docContent h1,
+.docContent h2,
+.docContent h3 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.docContent pre {
+  background: var(--ifm-code-background);
+  padding: 1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+.docContent code {
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.docContent table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.docContent th,
+.docContent td {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  padding: 0.5rem 0.75rem;
+}
+
+.docContent img {
+  max-width: 100%;
+  height: auto;
+}
+
+.docContent blockquote {
+  border-left: 4px solid var(--ifm-color-primary);
+  padding-left: 1rem;
+  margin-left: 0;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.loading {
+  text-align: center;
+  padding: 3rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.loadingSpinner {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 4px solid var(--ifm-color-emphasis-200);
+  border-top-color: var(--ifm-color-primary);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.error {
+  text-align: center;
+  padding: 3rem;
+  color: var(--ifm-color-danger);
+}
+
+.errorBox {
+  background: var(--ifm-color-emphasis-100);
+  border: 1px solid var(--ifm-color-danger);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1rem auto;
+  max-width: 600px;
+}
+
+.backLink {
+  margin-bottom: 1rem;
+  display: inline-block;
+}

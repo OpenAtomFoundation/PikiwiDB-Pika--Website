@@ -1,0 +1,375 @@
+/**
+ * 微信公众号博客文章配置
+ * 数据来源：微信公众号「Pika开源社区」
+ *
+ * 说明：
+ * 微信公众号没有公开的开放 API，无法直接通过接口获取文章列表。
+ * 本配置文件用于维护公众号文章的元信息（标题、链接、摘要、发布日期）。
+ *
+ * 如何更新：
+ * 推荐使用实时同步小工具自动更新本文件：
+ *   npm run sync:wechat
+ * 详见 scripts/wechat-sync/README.md
+ *
+ * 也可手动更新：
+ * 1. 在微信公众号「Pika开源社区」发布新文章后
+ * 2. 将文章信息添加到下方 WECHAT_ARTICLES 数组中
+ * 3. 网站会自动展示最新的文章列表
+ *
+ * 文章链接获取方式：在微信公众号文章页面点击右上角"复制链接"即可获得
+ */
+
+export const WECHAT_ACCOUNT_NAME = 'Pika开源社区';
+
+/**
+ * 最近一次同步时间（由同步小工具自动写入，格式：YYYY-MM-DD HH:mm:ss）
+ * 手动维护文章时可不填
+ */
+export const WECHAT_LAST_SYNCED = "2026-08";
+
+// 微信公众号文章列表（按发布时间倒序排列，最新的在最前面）
+export const WECHAT_ARTICLES = [
+  {
+    id: "PikiwiDB-Pika-Raft-一致性详解",
+    title: "PikiwiDB(Pika) Raft 一致性详解",
+    summary: "详解PikiwiDB(Pika) Raft一致性",
+    url: "https://mp.weixin.qq.com/s/mqBRDVvh1rkzaA9IhK8oYw",
+    date: "2026-01-29",
+    cover: "https://mmbiz.qpic.cn/mmbiz_jpg/UymVibR2bibiaLN84cQJ34HVAg6UWmmSbBaL1ohiaMQvfNyfXlUODQ0dYh1cyDyNibXYgQdeRBx3WjWOMg5IJejlvyg/0?wx_fmt=jpeg",
+  },
+  {
+    id: "PikiwiDB-pika-分布式集群架构解析",
+    title: "PikiwiDB(pika) 分布式集群架构解析",
+    summary: "概述 PikiwiDB(pika)3.5.X版本发布了分布式集群方案",
+    url: "https://mp.weixin.qq.com/s/OMcV6-0kYgTjhkbSMX9_2w",
+    date: "2025-11-26",
+    cover: "https://mmbiz.qpic.cn/mmbiz_jpg/UymVibR2bibiaLHrABCpmk0GqYRNnICJClEoj3p75hR4XJUTBocicsH4XtoW0KtpXduKYiaevWukEGofjnGkz4qbcOw/0?wx_fmt=jpeg",
+  },
+  {
+    id: "PikiwiDB-Pika-全版本热迁工具震撼发布",
+    title: "PikiwiDB(Pika) 全版本热迁工具震撼发布",
+    summary: "🧩 PikiwiDB (Pika) 全版本热迁工具震撼发布—— 3.2.2 / 3.3.6 / 3.5 / 4.0",
+    url: "https://mp.weixin.qq.com/s/e3qtQwc5Vv1Ro4zaiC0CXw",
+    date: "2025-10-31",
+    cover: "https://mmbiz.qpic.cn/mmbiz_jpg/UymVibR2bibiaIRTFNiaBPune8Jkhc0hgMcZFQLBKbf2KoVSiaicI6sq78N700QqELnHK9HEiaMoM7PTSzOwTOXOnVcUw/0?wx_fmt=jpeg",
+  },
+  {
+    id: "PikiwiDB-Pika-v3-5-6-稳定性与性能的完美结合",
+    title: "PikiwiDB (Pika) v3.5.6 - 稳定性与性能的完美结合",
+    summary: "PikiwiDB(Pika) v3.5.6 版本发布文档",
+    url: "https://mp.weixin.qq.com/s/C-NpuFbvQhpNgaiiRkMyLA",
+    date: "2025-09-09",
+    cover: "https://mmbiz.qpic.cn/mmbiz_jpg/UymVibR2bibiaKMqrdc1KfrT71QCU3vGn8tt1rvwTsvmciaUV9wL9qWUiaBlB6jmFLdMU5icqh5T2ibH1E9mpL9fPZ80g/0?wx_fmt=jpeg",
+  },
+  {
+    id: "RocksDB-Cloud-存算分离解析",
+    title: "RocksDB-Cloud 存算分离解析",
+    summary: "本篇文章基于代码示例对 RocksDB-Cloud 进行源码分析以及基于 RocksDB-Cloud 如何快速搭建一个简单的存算分离 KV 存储服务。",
+    url: "https://mp.weixin.qq.com/s/S1zVyhqnm_JzyHNnnQ1O-Q",
+    date: "2025-01-14",
+    cover: "https://mmbiz.qpic.cn/mmbiz_jpg/UymVibR2bibiaLmiagUnzwRs8EEJUZUmlwPXxT68ZoP85DC2BbCIoICqGic52XfMRQrQQCOo1wqIjL22Bwkohoic4GcQ/0?wx_fmt=jpeg",
+  },
+  {
+    id: "喜报-PikiwiDB-开源社区荣获-2024数据库国内活跃开源项目-奖",
+    title: "喜报｜PikiwiDB 开源社区荣获“2024数据库国内活跃开源项目”奖",
+    summary: "PikiwiDB 开源社区荣获“2024数据库国内活跃开源项目”奖",
+    url: "https://mp.weixin.qq.com/s/d7lvpeUfzkCAwC2c55ORDw",
+    date: "2024-12-23",
+    cover: "https://mmbiz.qpic.cn/mmbiz_jpg/UymVibR2bibiaLz66l3udPrciaMQ4Eecn3UmGGKz7ibsibEibc9nRKmdeODcFkG5azKBmfKzISM6YxnfyIknVVJYBNyXA/0?wx_fmt=jpeg",
+  },
+  {
+    id: "详解-Pika-V3-5-0-新全量复制机制",
+    title: "详解 Pika V3.5.0 新全量复制机制",
+    summary: "本文章主要介绍 Pika 去除 Rsync，使用自研主从复制方案进行全量复制的架构逻辑。",
+    url: "https://mp.weixin.qq.com/s/xoRcCCVyZ2fAdhD1v3-MRA",
+    date: "2024-11-13",
+    cover: "https://mmbiz.qpic.cn/mmbiz_jpg/UymVibR2bibiaLyejzbnBglBl49ib2fgjgfN0G5HGv4lClXBYp5Gu7GoNp0AsYEL736mYVbHt5Jh5qC27lEXUNJScQ/0?wx_fmt=jpeg",
+  },
+  {
+    id: "RocksDB-KV-分离实现解析",
+    title: "RocksDB KV 分离实现解析",
+    summary: "RocksDB KV 分离实现解析",
+    url: "https://mp.weixin.qq.com/s/y2EflPTfyYGOUFy3m5t8cA",
+    date: "2024-09-30",
+    cover: "https://mmbiz.qpic.cn/mmbiz_jpg/UymVibR2bibiaI0Mvc84WrbABQdahhGquxDUGYVrev1Vib0SwAFCrxtKeAXyAMiaMs6fthD9hycqHBTS91KfwMmZ1jQ/0?wx_fmt=jpeg",
+  },
+  {
+    id: "Pika版本升级线上最佳实践",
+    title: "Pika版本升级线上最佳实践",
+    summary: "本篇文章将结合线上升级经验，介绍升级以及回滚方案，助力更平稳地升级Pika版本。",
+    url: "https://mp.weixin.qq.com/s/2utt7h9FJ7MYTlGlSp7OPg",
+    date: "2024-09-11",
+    cover: "https://mmbiz.qpic.cn/mmbiz_jpg/UymVibR2bibiaKloxUCiaNWslbjC1q9DFQ7qjA1z59Id3291Ra3WQOuAjeonZWwcaWKBkeupric5s1IXF5jeFspvHIA/0?wx_fmt=jpeg",
+  },
+  {
+    id: "What-39-s-new-in-PikiwiDB-Pika-v3-5-5",
+    title: "What&#39;s new in PikiwiDB(Pika) v3.5.5",
+    summary: "PikiwiDB(Pika)【下文简称 Pika】长期维护版本 v3.5的最新版本 — v3.5.5 今天正式发布",
+    url: "https://mp.weixin.qq.com/s/UUiIPWy8JUAg4G1RkKyBBA",
+    date: "2024-08-20",
+    cover: "https://mmbiz.qpic.cn/mmbiz_jpg/UymVibR2bibiaIIYgokNDJIIpKJUewU0tUNvH9VLe7vYpexkP331ibmico2V8dyYAwqqcTZpCSqxmQowg7IX0G3DE3A/0?wx_fmt=jpeg",
+  },
+  {
+    id: "What-39-s-new-in-PikiwiDB-Pika-v4-0-0",
+    title: "What&#39;s new in PikiwiDB(Pika) v4.0.0",
+    summary: "尊敬的社区成员及技术爱好者们：PikiwiDB(Pika) 最新版本 v4.0.0 版本正式发布。",
+    url: "https://mp.weixin.qq.com/s/jFkpR98bk0nvUY_o8SkYOA",
+    date: "2024-07-08",
+    cover: "https://mmbiz.qpic.cn/mmbiz_jpg/UymVibR2bibiaLD8eibByUdPsibicoAMkjQbRVsQqOWsdlN80fLLcMAGCFIyJA3E7TpiaQDpyVylqiaFUEiaf0hFDu3QlTQ/0?wx_fmt=jpeg",
+  },
+  {
+    id: "PikiwiDB-Pika-3-5-最佳实践",
+    title: "PikiwiDB(Pika) 3.5 最佳实践",
+    summary: "PikiwiDB(Pika) 3.5 最佳实践三十三计",
+    url: "https://mp.weixin.qq.com/s/7dN77JTeHPPDPX9FPrV6_g",
+    date: "2024-07-01",
+    cover: "https://mmbiz.qpic.cn/mmbiz_jpg/UymVibR2bibiaIcKQhgHibc9QRH41sNiaORia5JyqUxsBHmHYj1XIyTnd1l1NIWHNlrOUYFJic1XBHDBLmvWMId3VQ8ng/0?wx_fmt=jpeg",
+  },
+  {
+    id: "PikiwiDB-Pika-混合存储之批量查询",
+    title: "PikiwiDB(Pika) 混合存储之批量查询",
+    summary: "批量查询热数据缓存功能显著提升了批量查询性能，降低了查询延迟和失败率",
+    url: "https://mp.weixin.qq.com/s/KFLPruSdB66TMRxUfR9PbQ",
+    date: "2024-06-20",
+    cover: "https://mmbiz.qpic.cn/mmbiz_jpg/UymVibR2bibiaJhlAkMvB3Fb9icTJREmVQj8aRtf7YBM0CG0S4HIqNoANWIM1ceL9osibUqMV2ZDMwcy78QIRUfrsRQ/0?wx_fmt=jpeg",
+  },
+  {
+    id: "万字长文详解降本增效利器-PikiwiDB-Pika-混合存储原理",
+    title: "万字长文详解降本增效利器 PikiwiDB(Pika) 混合存储原理",
+    summary: "2023 年 11 月 PikiwiDB 社区发布了 v3.5.2 版本，我们引入了一个关键特性：通过在 Pika 的处理命令层集成 Redis 缓存层，对冷数据与热数据进行了分离，在性能和成本之间达成了平衡，实现了混合存储。",
+    url: "https://mp.weixin.qq.com/s/Kbma_hbouvZD0lJrR06EMg",
+    date: "2024-06-06",
+    cover: "https://mmbiz.qpic.cn/mmbiz_jpg/UymVibR2bibiaK8ujibHRVn9FcFwcMCxpJW3uAnw3ib4WqAaObgqe7dBibYvKBI9Wb4OYoibWou21wbCicPrgVT6Xka1Tg/0?wx_fmt=jpeg",
+  },
+  {
+    id: "Pika-主从数据同步状态指标-repl_connect_status-简介",
+    title: "Pika 主从数据同步状态指标 “repl_connect_status” 简介",
+    summary: "为了方便用户或其他旁路系统实时获取 Pika 的数据同步状态，我们在 PR #2656 中新增了主从数据同步 info 命令指标 ”repl_connect_status“。",
+    url: "https://mp.weixin.qq.com/s/GiAXEnnY2BFf7KKGf8bMBw",
+    date: "2024-06-03",
+    cover: "https://mmbiz.qpic.cn/mmbiz_jpg/UymVibR2bibiaIehMtNacHpaicvBSvWcBTzgCHLlpk2EHJCicrICclOKCfxJmFWwnRX713OyFGSbxdXM3PGIDE8LyPA/0?wx_fmt=jpeg",
+  },
+  {
+    id: "PikiwiDB-Pika-社区参与的-2023年中国数据库行业年度分析报告-正式发布",
+    title: "PikiwiDB(Pika) 社区参与的《2023年中国数据库行业年度分析报告》正式发布！",
+    summary: "为明晰发展脉络，把握未来趋势，墨天轮于5月29日正式发布 《2023年中国数据库年度行业分析报告》。该报告由",
+    url: "https://mp.weixin.qq.com/s/L44sNy9AjdnySzuoicc7KA",
+    date: "2024-06-03",
+    cover: "https://mmbiz.qpic.cn/mmbiz_jpg/B2Bib3LWGf4iayHdWkdjwa65eHeOTM3aomN05XcgicYM6DKfxIjia8grtXkNboxsUhWMoe35xmoLibFe46Ytz3MLyPw/0?wx_fmt=jpeg",
+  },
+  {
+    id: "如何通过-Unit-Test-调试-PikiwiDB-Pika-进程",
+    title: "如何通过 Unit Test 调试 PikiwiDB(Pika) 进程",
+    summary: "背景PikiwiDB(Pika)[以下简称 Pika] 的 UT 测试，默认是先在本地启动一个独立的 pika",
+    url: "https://mp.weixin.qq.com/s/U4Z9Uyv_FblG4kuwcjoKGA",
+    date: "2024-05-24",
+    cover: "https://mmbiz.qpic.cn/mmbiz_jpg/UymVibR2bibiaL2icUtMz4HhZNlZjtdbIs5OQEG145OhoeVzzzoVJapx3enchTicyUj6yUZrichpek9q52BID3undpvg/0?wx_fmt=jpeg",
+  },
+  {
+    id: "What-39-s-new-in-PikiwiDB-Pika-v3-5-4",
+    title: "What&#39;s new in PikiwiDB(Pika) v3.5.4",
+    summary: "PikiwiDB(Pika) 社区非常荣幸地宣布，我们的最新 v3.5.4 正式生产可用版本现已发布。",
+    url: "https://mp.weixin.qq.com/s/_l0ojZKFXanRN4rG7ihZFQ",
+    date: "2024-05-16",
+    cover: "https://mmbiz.qpic.cn/mmbiz_jpg/UymVibR2bibiaKsiaYqC2dicmbFM43TfsfoH1R88YxOYjkDddsvTEUKGJEXqu2ViakOib61HpibIhovLEcKwvp7ibTYQlOg/0?wx_fmt=jpeg",
+  },
+  {
+    id: "PikiwiDB-Pika-又参加-2024-OSPP-提供-8-道题目和实习机会",
+    title: "PikiwiDB (Pika)  又参加 2024 OSPP，提供 8 道题目和实习机会",
+    summary: "自从 2021 年开始，于雨曾先后带领 apache/dubbo-go、apache/dubbo-go-pixiu、kata、nydus、dragonfly、PikiwiDB(Pika) 等多个项目参与 OSPP 开源之夏。",
+    url: "https://mp.weixin.qq.com/s/wpN4sNmMxnm-eZcXI6CriA",
+    date: "2024-05-14",
+    cover: "https://mmbiz.qpic.cn/mmbiz_jpg/UymVibR2bibiaIibwpU7QArQh6bUicHreS14Q6gLUcfibvcHEA8OHS4cHt9rsCtMLcWMsicCIKUqSkicGxT8wwBXHynIvw/0?wx_fmt=jpeg",
+  },
+  {
+    id: "PikiwiDB-Pika-邀你参加-2024-开源之夏-赢万元大奖",
+    title: "PikiwiDB(Pika) 邀你参加 2024 开源之夏，赢万元大奖",
+    summary: "热爱开源的你，准备好迎接挑战了吗？PikiwiDB (Pika) 诚挚邀请你加入 2024 开源之夏，一起探索开源世界的奥秘，赢取丰厚奖品，收获宝贵经验！",
+    url: "https://mp.weixin.qq.com/s/FOPaf6q6tP0jSTOuPFnSbg",
+    date: "2024-04-25",
+    cover: "https://mmbiz.qpic.cn/mmbiz_jpg/UymVibR2bibiaIXCjHWo5TO2ZTcQBcjeqBceXb9wSTpdvVmjIPhU9huDZ9jiaUUOXiaKNOxiaSNxD13ySxibkv2EVC94Q/0?wx_fmt=jpeg",
+  },
+  {
+    id: "5-月-18-日-360-大厦-PikiwiDB-和-TiDB-Kubeblocks-一起聊聊如何做",
+    title: "5 月 18 日 360 大厦，PikiwiDB 和 TiDB、Kubeblocks 一起聊聊如何做到成本、效率两手抓！",
+    summary: "北京大本营的小伙伴们！5月18日，北京 360 大厦线下见！",
+    url: "https://mp.weixin.qq.com/s/WIrA_ks-AgA2rumULDSN7g",
+    date: "2024-04-24",
+    cover: "https://mmbiz.qpic.cn/mmbiz_jpg/UymVibR2bibiaIgIliaQhVWjS7lU2TQvynIoMEA7auITQTeozxUCxGRyDQo4hkEZO1OSTEFicdKSgrvicBgMyLryAUmg/0?wx_fmt=jpeg",
+  },
+  {
+    id: "DTC-2024-以及-OSPP-校园行精彩回顾-及-OpenAtom-项目负责人交流活动预告",
+    title: "DTC 2024 以及 OSPP 校园行精彩回顾 及 OpenAtom 项目负责人交流活动预告",
+    summary: "在这个北方杨柳轻舞的人间四月天， PikiwiDB(Pika) 与你相约在这个开源的季节，社区活跃非凡。",
+    url: "https://mp.weixin.qq.com/s/d5UnQb0mlMzQQi2hchW-og",
+    date: "2024-04-13",
+    cover: "https://mmbiz.qpic.cn/mmbiz_jpg/UymVibR2bibiaIJk7icp4QSur5ztbQAIGI6j6Gk3KZFicA6BmoOnDvBk8nHD1t02L6WSjvsSzreFhday8IZfcGuOv2g/0?wx_fmt=jpeg",
+  },
+  {
+    id: "校园行-PikiwiDB-Pika-参与开源之夏2024走进华南理工大学",
+    title: "校园行｜PikiwiDB(Pika) 参与开源之夏2024走进华南理工大学",
+    summary: "春日正浓，开源之夏2024的社区已集结完毕，今年，在业界和广大开源同仁的关注和支持下，开源之夏最终成功上线1",
+    url: "https://mp.weixin.qq.com/s/31Sym1GQ4g6RsVkgweZU_Q",
+    date: "2024-04-09",
+    cover: "https://mmbiz.qpic.cn/sz_mmbiz_jpg/MIibpjkyhRYphRXuI8lvz3Is9kDq8njBV3dkSObDp2HUPHovbsloKaNRQOVpu2c7fK10Kp9nXTDNic38iadxHtvhQ/0?wx_fmt=jpeg",
+  },
+  {
+    id: "PikiwiDB-Pika-Redis-们永远的好伙伴",
+    title: "PikiwiDB(Pika)：Redis 们永远的好伙伴",
+    summary: "PikiwiDB 持开放态度，愿意与所有声称是 “Redis最佳替代” 的其他项目展开协作",
+    url: "https://mp.weixin.qq.com/s/Htv-Ov4tv-OoREh_oK-D4w",
+    date: "2024-03-29",
+    cover: "https://mmbiz.qpic.cn/mmbiz_jpg/UymVibR2bibiaKhvIHREVlQleV1EuTb1kC6qFl2gy3qzTdJ1iaVEQib8q4JPicarhNiaRSxw2Nfu1CiaV86qrCOM3H0OKA/0?wx_fmt=jpeg",
+  },
+  {
+    id: "What-39-s-new-in-PikiwiDB-Pika-v3-5-3-正式版",
+    title: "What&#39;s new in PikiwiDB(Pika) v3.5.3(正式版)",
+    summary: "介绍了 PikiwiDB(Pika)  v3.5.3 正式版本相关更新点",
+    url: "https://mp.weixin.qq.com/s/XrkM4Qf0w3hANwmdkPR7bg",
+    date: "2024-03-27",
+    cover: "https://mmbiz.qpic.cn/mmbiz_jpg/UymVibR2bibiaL8G3cWPjV9lKZokcGODL7xP9q542T9adgQyjhqqAHIooy0TmZ4rsWMkUAxkfuaicPV52eFCibibl1Hg/0?wx_fmt=jpeg",
+  },
+  {
+    id: "What-39-s-new-in-PikiwiDB-Pika-v3-5-3",
+    title: "What&#39;s new in PikiwiDB(Pika) v3.5.3",
+    summary: "PikiwiDB(Pika) 社区宣布，我们今天发布了 Pika v3.5.3 版本 https://gith",
+    url: "https://mp.weixin.qq.com/s/2M0yBgpBYDxCStzLqGDUnQ",
+    date: "2024-02-07",
+    cover: "https://mmbiz.qpic.cn/mmbiz_jpg/UymVibR2bibiaJWIVicPVb4X9KBJvvb2V5agf9Xed3nFF41ek0fFTaEpGjk0TBm6MaNSf6cvdRyMIOKnB6FTpic3RSQ/0?wx_fmt=jpeg",
+  },
+  {
+    id: "PikiwiDB-原Pika-项目荣获-2023-年度-创新产品与解决方案",
+    title: "PikiwiDB(原Pika) 项目荣获 “2023 年度 创新产品与解决方案”",
+    summary: "继 2023.12 月 PikiwiDB(原Pika) 社区荣获 OSCHINA 颁发的 “2023 年度优秀开源技术团队” 后，PikiwiDB(原Pika) 项目荣获 “创新产品与解决方案”  大奖！",
+    url: "https://mp.weixin.qq.com/s/u2m-EDaPwywq5o_qgknDfw",
+    date: "2024-02-01",
+    cover: "https://mmbiz.qpic.cn/mmbiz_jpg/UymVibR2bibiaKwnFKTp9kkTFp2fAkP7AkYrRqpCGq1tH910eIXT8gBOvQzzoNDfchYrkcaXFF9snG017saXMD8IQ/0?wx_fmt=jpeg",
+  },
+  {
+    id: "Farewell-to-Pika-Embracing-the-Arrival-of-PikiwiDB",
+    title: "Farewell to Pika,  Embracing the Arrival of PikiwiDB in 2024",
+    summary: "今年(2023年) 3 月份于某接手项目时，OpenAtom 基金会 Pika 项目对接人告诉我，OpenA",
+    url: "https://mp.weixin.qq.com/s/C7HtjkkIa2BYMYKkwhrUDA",
+    date: "2023-12-29",
+    cover: "https://mmbiz.qpic.cn/mmbiz_jpg/UymVibR2bibiaKaxSbwRNJZSwxzrkCEpeFvcpBwMWb9hQhLSq5r3C8hUws2UNMDRKuR4ya66r3h9LcuuG6NRl0A6g/0?wx_fmt=jpeg",
+  },
+  {
+    id: "基于-KubeBlocks-的-PikiwiDB-原-Pika-云化探索与规划",
+    title: "基于 KubeBlocks 的 PikiwiDB(原 Pika) 云化探索与规划",
+    summary: "一起来看 PikiwiDB(原Pika) 如何借助 KubeBlocks 的经验和抽象能力，在云环境中实现高效、便捷的部署和管理，以及 2023 年 PikiwiDB(原Pika) 的Serverless 架构演进规划。",
+    url: "https://mp.weixin.qq.com/s/dV3A1_OFDXkMpDr-Vs71DQ",
+    date: "2023-12-27",
+    cover: "https://mmbiz.qpic.cn/mmbiz_jpg/UymVibR2bibiaKDHhBcJGoIKIJWFdWkTEZwibxiaNZGIibicUQBicvibfJ71b3lmuPyXKZyVgQjMpeHvGZWwTTbMiaAIRn1A/0?wx_fmt=jpeg",
+  },
+  {
+    id: "Pika-社区喜获-2023年度优秀开源技术团队",
+    title: "Pika 社区喜获 “2023年度优秀开源技术团队”",
+    summary: "Pika 社区喜获 “2023年度优秀开源技术团队”",
+    url: "https://mp.weixin.qq.com/s/tlLrotLcNnh7n5yg7w7tWQ",
+    date: "2023-12-08",
+    cover: "https://mmbiz.qpic.cn/mmbiz_jpg/UymVibR2bibiaLMKJZMGibO7Lvic13eicE5kjiaeMmI0tQp41vMWzEagia7T7R5kd4PTib00VEfDdK1s0n1t7HjRzCLQINQ/0?wx_fmt=jpeg",
+  },
+  {
+    id: "What-39-s-new-in-Pika-v3-5-2",
+    title: "What&#39;s new in Pika v3.5.2",
+    summary: "Pika 3.5.2 版本特性说明",
+    url: "https://mp.weixin.qq.com/s/KQRewlKQmBDTeSesCCkO9g",
+    date: "2023-12-01",
+    cover: "https://mmbiz.qpic.cn/mmbiz_jpg/UymVibR2bibiaLepKAicWZ3ficXiaYGz6oy8P3dfVUXBq8A8jIdZotUhdQbyZ7aq6eS19cTPH4qWBkQr1BK0MicVkxOvQ/0?wx_fmt=jpeg",
+  },
+  {
+    id: "活动报名-KubeBlocks-x-GreptimeDB-x-Pika-北京联合-Meetup-共商",
+    title: "活动报名｜KubeBlocks x GreptimeDB x Pika 北京联合 Meetup！共商云原生时代下数据库的新趋势",
+    summary: "共商云原生时代下数据库的新趋势",
+    url: "https://mp.weixin.qq.com/s/1ZTi6jkSvt2278vU7DG0GQ",
+    date: "2023-10-19",
+    cover: "https://mmbiz.qpic.cn/mmbiz_jpg/UymVibR2bibiaLiaZqhGwCib6HuEib8xr2qbQTQcKiathjeI0jib789N9icZab0eFOleYaaZvsItlPPIcKRoaR4ArT3nZmg/0?wx_fmt=jpeg",
+  },
+  {
+    id: "What-39-s-new-in-Pika-v3-5-1",
+    title: "What&#39;s new in Pika v3.5.1",
+    summary: "Pika3.5.1发版文档",
+    url: "https://mp.weixin.qq.com/s/ALqnVqwBYmT60kmdNA-tqQ",
+    date: "2023-09-28",
+    cover: "https://mmbiz.qpic.cn/mmbiz_jpg/UymVibR2bibiaKGSYe0XbP6teHsTq0q8b0zo0Jaxg1MMf6ky13rpOKRRUA64mfkRMOUgWfNiaZcfRwsUKuos3yxJKQ/0?wx_fmt=jpeg",
+  },
+  {
+    id: "喜马拉雅-Redis-与-Pika-缓存使用军规",
+    title: "喜马拉雅 Redis 与 Pika 缓存使用军规",
+    summary: "喜马拉雅 Redis 与 Pika 缓存使用规范",
+    url: "https://mp.weixin.qq.com/s/QVL586fh3Su3M-7owlRABg",
+    date: "2023-09-08",
+    cover: "https://mmbiz.qpic.cn/mmbiz_jpg/BrJZo7nmPJgduNGMorXY8iap1ia4YIWcPeIh3icHRFOtk654dJC4vKMo5AZj71JWTYFBmk81nNf830aPQXVlGTywA/0?wx_fmt=jpeg",
+  },
+  {
+    id: "OpenAtom开源大赛-Pika-赛题放出-快来报名-50万等你拿",
+    title: "OpenAtom开源大赛 Pika 赛题放出，快来报名，50万等你拿！！！",
+    summary: "2023年8月，开源和信息消费大赛新闻发布会在北京召开，首届开放原子开源大赛也开始了报名计划！此次开源大赛，",
+    url: "https://mp.weixin.qq.com/s/cjR15x5ydrZfr5iLNlzIDg",
+    date: "2023-09-06",
+    cover: "https://mmbiz.qpic.cn/mmbiz_jpg/UymVibR2bibiaKX64nYjSeL3C95jNK8H8nEyiaePhOGnIFnjrBskqXEzp6KXCZmTa8AhRlJBK2Khz5m7sice9cgVs3A/0?wx_fmt=jpeg",
+  },
+  {
+    id: "Step-By-Step-示范让-rocksdb-cloud-在-S3-Run-起来",
+    title: "Step By Step 示范让 rocksdb-cloud 在 S3 Run  起来",
+    summary: "逐步示范让 Rocksdb-cloud 在 S3 Run  起来",
+    url: "https://mp.weixin.qq.com/s/j_nrhp8Ho4BEZAZ0HY827w",
+    date: "2023-06-16",
+    cover: "https://mmbiz.qpic.cn/mmbiz_jpg/UymVibR2bibiaIB7TFf5WuUicSo4sFxIMlrNRHYnq6XrOKSYXrf43Ulk5vQ1UdCnoPYKAaJsm5aDgTv6WncZrzicqQQ/0?wx_fmt=jpeg",
+  },
+  {
+    id: "开源之夏报名开启-Pika-项目一览",
+    title: "开源之夏报名开启！Pika 项目一览",
+    summary: "学生报名开启！开源之夏 2023 学生报名 4 月 29 日正式开启啦！4 月 29 号之后同学们就可以在开",
+    url: "https://mp.weixin.qq.com/s/Wvjm-vANauxJAsBzfTH6XA",
+    date: "2023-04-29",
+    cover: "https://mmbiz.qpic.cn/mmbiz_jpg/UymVibR2bibiaJ7Eib7HBhQA3pLyRThNiavB8obWZgc5bjCFPn6uWrtk76ujCMR4bU5N6tRnIsnNb9yMe1oPRH6GAlA/0?wx_fmt=jpeg",
+  },
+  {
+    id: "Pika数据库-陈磊-云时代下-键值数据库是否会被替代",
+    title: "Pika数据库 陈磊：云时代下，键值数据库是否会被替代？",
+    summary: "在共同推进国产化生态发展的进程下，墨天轮正式推出“国产数据库沙龙”系列直播活动，将定期邀请各国产数据库产品专",
+    url: "https://mp.weixin.qq.com/s/CYB2p54638opv9cafiLXgQ",
+    date: "2022-03-22",
+    cover: "http://mmbiz.qpic.cn/mmbiz_jpg/hThlEwQiaiccf8iaebRY5zLDgAvL2K8obd0395N5Ih1gBW64OEys0MJqSkLanffUibg6wYdB2pjSh2L2VGjzmJtb3A/0?wx_fmt=jpeg",
+  },
+  {
+    id: "Pika在360的应用与实践",
+    title: "Pika在360的应用与实践",
+    summary: "随着业务量快速发展，用户对Redis 这种速查KV缓存型数据库需求越来越高，不仅要快，还要持久化安全。同时进行扩容以及分析rdb等也会对系统内存造成挑战，还有重要的一点就是内存太贵了, 用不起用不起～为此Pika 诞生了。",
+    url: "https://mp.weixin.qq.com/s/-nF2duv_omCa5NjmGsyM1g",
+    date: "2021-10-26",
+    cover: "http://mmbiz.qpic.cn/mmbiz_jpg/UymVibR2bibiaLxspIP6zjicrQTO5ENNVTPgxIvfIzIiaP3T2WTeU3KEIMFiaZ6mAYvCqFyP1QiaVnlZZD0skG0XokicxQ/0?wx_fmt=jpeg",
+  },
+  {
+    id: "Pika-的存储挑战",
+    title: "Pika 的存储挑战",
+    summary: "随着Pika开源后在互联网公司的广泛使用，Pika面临新的挑战。核心痛点在于Pika无法有效解决单数据库容量严重依赖于单块硬盘容量的问题。",
+    url: "https://mp.weixin.qq.com/s/GxGv2m98GuEfqTGbmBxGgw",
+    date: "2021-10-11",
+    cover: "http://mmbiz.qpic.cn/mmbiz_jpg/UymVibR2bibiaIkNrSeWicyBLQTGnzwJyC5lVsQjFO2YiaibWnYu3Sh6mbiahD0FceR1PaFibPVvNO66EVKiaMDicaTcrFJA/0?wx_fmt=jpeg",
+  },
+  {
+    id: "KV存储成本降低70-pika在DataVisor的选型及落地",
+    title: "KV存储成本降低70%，pika在DataVisor的选型及落地",
+    summary: "pika在DataVisor的选型及落地    随着DataVisor业务发展越来快，接入的客户越来越多，流",
+    url: "https://mp.weixin.qq.com/s/V4rvDkZXPcKaog7IG3pmAw",
+    date: "2021-10-08",
+    cover: "http://mmbiz.qpic.cn/mmbiz_jpg/ZRdicN1vUkIMkiaeY5NcQnbtiaHj0OE2BYSibW7waLadxM5ASLvIsBb85iceGqo83enAqgmsRKZO5dw2FWc7BfbtA4A/0?wx_fmt=jpeg",
+  },
+  {
+    id: "OpenAtom-Pika-来了",
+    title: "OpenAtom Pika 来了！",
+    summary: "Pika 是一个基于硬盘存储、完全兼容 Redis 协议、解决 Redis 由于存储数据量巨大而导致内存容量瓶颈的 KV 数据库。",
+    url: "https://mp.weixin.qq.com/s/K2tzOzbiLPaTG_PCdS9WIQ",
+    date: "2021-09-14",
+    cover: "http://mmbiz.qpic.cn/mmbiz_jpg/UymVibR2bibiaJHAZu2ibib4Bkugl3zWBWIg19Kia19bibWicDDibeDIdPkyYEY1u19JEUNM0PnHQVQuqTkwUnd9zwkgIVA/0?wx_fmt=jpeg",
+  },
+];
+
+/**
+ * 微信公众号介绍页面链接
+ * 可在微信公众平台获取公众号的永久链接
+ */
+export const WECHAT_ACCOUNT_URL =
+  'https://mp.weixin.qq.com/s/CvIdQs3g31DC8JztyymuqQ';

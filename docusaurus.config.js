@@ -41,25 +41,19 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: {
-          sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/OpenAtomFoundation/PikiwiDB-Pika--Website/tree/main',
-            remarkPlugins: [remarkMath],
-            rehypePlugins: [rehypeKatex],
-          },
+        // 文档不再使用本地 docs 目录，改为实时获取 GitHub Wiki 内容
+        // 详见 src/pages/wiki/ 和 src/wiki/config.js
+        docs: false,
         theme: {
           customCss: './src/css/custom.css',
         },
-        blog: {
-          blogSidebarTitle: '全部文章',
-          blogSidebarCount: 'ALL',
-        },
+        // 博客不再使用本地 blog 目录，改为展示微信公众号文章
+        // 详见 src/pages/blog/ 和 src/wechat/config.js
+        blog: false,
       }),
     ],
   ],
+  plugins: [],
   stylesheets: [
     {
       href: '/css/katex.min.css',
@@ -79,8 +73,8 @@ const config = {
           src: 'img/PikiwiDB-Logo.png',
         },
         items: [
-          {to: 'docs/序言', label: '文档', position: 'left'},
-          {to: 'blog', label: '博客', position: 'left'}
+          {to: '/wiki', label: '文档', position: 'left'},
+          {to: '/blog', label: '博客', position: 'left'}
         ],
       },
       footer: {
