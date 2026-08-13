@@ -15,26 +15,42 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
           # 如果你文档需要 Git 子模块，取消注释下一行
           # submodules: true
 
-
-
       - name: 设置 Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
 
       - name: 安装依赖
-        run: npm install
+        run: npm ci
+
+      - name: 同步 Wiki 兜底清单
+        run: node scripts/wiki-sync/sync.js
+        continue-on-error: true
+        # Wiki 兜底清单生成失败不阻断构建：
+        # 仓库中已提交 static/wiki-pages.json，且前端会实时拉取 GitHub Wiki
+
+      - name: 同步微信公众号文章
+        run: |
+          node scripts/wechat-sync/sync-from-mplist.js
+          # 若抓取结果为空（网络受限/被限流），保留已提交的 articles.json，
+          # 避免空数据覆盖 src/wechat/config.js 导致博客显示"暂无文章"
+          if [ ! -s scripts/wechat-sync/articles.json ]; then
+            echo "⚠️ articles.json 为空，跳过本次微信文章同步"
+            exit 0
+          fi
+          node scripts/wechat-sync/sync.js --replace
 
       - name: 构建文档
-        run: |-
-          npm run build
+        # 仅执行 docusaurus build，同步已在上方受保护的步骤中完成。
+        # 不要改回 npm run build，否则会重复执行同步脚本且绕过空数据保护。
+        run: npx docusaurus build
 
       - name: 部署文档
         uses: JamesIves/github-pages-deploy-action@v4
