@@ -38,7 +38,45 @@ jobs:
         # 4. docusaurus build       构建静态站点到 build/
         run: npm run build
 
-      - name: 部署文档
+      - name: 部署到自建服务器
+        # 网站由自建 nginx 服务器（www.pikiwidb.com → 140.210.195.243）提供服务，
+        # 需要把 build 产物同步到服务器网站根目录 /home/pika/pika-doc。
+        #
+        # 需要在 GitHub 仓库 Settings → Secrets and variables → Actions 中配置：
+        #   SSH_HOST     服务器地址（140.210.195.243）
+        #   SSH_USER     SSH 用户名（pika）
+        #   SSH_PASSWORD SSH 密码
+        env:
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          SSH_USER: ${{ secrets.SSH_USER }}
+          SSH_PASSWORD: ${{ secrets.SSH_PASSWORD }}
+          DEPLOY_PATH: /home/pika/pika-doc
+        run: |
+          sudo apt-get update -y && sudo apt-get install -y sshpass
+          # 确保 .nojekyll 存在
+          touch build/.nojekyll
+          # 打包 build 目录
+          cd build && tar -czf /tmp/build.tar.gz . && cd ..
+          # 上传 tar.gz
+          sshpass -p "$SSH_PASSWORD" scp \
+            -o StrictHostKeyChecking=no \
+            -o UserKnownHostsFile=/dev/null \
+            /tmp/build.tar.gz "$SSH_USER@$SSH_HOST:/tmp/pikiwidb-build.tar.gz"
+          # 远程解压并替换旧文件（保留 .git 目录）
+          sshpass -p "$SSH_PASSWORD" ssh \
+            -o StrictHostKeyChecking=no \
+            -o UserKnownHostsFile=/dev/null \
+            "$SSH_USER@$SSH_HOST" \
+            "cd '$DEPLOY_PATH' && \
+             find . -mindepth 1 -not -name '.git' -not -path './.git/*' -not -path './.git' -delete && \
+             tar -xzf /tmp/pikiwidb-build.tar.gz -C '$DEPLOY_PATH' && \
+             touch '$DEPLOY_PATH/.nojekyll' && \
+             rm -f /tmp/pikiwidb-build.tar.gz && \
+             echo '✅ 服务器部署完成'"
+          echo "✅ 已部署到 $SSH_HOST:$DEPLOY_PATH"
+
+      - name: 部署文档到 gh-pages（备份）
+        # 同时保留 gh-pages 分支部署作为备份
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           # 这是文档部署到的分支名称

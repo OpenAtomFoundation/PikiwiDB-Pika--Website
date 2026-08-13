@@ -36,7 +36,7 @@ export default function Home() {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="PikiwiDB 是一款支持持久化存储的键值数据库">
+      description="为海量数据存储设计的高可用键值数据库">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

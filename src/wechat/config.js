@@ -30,6 +30,14 @@ export const WECHAT_LAST_SYNCED = "2026-08";
 // 微信公众号文章列表（按发布时间倒序排列，最新的在最前面）
 export const WECHAT_ARTICLES = [
   {
+    id: "PikiwiDB-离线大键分析工具深度原理解析",
+    title: "PikiwiDB 离线大键分析工具深度原理解析",
+    summary: "概述     在PikiwiDB (Pika) 系统的运维与治理中，大键 (BigKey) 是影响系统稳定性与",
+    url: "https://mp.weixin.qq.com/s/TArW7ErdYrFlHxv9y4n4Xg",
+    date: "2026-03-27",
+    cover: "https://mmbiz.qpic.cn/sz_mmbiz_jpg/gcjqmgkpFXCYYiaNCl3icbHibj6onz8VBdlqBPa0doJAiaNBJyEW2iaLQjUrX0fQoHFjHEQmR3tNBUfdmRv3dGPREbiaAnicQEoJuBICfbmOiap9htU/0?wx_fmt=jpeg",
+  },
+  {
     id: "PikiwiDB-Pika-Raft-一致性详解",
     title: "PikiwiDB(Pika) Raft 一致性详解",
     summary: "详解PikiwiDB(Pika) Raft一致性",
