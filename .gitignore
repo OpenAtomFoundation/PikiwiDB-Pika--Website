@@ -3,6 +3,10 @@ node_modules/
 
 # Ignore build output directory
 dist/
+build/
+
+# Ignore Docusaurus cache
+.docusaurus/
 
 # Ignore logs and temporary files
 *.log
