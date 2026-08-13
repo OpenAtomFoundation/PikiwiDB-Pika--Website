@@ -11,11 +11,17 @@ const os = require('os');
 const {execSync} = require('child_process');
 const {Client} = require('ssh2');
 
-const HOST = process.env.SSH_HOST || '140.210.195.243';
+const HOST = process.env.SSH_HOST;
 const PORT = 22;
-const USER = process.env.SSH_USER || 'pika';
-const PASSWORD = process.env.SSH_PASSWORD || 'yuyu#as@360';
+const USER = process.env.SSH_USER;
+const PASSWORD = process.env.SSH_PASSWORD;
 const REMOTE_PATH = process.env.DEPLOY_PATH || '/home/pika/pika-doc';
+
+if (!HOST || !USER || !PASSWORD) {
+  console.error('❌ 缺少环境变量，请设置 SSH_HOST、SSH_USER、SSH_PASSWORD');
+  console.error('   示例: SSH_HOST=xxx SSH_USER=xxx SSH_PASSWORD=xxx node scripts/deploy-server.js');
+  process.exit(1);
+}
 const LOCAL_BUILD = path.resolve(__dirname, '..', 'build');
 
 const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'pikiwidb-deploy-'));

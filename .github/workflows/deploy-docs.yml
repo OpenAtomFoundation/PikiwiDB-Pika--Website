@@ -39,12 +39,12 @@ jobs:
         run: npm run build
 
       - name: 部署到自建服务器
-        # 网站由自建 nginx 服务器（www.pikiwidb.com → 140.210.195.243）提供服务，
-        # 需要把 build 产物同步到服务器网站根目录 /home/pika/pika-doc。
+        # 网站由自建 nginx 服务器（www.pikiwidb.com）提供服务，
+        # 需要把 build 产物同步到服务器网站根目录。
         #
         # 需要在 GitHub 仓库 Settings → Secrets and variables → Actions 中配置：
-        #   SSH_HOST     服务器地址（140.210.195.243）
-        #   SSH_USER     SSH 用户名（pika）
+        #   SSH_HOST     服务器地址
+        #   SSH_USER     SSH 用户名
         #   SSH_PASSWORD SSH 密码
         env:
           SSH_HOST: ${{ secrets.SSH_HOST }}
