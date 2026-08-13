@@ -1,0 +1,338 @@
+{
+  "source": "https://github.com/OpenAtomFoundation/pikiwidb.wiki.git",
+  "commit": "77616b43f61ac63c8ed59a6a0480ba656cb6decb",
+  "generatedAt": "2026-08-13T02:22:56.899Z",
+  "categories": [
+    {
+      "title": "概况",
+      "items": [
+        {
+          "title": "PikiwiDB 介绍",
+          "href": "https://github.com/OpenAtomFoundation/pikiwidb/wiki/pika-%E4%BB%8B%E7%BB%8D"
+        },
+        {
+          "title": "FAQ",
+          "href": "https://github.com/OpenAtomFoundation/pikiwidb/wiki/FAQ"
+        },
+        {
+          "title": "社区贡献文档",
+          "href": "https://github.com/Qihoo360/pika/wiki/ArticlesFromUsers"
+        }
+      ]
+    },
+    {
+      "title": "发版文档",
+      "items": [
+        {
+          "title": "What's new in PikiwiDB v4.0.0",
+          "href": "https://mp.weixin.qq.com/s/jFkpR98bk0nvUY_o8SkYOA"
+        },
+        {
+          "title": "What's new in PikiwiDB v3.5.5",
+          "href": "https://mp.weixin.qq.com/s/UUiIPWy8JUAg4G1RkKyBBA"
+        },
+        {
+          "title": "What's new in PikiwiDB v3.5.4",
+          "href": "https://mp.weixin.qq.com/s/_l0ojZKFXanRN4rG7ihZFQ"
+        },
+        {
+          "title": "What's new in PikiwiDB v3.5.3",
+          "href": "https://mp.weixin.qq.com/s/XrkM4Qf0w3hANwmdkPR7bg"
+        },
+        {
+          "title": "What's new in PikiwiDB v3.5.2",
+          "href": "https://my.oschina.net/dubbogo/blog/10315913"
+        },
+        {
+          "title": "What's new in PikiwiDB v3.5.1",
+          "href": "https://my.oschina.net/dubbogo/blog/10114890"
+        },
+        {
+          "title": "What's new in PikiwiDB v3.5.0",
+          "href": "https://mp.weixin.qq.com/s/NNnmd0RtQ-vx9arW9YBcBA"
+        }
+      ]
+    },
+    {
+      "title": "使用与运维",
+      "items": [
+        {
+          "title": "安装使用",
+          "href": "https://github.com/OpenAtomFoundation/pika/wiki/%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8"
+        },
+        {
+          "title": "支持的语言和客户端",
+          "href": "https://github.com/OpenAtomFoundation/pika/wiki/%E6%94%AF%E6%8C%81%E7%9A%84%E8%AF%AD%E8%A8%80%E5%92%8C%E5%AE%A2%E6%88%B7%E7%AB%AF"
+        },
+        {
+          "title": "当前支持的Redis接口以及兼容情况",
+          "href": "https://github.com/OpenAtomFoundation/pika/wiki/pika-%E6%94%AF%E6%8C%81%E7%9A%84redis%E6%8E%A5%E5%8F%A3%E5%8F%8A%E5%85%BC%E5%AE%B9%E6%83%85%E5%86%B5"
+        },
+        {
+          "title": "配置文件说明",
+          "href": "https://github.com/OpenAtomFoundation/pika/wiki/pika-%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%B4%E6%98%8E"
+        },
+        {
+          "title": "数据目录说明",
+          "href": "https://github.com/OpenAtomFoundation/pika/wiki/pika-%E6%95%B0%E6%8D%AE%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84%E8%AF%B4%E6%98%8E"
+        },
+        {
+          "title": "info信息说明",
+          "href": "https://github.com/OpenAtomFoundation/pika/wiki/pika-info%E4%BF%A1%E6%81%AF%E8%AF%B4%E6%98%8E"
+        },
+        {
+          "title": "部分管理指令说明",
+          "href": "https://github.com/OpenAtomFoundation/pika/wiki/pika%E7%9A%84%E4%B8%80%E4%BA%9B%E7%AE%A1%E7%90%86%E5%91%BD%E4%BB%A4%E6%96%B9%E5%BC%8F%E8%AF%B4%E6%98%8E"
+        },
+        {
+          "title": "差异化命令",
+          "href": "https://github.com/OpenAtomFoundation/pika/wiki/pika-%E5%B7%AE%E5%BC%82%E5%8C%96%E5%91%BD%E4%BB%A4"
+        },
+        {
+          "title": "PikiwiDB Sharding Tutorials",
+          "href": "https://github.com/Qihoo360/pika/wiki/Pika-Sharding-Tutorials"
+        },
+        {
+          "title": "PikiwiDB 订阅",
+          "href": "https://github.com/OpenAtomFoundation/pika/wiki/Pub-Sub%E4%BD%BF%E7%94%A8"
+        },
+        {
+          "title": "配合sentinel(哨兵)实现pika自动容灾",
+          "href": "https://github.com/OpenAtomFoundation/pika/wiki/%E9%85%8D%E5%90%88sentinel(%E5%93%A8%E5%85%B5)%E5%AE%9E%E7%8E%B0pika%E8%87%AA%E5%8A%A8%E5%AE%B9%E7%81%BE"
+        },
+        {
+          "title": "如何升级到 PikiwiDB 3.0",
+          "href": "https://github.com/OpenAtomFoundation/pika/wiki/%E5%A6%82%E4%BD%95%E5%8D%87%E7%BA%A7%E5%88%B0Pika3.0"
+        },
+        {
+          "title": "如何升级到 PikiwiDB 3.1或3.2",
+          "href": "https://github.com/OpenAtomFoundation/pika/wiki/%e5%a6%82%e4%bd%95%e5%8d%87%e7%ba%a7%e5%88%b0Pika3.1%e6%88%963.2"
+        },
+        {
+          "title": "PikiwiDB 多库版命令、参数变化参考",
+          "href": "https://github.com/Qihoo360/pika/wiki/pika%e5%a4%9a%e5%ba%93%e7%89%88%e5%91%bd%e4%bb%a4%e3%80%81%e5%8f%82%e6%95%b0%e5%8f%98%e5%8c%96%e5%8f%82%e8%80%83"
+        },
+        {
+          "title": "PikiwiDB 分片版本命令",
+          "href": "https://github.com/Qihoo360/pika/wiki/Pika%E5%88%86%E7%89%87%E5%91%BD%E4%BB%A4"
+        },
+        {
+          "title": "副本一致性使用说明",
+          "href": "https://github.com/Qihoo360/pika/wiki/%E5%89%AF%E6%9C%AC%E4%B8%80%E8%87%B4%E6%80%A7%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3"
+        },
+        {
+          "title": "PikiwiDB 内存使用",
+          "href": "https://github.com/Qihoo360/pika/wiki/Pika-Memory-Usage"
+        },
+        {
+          "title": "PikiwiDB 最佳实践",
+          "href": "https://github.com/Qihoo360/pika/wiki/Pika-Best-Practice"
+        },
+        {
+          "title": "调整 max-write-buffer-size 优化 PikiwiDB 性能 10 倍的案例",
+          "href": "https://opensource.actionsky.com/20220519-mysql/"
+        },
+        {
+          "title": "Redis 与 PikiwiDB scan 性能对比",
+          "href": "https://yifei.me/note/575"
+        },
+        {
+          "title": "PikiwiDB 3.5 参数优化手册",
+          "href": "https://github.com/OpenAtomFoundation/pika/discussions/1970"
+        },
+        {
+          "title": "喜马拉雅 Redis 与 PikiwiDB 缓存使用军规",
+          "href": "https://my.oschina.net/dubbogo/blog/10108965"
+        },
+        {
+          "title": "如何实现 3.3.6 升级到 3.5.x",
+          "href": "https://github.com/OpenAtomFoundation/pika/discussions/1983"
+        },
+        {
+          "title": "Docker 搭建 Pika 分片多主集群（Docker & Codis & Pika& Replication & Sharding）",
+          "href": "https://blog.csdn.net/lizongti/article/details/100020551"
+        },
+        {
+          "title": "v3.3.6 版本如何升级 v3.5.3",
+          "href": "https://github.com/OpenAtomFoundation/pika/discussions/2551"
+        },
+        {
+          "title": "磁盘被打满后如何让 PikiwiDB 恢复服务",
+          "href": "https://github.com/OpenAtomFoundation/pika/issues/2520"
+        },
+        {
+          "title": "PikiwiDB 主从数据同步状态指标 “repl_connect_status” 简介",
+          "href": "https://mp.weixin.qq.com/s/g7ppD8PdAGBy3BTBoVi2cg"
+        },
+        {
+          "title": "PikiwiDB 3.5 最佳实践",
+          "href": "https://mp.weixin.qq.com/s/7dN77JTeHPPDPX9FPrV6_g"
+        }
+      ]
+    },
+    {
+      "title": "设计与实现",
+      "items": [
+        {
+          "title": "整体架构",
+          "href": "https://github.com/OpenAtomFoundation/pika/wiki/%E6%95%B4%E4%BD%93%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84"
+        },
+        {
+          "title": "线程模型",
+          "href": "https://github.com/OpenAtomFoundation/pika/wiki/pika-%E7%BA%BF%E7%A8%8B%E6%A8%A1%E5%9E%8B"
+        },
+        {
+          "title": "全同步",
+          "href": "https://github.com/OpenAtomFoundation/pika/wiki/pika-%E5%85%A8%E5%90%8C%E6%AD%A5"
+        },
+        {
+          "title": "增量同步",
+          "href": "https://github.com/Qihoo360/pika/wiki/pika-%E5%A2%9E%E9%87%8F%E5%90%8C%E6%AD%A5"
+        },
+        {
+          "title": "副本一致性",
+          "href": "https://github.com/Qihoo360/pika/wiki/%E5%89%AF%E6%9C%AC%E4%B8%80%E8%87%B4%E6%80%A7%E8%AE%BE%E8%AE%A1%E6%96%87%E6%A1%A3"
+        },
+        {
+          "title": "快照式备份",
+          "href": "https://github.com/OpenAtomFoundation/pikiwidb/wiki/pika-%E5%BF%AB%E7%85%A7%E5%BC%8F%E5%A4%87%E4%BB%BD%E6%96%B9%E6%A1%88"
+        },
+        {
+          "title": "锁的应用",
+          "href": "https://github.com/Qihoo360/pika/wiki/pika-%E9%94%81%E7%9A%84%E5%BA%94%E7%94%A8"
+        },
+        {
+          "title": "blackwidow存储引擎数据格式",
+          "href": "https://github.com/OpenAtomFoundation/pikiwidb/wiki/pika-blackwidow%E5%BC%95%E6%93%8E%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E6%A0%BC%E5%BC%8F"
+        },
+        {
+          "title": "PikiwiDB 源码学习--pikiwidb的通信和线程模型",
+          "href": "https://www.cnblogs.com/sigma0-/p/12828226.html"
+        },
+        {
+          "title": "PikiwiDB 源码学习--pikiwidb的PubSub机制",
+          "href": "https://www.cnblogs.com/sigma0-/p/12829153.html"
+        },
+        {
+          "title": "PikiwiDB 源码学习--pikiwidb的命令执行框架",
+          "href": "https://www.cnblogs.com/sigma0-/p/12831546.html"
+        },
+        {
+          "title": "PikiwiDB 源码学习--pikiwidb和rocksdb的对接",
+          "href": "https://www.cnblogs.com/sigma0-/p/12831748.html"
+        },
+        {
+          "title": "PikiwiDB-NoSQL原理概述",
+          "href": "https://blog.csdn.net/qq_33339479/article/details/120998035"
+        },
+        {
+          "title": "PikiwiDB 在codis中的探索",
+          "href": "https://blog.csdn.net/qq_33339479/article/details/122754729"
+        },
+        {
+          "title": "PikiwiDB 笔记",
+          "href": "https://alexstocks.github.io/html/pika.html"
+        },
+        {
+          "title": "PikiwiDB 主从同步原理",
+          "href": "https://blog.csdn.net/qq_33339479/article/details/123898420"
+        },
+        {
+          "title": "PikiwiDB 新存储结构 Floyd",
+          "href": "https://github.com/OpenAtomFoundation/pika/discussions/2052"
+        },
+        {
+          "title": "floyd 存储方案",
+          "href": "https://github.com/OpenAtomFoundation/pika/discussions/2074"
+        },
+        {
+          "title": "PikiwiDB 简单分析",
+          "href": "https://wanghenshui.github.io/2019/02/02/pika-walkthrough1.html"
+        },
+        {
+          "title": "PikiwiDB 主从数据同步状态指标 “repl_connect_status” 简介",
+          "href": "https://mp.weixin.qq.com/s/g7ppD8PdAGBy3BTBoVi2cg"
+        },
+        {
+          "title": "万字长文详解降本增效利器 PikiwiDB(Pika) 混合存储原理",
+          "href": "https://mp.weixin.qq.com/s/g4M5EH-KnFpkd0PQ1s49pw"
+        },
+        {
+          "title": "PikiwiDB 混合存储之批量查询",
+          "href": "https://mp.weixin.qq.com/s/KFLPruSdB66TMRxUfR9PbQ"
+        },
+        {
+          "title": "PikiwiDB 3.5 最佳实践",
+          "href": "https://mp.weixin.qq.com/s/7dN77JTeHPPDPX9FPrV6_g"
+        }
+      ]
+    },
+    {
+      "title": "性能",
+      "items": [
+        {
+          "title": "3.2.x性能",
+          "href": "https://github.com/Qihoo360/pika/wiki/3.2.x-Performance"
+        }
+      ]
+    },
+    {
+      "title": "工具包",
+      "items": [
+        {
+          "title": "新，旧，可读三类binlog转换工具",
+          "href": "https://github.com/OpenAtomFoundation/pika/wiki/%E6%96%B0%EF%BC%8C%E6%97%A7%EF%BC%8C%E5%8F%AF%E8%AF%BB-%E4%B8%89%E7%B1%BBbinlog%E8%BD%AC%E6%8D%A2%E5%B7%A5%E5%85%B7"
+        },
+        {
+          "title": "根据时间戳恢复数据工具",
+          "href": "https://github.com/OpenAtomFoundation/pika/wiki/%E6%A0%B9%E6%8D%AE%E6%97%B6%E9%97%B4%E6%88%B3%E6%81%A2%E5%A4%8D%E6%95%B0%E6%8D%AE%E5%B7%A5%E5%85%B7"
+        },
+        {
+          "title": "Redis到PikiwiDB迁移工具",
+          "href": "https://github.com/OpenAtomFoundation/pika/wiki/Redis%E5%88%B0pika%E8%BF%81%E7%A7%BB%E5%B7%A5%E5%85%B7"
+        },
+        {
+          "title": "Redis请求实时copy到PikiwiDB工具",
+          "href": "https://github.com/OpenAtomFoundation/pika/wiki/Redis%E8%AF%B7%E6%B1%82%E5%AE%9E%E6%97%B6copy%E5%88%B0pika%E5%B7%A5%E5%85%B7"
+        },
+        {
+          "title": "PikiwiDB到PikiwiDB、Redis迁移工具 PikiwiDB-Port(适用于 PikiwiDB v2.x&v3.0.x)",
+          "href": "https://github.com/OpenAtomFoundation/pika/wiki/pika%e5%88%b0pika%e3%80%81redis%e8%bf%81%e7%a7%bb%e5%b7%a5%e5%85%b7"
+        },
+        {
+          "title": "PikiwiDB到PikiwiDB、Redis迁移工具 PikiwiDB-Migrage(适用于 PikiwiDB v3.2及以上版本) ",
+          "href": "https://www.tencentcloud.com/zh/document/product/239/48547"
+        },
+        {
+          "title": "PikiwiDB的kv数据写入txt文本工具",
+          "href": "https://github.com/OpenAtomFoundation/pika/wiki/%e8%bf%81%e7%a7%bbString%e7%b1%bb%e5%9e%8b%e6%95%b0%e6%8d%ae%e5%88%b0txt%e6%96%87%e6%9c%ac"
+        },
+        {
+          "title": "kv数据txt文本迁移PikiwiDB工具",
+          "href": "https://github.com/OpenAtomFoundation/pika/wiki/txt_to_pika%E5%B7%A5%E5%85%B7"
+        },
+        {
+          "title": "PikiwiDB exporter监控工具",
+          "href": "https://github.com/OpenAtomFoundation/pika/tree/unstable/tools/pika_exporter"
+        },
+        {
+          "title": "codis-redis实时同步pikiwiDB工具",
+          "href": "https://github.com/GetuiLaboratory/codis2pika"
+        }
+      ]
+    },
+    {
+      "title": "Develop",
+      "items": [
+        {
+          "title": "PikiwiDB coding style",
+          "href": "https://github.com/Qihoo360/pika/wiki/cpp---coding-style"
+        },
+        {
+          "title": "PikiwiDB 代码梳理",
+          "href": "https://github.com/OpenAtomFoundation/pika/wiki/Pika%E4%BB%A3%E7%A0%81%E6%A2%B3%E7%90%86"
+        }
+      ]
+    }
+  ]
+}
